@@ -1,0 +1,48 @@
+name: Semantic artefacts scripted integration for EarthPortal
+
+on:
+  schedule:
+    # Runs every day at 4:30 PM UTC (approximates 5:30 PM CET)
+    - cron: '30 16 * * *'
+    
+  workflow_dispatch:
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Run Python script
+        run: |
+          python scripts/concat_GCMD.py
+
+      # Compare the output file and commit changes if different
+      - name: Check if file has been updated and commit changes
+        run: |
+          sa_folder="semantic_artefacts"
+          
+          # Check if the original file has been updated by comparing it with the previously committed version
+          git diff --quiet "$sa_folder" || {
+            echo "Changes detected in $sa_folder, committing changes..."
+            git config --global user.name "earthportal-sac"
+            git config --global user.email "earthportal.sac@gmail.com"
+            git add "$sa_folder/*"
+            git commit -m "New version(s) of semantic artefact(s)"
+            git push origin main
+          }
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
