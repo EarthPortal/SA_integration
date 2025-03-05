@@ -1,5 +1,5 @@
 import requests
-from rdflib import Graph, SKOS, RDF, URIRef
+from rdflib import Graph, SKOS, RDF, URIRef, RDFS, Literal, BNode, Namespace
 
 # Base URL of the REST API
 API_BASE_URL = "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/"
@@ -49,6 +49,8 @@ CONCEPT_SCHEMES = [
     "verticalresolutionrange",
 ]
 
+GCMD = Namespace("https://gcmd.earthdata.nasa.gov/kms#")
+
 def fetch_rdf_from_api(base_url, concept_scheme):
     """
     Fetch RDF content from a paginated REST API and merge it into a single RDF Graph.
@@ -62,7 +64,6 @@ def fetch_rdf_from_api(base_url, concept_scheme):
     merged_graph = Graph()
     page = 1
     session = requests.Session()  # Use a session for better performance
-    concept_scheme = concept_scheme
     print(f"Concept scheme: {concept_scheme}")
     while True:
         print(f"Fetching page {page}...")
@@ -104,6 +105,17 @@ def fetch_rdf_from_api(base_url, concept_scheme):
         #     break
 
         page += 1
+    
+    # Find the blank node containing the ConceptScheme information and replace it with the proper ConceptScheme URI
+    scheme_uri = URIRef(API_BASE_URL+concept_scheme)
+    blank_node = None
+    for s, p, o in merged_graph.triples((None, URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), GCMD.gcmd)):
+        if isinstance(s, BNode):
+            blank_node = s
+            break
+    for s, p, o in merged_graph.triples((blank_node, None, None)):
+        if p != GCMD.page_num and p != GCMD.page_size:
+            merged_graph.add((scheme_uri, p, o))
 
     return merged_graph
 
@@ -136,9 +148,25 @@ def main():
             merged_graph.add((scheme_uri, SKOS.hasTopConcept, topConcept))
             merged_graph.add((topConcept, SKOS.topConceptOf, gcmd_scheme))
         merged_graph += fetch_rdf_from_api(API_BASE_URL, scheme)
-
-    # Save the merged RDF graph to a file
-    save_rdf_to_file(merged_graph, "semantic_artefacts/gcmd_full.ttl")
+        for s, p, o in merged_graph.triples((None, URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), GCMD.gcmd)):
+            if isinstance(s, BNode):
+                blank_node = s
+                for s2, p2, o2 in merged_graph.triples((blank_node, None, None)):
+                    merged_graph.remove((s2, p2, o2))
+    old_graph = Graph()
+    old_graph.parse("semantic_artefacts/gcmd_full.ttl", format="turtle")
+    sciencekeywords = URIRef("https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords")
+    sciencekeywords_version = list(old_graph.objects(sciencekeywords, GCMD.keywordVersion))
+    if len(sciencekeywords_version) == 0:
+        sciencekeywords_version = "0.0"
+    else:
+        sciencekeywords_version = sciencekeywords_version[0]
+    current_version = list(merged_graph.objects(sciencekeywords, GCMD.keywordVersion))[0]
+    if sciencekeywords_version == current_version:
+        print("Version number did not change (", str(current_version), "), skipping save...")
+    else:
+        print("New version detected:", str(current_version))
+        save_rdf_to_file(merged_graph, "semantic_artefacts/gcmd_full.ttl")
 
 if __name__ == "__main__":
     main()
