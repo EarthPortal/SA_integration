@@ -1299,6 +1299,24 @@ add narrower relation (Chained Operations [ee18f758-071a-4ac8-8cd6-b217270243ea,
         <https://gcmd.earthdata.nasa.gov/kms/concept/eb453edc-11bf-43b2-8f98-febb2af07539> ;
     skos:prefLabel "Chained Operations"@en .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/f03cac2e-6ee5-4734-9ab7-eb8521ba2654> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3f4cfc81-7745-43d9-b313-f68cdf72359b> ;
+    skos:changeNote """2025-03-10 09:31:04.0 [tstevens] Insert Concept 
+add broader relation (GREENHOUSE GASES [f03cac2e-6ee5-4734-9ab7-eb8521ba2654,2103180] - ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,2099764]); 
+""",
+        """2025-03-10 09:32:12.0 [tstevens]  
+insert Definition (id: null
+text: Greenhouse gases, including carbon dioxide, methane, and water vapor, absorb and re-emit thermal infrared radiation, thereby regulating Earth’s temperature and climate. While they are essential for maintaining habitable conditions by preventing heat loss into space, excessive emissions from human activities amplify this effect, contributing to climate change.
+language code: en); 
+""",
+        """2025-03-10 11:29:47.0 [tstevens]  
+update Definition (Stephen H. Schneider, The Greenhouse Effect: Science and Policy. Science 243, 771-781 (1989). DOI: 10.1126/science.243.4892.771); 
+""" ;
+    skos:definition "Greenhouse gases, including carbon dioxide, methane, and water vapor, absorb and re-emit thermal infrared radiation, thereby regulating Earth’s temperature and climate. While they are essential for maintaining habitable conditions by preventing heat loss into space, excessive emissions from human activities amplify this effect, contributing to climate change."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
+    skos:prefLabel "GREENHOUSE GASES"@en ;
+    gcmd:reference [ gcmd:text "Stephen H. Schneider, The Greenhouse Effect: Science and Policy. Science 243, 771-781 (1989). DOI: 10.1126/science.243.4892.771"@en ] .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/fb0b9fcd-5c96-4989-8c64-a479bbed83ab> a skos:Concept ;
     skos:changeNote """2014-03-05 06:40:50.0 [aaleman] Insert Concept 
 add narrower relation (Projects [fb0b9fcd-5c96-4989-8c64-a479bbed83ab,77491] - ANDRILL [9c54f8c2-e1a8-4ccd-87b9-c268615f6de8,106189]); 
@@ -165736,14 +165754,14 @@ Group: Platform_Details
 End_Group"""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "GRACE-FO"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Gravity Recovery and Climate Experiment Follow-On"@en ],
-        [ gcmd:category "outdated"@en ;
+    gcmd:altLabel [ gcmd:category "outdated"@en ;
             gcmd:text "The Gravity Recovery and Climate Experiment Follow-on"@en ],
         [ gcmd:category "outdated"@en ;
-            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
+            gcmd:text "GRACE-II"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Gravity Recovery and Climate Experiment Follow-On"@en ],
         [ gcmd:category "outdated"@en ;
-            gcmd:text "GRACE-II"@en ] .
+            gcmd:text "Gravity Recovery and Climate Experiment II"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/f75f9011-903e-4757-9fcf-fefac2599b59> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/58f39353-7e1c-4884-9501-376cd0377fbf> ;
@@ -178873,10 +178891,10 @@ URI: https://earth.esa.int/concept/sentinel-3"""@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Copernicus: Sentinel-3"@en ] ;
     gcmd:reference [ gcmd:text "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3"@en ] ;
-    gcmd:resource [ gcmd:type "provider" ;
-            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ],
-        [ gcmd:type "image" ;
-            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ] .
+    gcmd:resource [ gcmd:type "image" ;
+            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ],
+        [ gcmd:type "provider" ;
+            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/8ce319a5-9b49-49e3-8981-3ce512c7efb0> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/705cd3a0-ea07-40c8-bfa1-9c26f22d13ba> ;
@@ -194664,8 +194682,8 @@ language code: en);
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9728ca44-7bb3-40a4-9dd2-49470ad47fa5> ;
     gcmd:hits "8" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:20:38" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:51:55" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/verticalresolutionrange" .
 
@@ -198841,8 +198859,8 @@ End_Group"""@en ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
     gcmd:hits "13" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:21:17" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:52:26" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/PlatformType" .
 
@@ -199964,8 +199982,8 @@ add narrower relation (Lidar/Laser Altimeters [ec76ff59-7450-48a0-9152-7c3531e60
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1499785c-8b74-45f4-bbf7-19d2d4e43b2f> ;
     gcmd:hits "15" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:20:36" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:51:55" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/horizontalresolutionrange" .
 
@@ -200931,8 +200949,8 @@ Science, Wadsworth Publishing Co., p. 526."""@en ] .
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/6eb7a3bb-2330-4086-9a77-79e46470f1e6> ;
     gcmd:hits "17" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:21:18" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:52:26" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProductLevelId" .
 
@@ -202928,8 +202946,8 @@ update Definition (Describes the major physical characteristics of water that re
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/e97d2b88-a545-4882-801b-40964a2bc723> ;
     gcmd:hits "21" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:22:04" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:52:55" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/Operations" .
 
@@ -202978,68 +202996,6 @@ language code: en);
         <https://gcmd.earthdata.nasa.gov/kms/concept/f2a6694b-5ba1-464a-9d0f-d0212e492d53> ;
     skos:prefLabel "Defense Meteorological Satellite Program (DMSP)"@en ;
     gcmd:reference [ gcmd:text "https://www.ospo.noaa.gov/Operations/DMSP/index.html"@en ] .
-
-<https://gcmd.earthdata.nasa.gov/kms/concept/3f4cfc81-7745-43d9-b313-f68cdf72359b> a skos:Concept ;
-    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/fb93d937-c17c-45d0-a9e3-ca5c8a800ca8> ;
-    skos:changeNote """2012-06-26 14:59:54.0 [tbs1979] Move Concepts 
-delete narrower relation (null); 
-""",
-        """2012-06-27 13:48:25.0 [tbs1979] Move Concepts 
-delete narrower relation (null); 
-""",
-        """2012-06-27 13:48:43.0 [tbs1979] Move Concepts 
-delete narrower relation (null); 
-""",
-        """2012-06-27 14:00:45.0 [tbs1979] Insert Concept 
-add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,20271] - PRESCRIBED BURNS/FIRES [c0fb4215-4f72-445f-af81-b3f44c44cd0e,40209]); 
-""",
-        """2012-06-27 14:07:56.0 [tbs1979] Insert Concept 
-add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,20271] - ELECTRIC/MAGNETIC FIELD EXPOSURE [69d84440-b806-4093-a659-f052185e22bd,40211]); 
-""",
-        """2012-06-27 14:10:12.0 [tbs1979] Move Concepts 
-delete narrower relation (null); 
-""",
-        """2012-07-11 09:40:23.0 [tbs1979]  
-update Definition (Refers to the types of impacts that humans have on their environment.); 
-""",
-        """2017-03-10 08:18:40.0 [tstevens]  
-update Definition (NASA GCMD); 
-""",
-        """2020-05-15 09:22:22.0 [tstevens] Insert Concept 
-add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,83739] - WATER RESOURCES [ee3e296f-fdc0-4695-95af-dbe63f43b679,560125]); 
-""",
-        """2021-08-05 15:51:16.0 [tstevens] Insert Concept 
-add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,689102] - MARINE DEBRIS REMOVAL [ed96cfbb-6fc5-4f02-baba-4c37b813c259,692293]); 
-""",
-        """2022-12-15 08:00:58.0 [tstevens] Insert Concept 
-add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,1140464] - MECHANICAL DISTURBANCE [e84f5068-2123-4594-aa07-bc1389346093,1143778]); 
-""" ;
-    skos:definition "Refers to the types of impacts that humans have on their environment."@en ;
-    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
-    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/07f7ea8e-cf94-4421-923a-539e12dbeb95>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/083d79ba-b7fa-4a07-9c36-73540666d5c4>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/09cf34f3-5e20-4dc1-9b76-97afd856ebe0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0c4ffc6a-694d-4f33-bc18-06fefb68acdd>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/207a34e0-48c0-439a-a001-dcf664b61686>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/40869a25-edea-4438-80f9-47c9e6910b9b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/48671d9e-a627-4034-baec-201bda5d166d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6221fa7d-9407-4ffc-ab58-886038209254>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/69d84440-b806-4093-a659-f052185e22bd>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/82c3689a-6bbf-496f-b118-b6ab46a9d2c7>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/835c5ec2-50e3-4bef-b380-9f74b143dac6>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/912245ce-a81e-4d3b-b4fb-f71c8da63357>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9d7eed04-9c49-4024-8d0f-06474cc38bbc>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/a5b074da-5e00-4fd9-9c40-cfec771263ee>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/c0fb4215-4f72-445f-af81-b3f44c44cd0e>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/d076e628-320a-477b-aad9-07d87ca04993>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/dbeff538-6857-4573-8d14-12009e0ee078>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/de89c42c-206a-4573-a2af-edffe5ddd6bf>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/e84f5068-2123-4594-aa07-bc1389346093>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ed96cfbb-6fc5-4f02-baba-4c37b813c259>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/edfbff1e-b24b-40b9-be54-e1823b4d7f49>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ee3e296f-fdc0-4695-95af-dbe63f43b679> ;
-    skos:prefLabel "ENVIRONMENTAL IMPACTS"@en ;
-    gcmd:reference [ gcmd:text "NASA GCMD"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/5440f386-8dac-4779-91a6-e610a06ab6f5> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/4f81c61c-f100-4bc4-9664-d9b70d2f162f> ;
@@ -203198,8 +203154,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/27fa831b-f131-4f6d-8020-cc4ab0896249> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:20:34" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:51:55" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/isotopiccategory" .
 
@@ -203207,8 +203163,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/502ad03c-dba8-4b32-8af5-13fa947c3988> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:20:38" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:51:56" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/temporalresolutionrange" .
 
@@ -203511,6 +203467,68 @@ generated by: null);
         <https://gcmd.earthdata.nasa.gov/kms/concept/d9483208-ff59-4293-9867-3f4895e58c9f>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/e069e3fc-0c75-40ee-92d7-595991f8fdb4> ;
     skos:prefLabel "COASTAL LANDFORMS"@en .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/3f4cfc81-7745-43d9-b313-f68cdf72359b> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/fb93d937-c17c-45d0-a9e3-ca5c8a800ca8> ;
+    skos:changeNote """2012-06-26 14:59:54.0 [tbs1979] Move Concepts 
+delete narrower relation (null); 
+""",
+        """2012-06-27 13:48:25.0 [tbs1979] Move Concepts 
+delete narrower relation (null); 
+""",
+        """2012-06-27 13:48:43.0 [tbs1979] Move Concepts 
+delete narrower relation (null); 
+""",
+        """2012-06-27 14:00:45.0 [tbs1979] Insert Concept 
+add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,20271] - PRESCRIBED BURNS/FIRES [c0fb4215-4f72-445f-af81-b3f44c44cd0e,40209]); 
+""",
+        """2012-06-27 14:07:56.0 [tbs1979] Insert Concept 
+add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,20271] - ELECTRIC/MAGNETIC FIELD EXPOSURE [69d84440-b806-4093-a659-f052185e22bd,40211]); 
+""",
+        """2012-06-27 14:10:12.0 [tbs1979] Move Concepts 
+delete narrower relation (null); 
+""",
+        """2012-07-11 09:40:23.0 [tbs1979]  
+update Definition (Refers to the types of impacts that humans have on their environment.); 
+""",
+        """2017-03-10 08:18:40.0 [tstevens]  
+update Definition (NASA GCMD); 
+""",
+        """2020-05-15 09:22:22.0 [tstevens] Insert Concept 
+add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,83739] - WATER RESOURCES [ee3e296f-fdc0-4695-95af-dbe63f43b679,560125]); 
+""",
+        """2021-08-05 15:51:16.0 [tstevens] Insert Concept 
+add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,689102] - MARINE DEBRIS REMOVAL [ed96cfbb-6fc5-4f02-baba-4c37b813c259,692293]); 
+""",
+        """2022-12-15 08:00:58.0 [tstevens] Insert Concept 
+add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,1140464] - MECHANICAL DISTURBANCE [e84f5068-2123-4594-aa07-bc1389346093,1143778]); 
+""" ;
+    skos:definition "Refers to the types of impacts that humans have on their environment."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
+    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/07f7ea8e-cf94-4421-923a-539e12dbeb95>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/083d79ba-b7fa-4a07-9c36-73540666d5c4>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/09cf34f3-5e20-4dc1-9b76-97afd856ebe0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0c4ffc6a-694d-4f33-bc18-06fefb68acdd>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/207a34e0-48c0-439a-a001-dcf664b61686>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/40869a25-edea-4438-80f9-47c9e6910b9b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/48671d9e-a627-4034-baec-201bda5d166d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6221fa7d-9407-4ffc-ab58-886038209254>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/69d84440-b806-4093-a659-f052185e22bd>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/82c3689a-6bbf-496f-b118-b6ab46a9d2c7>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/835c5ec2-50e3-4bef-b380-9f74b143dac6>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/912245ce-a81e-4d3b-b4fb-f71c8da63357>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9d7eed04-9c49-4024-8d0f-06474cc38bbc>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/a5b074da-5e00-4fd9-9c40-cfec771263ee>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c0fb4215-4f72-445f-af81-b3f44c44cd0e>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/d076e628-320a-477b-aad9-07d87ca04993>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/dbeff538-6857-4573-8d14-12009e0ee078>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/de89c42c-206a-4573-a2af-edffe5ddd6bf>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/e84f5068-2123-4594-aa07-bc1389346093>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ed96cfbb-6fc5-4f02-baba-4c37b813c259>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/edfbff1e-b24b-40b9-be54-e1823b4d7f49>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ee3e296f-fdc0-4695-95af-dbe63f43b679> ;
+    skos:prefLabel "ENVIRONMENTAL IMPACTS"@en ;
+    gcmd:reference [ gcmd:text "NASA GCMD"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/bb5a51d9-0ded-40ed-9bfd-7cb0e788f1a5> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ff564c87-78f2-47eb-a857-a4bdc0a71ae5> ;
@@ -207853,8 +207871,8 @@ add narrower relation (Projection Name [9d37b0bc-31fa-4b2e-b39d-1e19ceefa103,423
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9d37b0bc-31fa-4b2e-b39d-1e19ceefa103> ;
     gcmd:hits "52" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:22:00" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:52:52" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProjectionName" .
 
@@ -211032,8 +211050,8 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
     gcmd:hits "154" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:21:33" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:52:35" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/DataFormat" .
 
@@ -213503,8 +213521,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/2bc6e372-93d8-4672-96b1-ec159aff2e19> ;
     gcmd:hits "251" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:21:41" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:52:42" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/MeasurementName" .
 
@@ -213512,8 +213530,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
     gcmd:hits "450" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:20:16" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:51:46" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/discipline" .
 
@@ -213521,8 +213539,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12> ;
     gcmd:hits "1246" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:17:23" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-03 09:49:37" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/platforms" .
 
@@ -213530,8 +213548,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/b2140059-b3ca-415c-b0a7-3e142783ffe8> ;
     gcmd:hits "2057" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:18:35" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-07 10:43:44" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/instruments" .
 
@@ -213539,8 +213557,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1eb0ea0a-312c-4d74-8d42-6f1ad758f999> ;
     gcmd:hits "3622" ;
-    gcmd:keywordVersion "20.8" ;
-    gcmd:schemeVersion "2025-02-28 08:22:06" ;
+    gcmd:keywordVersion "20.9" ;
+    gcmd:schemeVersion "2025-03-10 11:29:50" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/sciencekeywords" .
 
