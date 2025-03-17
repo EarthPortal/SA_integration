@@ -1,49 +1,67 @@
 import requests
 from rdflib import Graph, SKOS, RDF, URIRef, RDFS, Literal, BNode, Namespace
+import argparse
 
 # Base URL of the REST API
 API_BASE_URL = "https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/"
 CONCEPT_SCHEMES = [
-    # "ChainedOperations",
-    # "CollectionDataType",
-    # "ContactType",
-    # "CoordinateSystem",
+    "ChainedOperations",
+    "CollectionDataType",
+    "ContactType",
+    "CoordinateSystem",
     "DataFormat",
-    # "DatasetLanguage",
-    # "DatasetProgress",
-    # "DistributionSizeUnit",
-    # "DurationUnit", #?
-    # "GranuleSpatialRepresentation",
+    "DatasetLanguage",
+    "DatasetProgress",
+    "DistributionSizeUnit",
+    "DurationUnit", #?
+    "GranuleSpatialRepresentation",
     "MeasurementName",
-    # "MetadataAssociationType",
-    # "MetadataLanguage",
-    # "MimeType",
-    # "MultimediaFormat",
+    "MetadataAssociationType",
+    "MetadataLanguage",
+    "MimeType",
+    "MultimediaFormat",
     "Operations",
-    # "OrganizationPersonnelRole",
-    # "OrganizationType",
-    # "PersistentIdentifier",
-    # "PersonnelRole",
-    # "PhoneType",
+    "OrganizationPersonnelRole",
+    "OrganizationType",
+    "PersistentIdentifier",
+    "PersonnelRole",
+    "PhoneType",
     "PlatformType",
-    # "Private",
-    # "ProductFlag",
+    "Private",
+    "ProductFlag",
     "ProductLevelId",
-    # "ProjectionAuthority",
-    # "ProjectionDatumNames",
+    "ProjectionAuthority",
+    "ProjectionDatumNames",
     "ProjectionName",
-    # "SpatialCoverageType", #?
-    # "chronounits",
+    "SpatialCoverageType", #?
+    "chronounits",
     "discipline",
     "horizontalresolutionrange",
-    # "idnnode",
+    "idnnode",
     "instruments",
     "isotopiccategory",
-    # "locations",
+    "locations",
     "platforms",
-    # "projects",
-    # "providers",
-    # "rucontenttype",
+    "projects",
+    "providers",
+    "rucontenttype",
+    "sciencekeywords",
+    "temporalresolutionrange",
+    "verticalresolutionrange",
+]
+
+CONCEPT_SCHEMES_DTTR = [
+    "DataFormat",
+    "MeasurementName",
+    "Operations",
+    "PlatformType",
+    "ProductLevelId",
+    "ProjectionName",
+    "discipline",
+    "horizontalresolutionrange",
+    "instruments",
+    "isotopiccategory",
+    "platforms",
     "sciencekeywords",
     "temporalresolutionrange",
     "verticalresolutionrange",
@@ -131,14 +149,19 @@ def save_rdf_to_file(graph, file_path):
     print(f"RDF data saved to {file_path}.")
 
 def main():
+    parser = argparse.ArgumentParser(description="Fetch and concatenate GCMD RDF data from the API.")
+    parser.add_argument("--all", action='store_true', help="Compute all concept schemes and not just the ones of interest for Data Terra")
+    args = parser.parse_args()
+
     # Fetch RDF data from the API
+    schemes = args.all and CONCEPT_SCHEMES or CONCEPT_SCHEMES_DTTR
     merged_graph = Graph()
     session = requests.Session()
     response = session.get("https://gcmd.earthdata.nasa.gov/kms/concepts/root", params={}, headers={"Accept": "application/rdf+xml"})
     merged_graph.parse(data=response.text, format="application/rdf+xml")
     gcmd_scheme = URIRef("https://gcmd.earthdata.nasa.gov/kms/")
     merged_graph.add((gcmd_scheme, RDF.type, SKOS.ConceptScheme))
-    for scheme in CONCEPT_SCHEMES:
+    for scheme in schemes:
         scheme_uri = URIRef(API_BASE_URL+scheme)
         merged_graph.add((scheme_uri, RDF.type, SKOS.ConceptScheme))
         topConcept = URIRef("")
@@ -153,8 +176,11 @@ def main():
                 blank_node = s
                 for s2, p2, o2 in merged_graph.triples((blank_node, None, None)):
                     merged_graph.remove((s2, p2, o2))
+    
+
     old_graph = Graph()
-    old_graph.parse("semantic_artefacts/gcmd_full.ttl", format="turtle")
+    old_file = args.all and "semantic_artefacts/gcmd_all.ttl" or "semantic_artefacts/gcmd_full.ttl"
+    old_graph.parse(old_file, format="turtle")
     sciencekeywords = URIRef("https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords")
     sciencekeywords_version = list(old_graph.objects(sciencekeywords, GCMD.keywordVersion))
     if len(sciencekeywords_version) == 0:
@@ -166,7 +192,7 @@ def main():
         print("Version number did not change (", str(current_version), "), skipping save...")
     else:
         print("New version detected:", str(current_version))
-        save_rdf_to_file(merged_graph, "semantic_artefacts/gcmd_full.ttl")
+        save_rdf_to_file(merged_graph, old_file)
 
 if __name__ == "__main__":
     main()

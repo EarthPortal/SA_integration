@@ -29,6 +29,7 @@ jobs:
       - name: Run Python script
         run: |
           python scripts/concat_GCMD.py
+          python scripts/concat_GCMD.py --all
 
       # Compare the output file and commit changes if different
       - name: Check if file has been updated and commit changes
