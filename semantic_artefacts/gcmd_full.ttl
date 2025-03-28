@@ -538,6 +538,7 @@ add narrower relation (Dataset Language [79ec7ee3-0013-4ef7-a439-bbfcce88fb38,26
         <https://gcmd.earthdata.nasa.gov/kms/concept/93930438-1b0c-422a-aa12-3064329da9ee>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/abced76b-d512-4cd5-8cc5-94872eb033f3>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b0c8dbc9-3f8d-4426-9302-c1f9cfcbcc5b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b4b8ae24-afdf-45ee-825f-aa19cf42fec2>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/bb3f8975-7b0b-4a38-8cde-bb291ffca33b>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c5a4126a-8f0a-4774-9bef-c2a9f9487727>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c654a873-271a-4586-90bf-995866885cc4>,
@@ -1298,24 +1299,6 @@ add narrower relation (Chained Operations [ee18f758-071a-4ac8-8cd6-b217270243ea,
         <https://gcmd.earthdata.nasa.gov/kms/concept/be356007-ea42-496a-9417-e000bc0d41de>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/eb453edc-11bf-43b2-8f98-febb2af07539> ;
     skos:prefLabel "Chained Operations"@en .
-
-<https://gcmd.earthdata.nasa.gov/kms/concept/f03cac2e-6ee5-4734-9ab7-eb8521ba2654> a skos:Concept ;
-    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3f4cfc81-7745-43d9-b313-f68cdf72359b> ;
-    skos:changeNote """2025-03-10 09:31:04.0 [tstevens] Insert Concept 
-add broader relation (GREENHOUSE GASES [f03cac2e-6ee5-4734-9ab7-eb8521ba2654,2103180] - ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,2099764]); 
-""",
-        """2025-03-10 09:32:12.0 [tstevens]  
-insert Definition (id: null
-text: Greenhouse gases, including carbon dioxide, methane, and water vapor, absorb and re-emit thermal infrared radiation, thereby regulating Earth’s temperature and climate. While they are essential for maintaining habitable conditions by preventing heat loss into space, excessive emissions from human activities amplify this effect, contributing to climate change.
-language code: en); 
-""",
-        """2025-03-10 11:29:47.0 [tstevens]  
-update Definition (Stephen H. Schneider, The Greenhouse Effect: Science and Policy. Science 243, 771-781 (1989). DOI: 10.1126/science.243.4892.771); 
-""" ;
-    skos:definition "Greenhouse gases, including carbon dioxide, methane, and water vapor, absorb and re-emit thermal infrared radiation, thereby regulating Earth’s temperature and climate. While they are essential for maintaining habitable conditions by preventing heat loss into space, excessive emissions from human activities amplify this effect, contributing to climate change."@en ;
-    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
-    skos:prefLabel "GREENHOUSE GASES"@en ;
-    gcmd:reference [ gcmd:text "Stephen H. Schneider, The Greenhouse Effect: Science and Policy. Science 243, 771-781 (1989). DOI: 10.1126/science.243.4892.771"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/fb0b9fcd-5c96-4989-8c64-a479bbed83ab> a skos:Concept ;
     skos:changeNote """2014-03-05 06:40:50.0 [aaleman] Insert Concept 
@@ -11449,6 +11432,29 @@ language code: en);
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "GLACIER AREA"@en ;
     gcmd:reference [ gcmd:text "NSIDC"@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/0da2873b-8614-4de9-90b4-b4e5e44b0139> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ecd58f82-8f96-45e1-9547-dd4a02291bd9> ;
+    skos:changeNote """2025-03-20 17:30:22.0 [sritz] Insert Concept 
+add broader relation (MARLi [0da2873b-8614-4de9-90b4-b4e5e44b0139,2118387] - Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,2110446]); 
+""",
+        """2025-03-20 17:31:26.0 [sritz]  
+insert AltLabel (id: null
+category: primary
+text: Multi-function Airborne Raman Lidar
+language code: en); 
+insert Definition (id: null
+text: MARLi was an NSF-MRI funded new instrument development to provide water vapor, temperature, aerosol, and cloud profiles within the planetary boundary layer (PBL). MARLi was successfully flight-tested on the UWKA and the NSF/NCAR C-130 for over sixty-hours in the summer of 2016.  
+MARLi transforms our capability to observe the atmosphere at horizontal resolutions ranging from ~100 m to ~1 km and can revolutionize a range of atmospheric processes studies. These include: advancing our understanding of small-scale interactions between clouds and their environment, investigating air-sea and air-land interactions; documenting boundary layer structure over heterogeneous surfaces and under cloudy conditions; examining the mesoscale atmospheric environments and dynamics.
+language code: en); 
+""" ;
+    skos:definition """MARLi was an NSF-MRI funded new instrument development to provide water vapor, temperature, aerosol, and cloud profiles within the planetary boundary layer (PBL). MARLi was successfully flight-tested on the UWKA and the NSF/NCAR C-130 for over sixty-hours in the summer of 2016.  
+MARLi transforms our capability to observe the atmosphere at horizontal resolutions ranging from ~100 m to ~1 km and can revolutionize a range of atmospheric processes studies. These include: advancing our understanding of small-scale interactions between clouds and their environment, investigating air-sea and air-land interactions; documenting boundary layer structure over heterogeneous surfaces and under cloudy conditions; examining the mesoscale atmospheric environments and dynamics."""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "MARLi"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Multi-function Airborne Raman Lidar"@en ] ;
+    gcmd:reference [ gcmd:text "https://espo.nasa.gov/arcsix/instrument/Multi-function_Airborne_Raman_Lidar"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/0db57d66-2c66-4416-964a-2eaccd439882> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
@@ -23696,13 +23702,17 @@ language code: en);
 """,
         """2024-01-04 13:46:09.0 [sritz]  
 update Definition (https://tempo.si.edu/instrument.html, https://science.nasa.gov/mission/tempo); 
+""",
+        """2025-03-25 09:11:27.0 [tstevens]  
+update Definition (The TEMPO instrument is a grating spectrometer sensitive to ultraviolet and visible wavelengths of light and is attached to the Earth-facing side of the commercial telecommunications satellite Intelsat 40e (IS-40e) in geostationary orbit. This vantage point allows TEMPO to maintain a constant view of North America so that the instrument's light-collecting mirror can make a complete East-to-West scan of the field of regard each and every hour during daytime. By measuring sunlight reflected and scattered from the Earth's surface and atmosphere back to the instrument's detectors, TEMPO's light sensors provide spectra that are used to derive measurements of ozone, nitrogen dioxide, formaldehyde, aerosols, and other constituents involved in atmospheric chemistry and air quality.); 
+update Definition (https://science.nasa.gov/mission/tempo); 
 """ ;
-    skos:definition "The TEMPO instrument is a grating spectrometer, sensitive to visible and ultraviolet wavelengths of light, which will be attached to the Earth-facing side of a commercial telecommunications satellite (to be selected) in geostationary orbit. This allows TEMPO to maintain a constant view of North America so that the instrument's light-collecting mirror can make a complete East to West scan of the \"Field of Regard\" each and every hour of the day. By measuring sunlight reflected and scattered from the Earth's surface and atmosphere back to the instrument's detectors, TEMPO's ultraviolet and visible light sensors will provide spectra of ozone, nitrogen dioxide, and other elements of daily atmospheric chemistry cycles."@en ;
+    skos:definition "The TEMPO instrument is a grating spectrometer sensitive to ultraviolet and visible wavelengths of light and is attached to the Earth-facing side of the commercial telecommunications satellite Intelsat 40e (IS-40e) in geostationary orbit. This vantage point allows TEMPO to maintain a constant view of North America so that the instrument's light-collecting mirror can make a complete East-to-West scan of the field of regard each and every hour during daytime. By measuring sunlight reflected and scattered from the Earth's surface and atmosphere back to the instrument's detectors, TEMPO's light sensors provide spectra that are used to derive measurements of ozone, nitrogen dioxide, formaldehyde, aerosols, and other constituents involved in atmospheric chemistry and air quality."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "TEMPO"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Tropospheric Emissions: Monitoring of Pollution"@en ] ;
-    gcmd:reference [ gcmd:text "https://tempo.si.edu/instrument.html, https://science.nasa.gov/mission/tempo"@en ] .
+    gcmd:reference [ gcmd:text "https://science.nasa.gov/mission/tempo"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/20b41061-e6dc-47ef-b73b-00dc08a59618> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/457883c4-b30c-4d26-bed8-6c2887ebbc90> ;
@@ -37519,10 +37529,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/384cd160-ef82-4278-ae45-7c7d78dd7609> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ffa3a835-903a-462a-adfb-fc0d25ba07d0> ;
+    skos:changeNote """2025-03-06 13:36:30.0 [tstevens]  
+insert Definition (id: null
+text: A device used to precisely measure the acceleration due to gravity by tracking the free fall of a small object (often a retroreflector) using laser beams and optical interferometry, allowing for highly accurate measurements of the gravitational field at a specific location.
+language code: en); 
+""" ;
+    skos:definition "A device used to precisely measure the acceleration due to gravity by tracking the free fall of a small object (often a retroreflector) using laser beams and optical interferometry, allowing for highly accurate measurements of the gravitational field at a specific location."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "OFFI"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Optical Free Fall Instrument"@en ] .
+            gcmd:text "Optical Free Fall Instrument"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.ngs.noaa.gov/GRD/GRAVITY/ABSG.html"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/385af5fe-ad73-4e04-9d51-675599fb0576> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/592d49c4-e8ae-4ab4-bf24-ae4a896d0637> ;
@@ -38158,11 +38175,18 @@ insert AltLabel (id: null
 category: primary
 text: Water Isotope Spectrometer for Precipitation and Entrainment Research
 language code: en); 
+""",
+        """2025-03-06 13:25:00.0 [tstevens]  
+insert Definition (id: null
+text: The Water Isotope System for Precipitation and Entrainment Research (WISPER) is a counterflow virtual impactor on the NASA P-3 aircraft. WISPER uses a modified commercial Picarro L2120-i δD/δ18O ultra-High-Precision Isotopic Water Analyzer to make in-situ measurements of condensed water contents and water vapor in clouds, along with water vapor isotopic abundances (Henze et al., 2020; Henze and Noone, 2017). The measurement technique is cavity ring-down (CRD) spectroscopy (O'Keefe and Deacon, 1988; Berden et al., 2000; Gupta et al., 2009). WISPER has been deployed to the NASA ORACLES (ObseRvations of Aerosols above CLouds and their intEractionS) and IMPACTS (Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms) field campaigns.
+language code: en); 
 """ ;
+    skos:definition "The Water Isotope System for Precipitation and Entrainment Research (WISPER) is a counterflow virtual impactor on the NASA P-3 aircraft. WISPER uses a modified commercial Picarro L2120-i δD/δ18O ultra-High-Precision Isotopic Water Analyzer to make in-situ measurements of condensed water contents and water vapor in clouds, along with water vapor isotopic abundances (Henze et al., 2020; Henze and Noone, 2017). The measurement technique is cavity ring-down (CRD) spectroscopy (O'Keefe and Deacon, 1988; Berden et al., 2000; Gupta et al., 2009). WISPER has been deployed to the NASA ORACLES (ObseRvations of Aerosols above CLouds and their intEractionS) and IMPACTS (Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms) field campaigns."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "WISPER"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Water Isotope Spectrometer for Precipitation and Entrainment Research"@en ] .
+            gcmd:text "Water Isotope Spectrometer for Precipitation and Entrainment Research"@en ] ;
+    gcmd:reference [ gcmd:text "https://ghrc.nsstc.nasa.gov/home/micro-articles/instrument-water-isotope-system-precipitation-and-entrainment-research-wisper"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3974be5a-2650-479c-a5f0-59a340f525d1> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/72227178-bb4c-4ff5-98a3-f976aa3f3714> ;
@@ -38442,10 +38466,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/39e3a87b-bf51-49da-8da0-468e1e148fb5> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/bb175474-5e70-47be-8e1f-8dcd7563cc5b> ;
+    skos:changeNote """2025-03-06 12:33:22.0 [tstevens]  
+insert Definition (id: null
+text: A worldwide network of six identical telescopes, designed to have 24/7 observations of the Sun. The network serves multiple purposes, including the provision of operation data for use in space weather prediction, and the study of solar internal structure and dynamics using helioseismology.
+language code: en); 
+""" ;
+    skos:definition "A worldwide network of six identical telescopes, designed to have 24/7 observations of the Sun. The network serves multiple purposes, including the provision of operation data for use in space weather prediction, and the study of solar internal structure and dynamics using helioseismology."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "GONG NETWORK"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Global Oscillation Network Group Network"@en ] .
+            gcmd:text "Global Oscillation Network Group Network"@en ] ;
+    gcmd:reference [ gcmd:text "https://gong.nso.edu/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/39f3bca5-0abf-4af7-9385-865b99c06b8f> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/02d92216-70c6-437c-8c15-2b76f2132921> ;
@@ -40742,10 +40773,17 @@ research.
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3cc266de-68cd-42bf-88e6-a508869901a6> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/7c13f166-8711-4d2f-9251-4635002c6c31> ;
+    skos:changeNote """2025-03-06 12:27:49.0 [tstevens]  
+insert Definition (id: null
+text: The Raman lidar (RL) is an active, ground-based, laser remote-sensing instrument that provides height- and time-resolved measurements of water-vapor mixing ratio, temperature, aerosol, and cloud optical properties. The RL operates in the ultraviolet (UV) and is sensitive to both molecular and aerosol backscatter. The RL works by transmitting short pulses of UV laser light into the atmosphere. As the light propagates, a small fraction of the light energy is scattered back to the lidar transceiver where it is collected and recorded as a time-resolved signal. From the delay between the outgoing pulse and the backscattered signal, the instrument infers the distance to the scattering volume.
+language code: en); 
+""" ;
+    skos:definition "The Raman lidar (RL) is an active, ground-based, laser remote-sensing instrument that provides height- and time-resolved measurements of water-vapor mixing ratio, temperature, aerosol, and cloud optical properties. The RL operates in the ultraviolet (UV) and is sensitive to both molecular and aerosol backscatter. The RL works by transmitting short pulses of UV laser light into the atmosphere. As the light propagates, a small fraction of the light energy is scattered back to the lidar transceiver where it is collected and recorded as a time-resolved signal. From the delay between the outgoing pulse and the backscattered signal, the instrument infers the distance to the scattering volume."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "RL"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Raman Lidar"@en ] .
+            gcmd:text "Raman Lidar"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.arm.gov/capabilities/instruments/rl"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3cc591bb-9544-49e1-94c6-8d0aa0119113> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ecd58f82-8f96-45e1-9547-dd4a02291bd9> ;
@@ -42133,10 +42171,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3e95f655-a6d2-4779-bd88-8d7c90f4a395> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-06 13:11:55.0 [tstevens]  
+insert Definition (id: null
+text: An optical particle counter (OPC) detects and sizes particles by measuring the amount of light scattered by individual particles as they pass through a beam of light.
+language code: en); 
+""" ;
+    skos:definition "An optical particle counter (OPC) detects and sizes particles by measuring the amount of light scattered by individual particles as they pass through a beam of light."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "LOPC-PMS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Laser Optical Particle Counter"@en ] .
+            gcmd:text "Laser Optical Particle Counter"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.sciencedirect.com/topics/engineering/optical-particle-counter"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3eaca5be-dc90-4fa1-b3d0-65bc0828d386> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ad11e2b2-db98-4820-b2dc-c075560baca8> ;
@@ -43143,10 +43188,17 @@ generated by: null);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/406d1bc6-8488-4691-a35e-f7e61b8aa268> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/7502f18e-f489-49f5-b879-27d5407df7ec> ;
+    skos:changeNote """2025-03-06 12:40:44.0 [tstevens]  
+insert Definition (id: null
+text: Hinode’s Solar Optical Telescope is the first spaceborne instrument to measure the strength and direction of the Sun’s magnetic field on the Sun’s surface, the photosphere. Combined with two other Hinode instruments, the EUV imaging spectrometer, or EIS, and the X-ray/EUV telescope, or XRT, the mission is designed to understand the causes of eruptions in the solar atmosphere and relate those eruptions to the intense heating of the corona and the mechanisms that drive the constant out ow of solar radiation, the solar wind. Hinode lies in a Sun-synchronous orbit around Earth at an altitude of nearly 400 miles (a little under 650 km). Its orbit allows Hinode to observe the Sun continuously for nine months at a time. During the summer (in the northern hemisphere) Hinode experiences an “eclipse season” during which the Sun is eclipsed by Earth for a maximum of ten minutes in each 98-minute orbit.
+language code: en); 
+""" ;
+    skos:definition "Hinode’s Solar Optical Telescope is the first spaceborne instrument to measure the strength and direction of the Sun’s magnetic field on the Sun’s surface, the photosphere. Combined with two other Hinode instruments, the EUV imaging spectrometer, or EIS, and the X-ray/EUV telescope, or XRT, the mission is designed to understand the causes of eruptions in the solar atmosphere and relate those eruptions to the intense heating of the corona and the mechanisms that drive the constant out ow of solar radiation, the solar wind. Hinode lies in a Sun-synchronous orbit around Earth at an altitude of nearly 400 miles (a little under 650 km). Its orbit allows Hinode to observe the Sun continuously for nine months at a time. During the summer (in the northern hemisphere) Hinode experiences an “eclipse season” during which the Sun is eclipsed by Earth for a maximum of ten minutes in each 98-minute orbit."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "SOT"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "SOLAR OPTICAL TELESCOPE (HINODE)"@en ] .
+            gcmd:text "SOLAR OPTICAL TELESCOPE (HINODE)"@en ] ;
+    gcmd:reference [ gcmd:text "https://science.nasa.gov/about-hinode/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4074eb32-a3de-494f-a722-2deeaab76b33> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/9a802ef3-680d-4bc6-a42e-aa84d5eb9908> ;
@@ -43853,10 +43905,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4158be33-fc11-416b-a9a8-ea9f90a898fb> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/596a5700-b3fd-4261-b8f8-a054d052e3fe> ;
+    skos:changeNote """2025-03-06 14:52:05.0 [tstevens]  
+insert Definition (id: null
+text: A system designed to monitor and measure the aerodynamic drag experienced by a satellite in orbit, typically by analyzing its orbital changes over time, which can be used to infer information about atmospheric conditions at the satellite's altitude, especially in low Earth orbit (LEO).
+language code: en); 
+""" ;
+    skos:definition "A system designed to monitor and measure the aerodynamic drag experienced by a satellite in orbit, typically by analyzing its orbital changes over time, which can be used to infer information about atmospheric conditions at the satellite's altitude, especially in low Earth orbit (LEO)."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "SDTA"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Satellite Drag Tracking Apparatus"@en ] .
+            gcmd:text "Satellite Drag Tracking Apparatus"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.nasa.gov/directorates/stmd/space-tech-research-grants/a-drag-device-and-control-algorithm-for-spacecraft-attitude-stabilization-and-de-orbit-point-targeting-using-aerodynamic-drag/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/415980f0-80de-4b1f-8937-6d32b4eb5fa3> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
@@ -44109,11 +44168,18 @@ add broader relation (ACORDS [41d3528f-8029-4b1a-ae82-9279c7466219,157941] - Rad
 insert AltLabel (id: null
 text: Advanced Coherent Radar Depth Sounder
 language code: en); 
+""",
+        """2025-03-07 09:55:17.0 [tstevens]  
+insert Definition (id: null
+text: The Center for Remote Sensing of Ice Sheets (CReSIS) has developed radars (ACoRDS) that operate over the frequency range from 140 to 230 MHz with multiple receivers developed for airborne sounding and imaging of ice sheets. MCoRDS radars have an adjustable radar bandwidth of 20 MHz to 60 MHz. Multiple receivers permit digital beamsteering for suppressing cross-track surface clutter that can mask weak ice-bed echoes and strip-map synthetic aperture radar (SAR) images of the ice-bed interface. With 200 W of peak transmit power, a loop sensitivity > 190 dB is achieved. These radars are flown on twin engine and long-range aircraft including NASA P-3 and DC-8.
+language code: en); 
 """ ;
+    skos:definition "The Center for Remote Sensing of Ice Sheets (CReSIS) has developed radars (ACoRDS) that operate over the frequency range from 140 to 230 MHz with multiple receivers developed for airborne sounding and imaging of ice sheets. MCoRDS radars have an adjustable radar bandwidth of 20 MHz to 60 MHz. Multiple receivers permit digital beamsteering for suppressing cross-track surface clutter that can mask weak ice-bed echoes and strip-map synthetic aperture radar (SAR) images of the ice-bed interface. With 200 W of peak transmit power, a loop sensitivity > 190 dB is achieved. These radars are flown on twin engine and long-range aircraft including NASA P-3 and DC-8."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "ACORDS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Advanced Coherent Radar Depth Sounder"@en ] .
+            gcmd:text "Advanced Coherent Radar Depth Sounder"@en ] ;
+    gcmd:reference [ gcmd:text "https://airbornescience.nasa.gov/instrument/Multichannel_Coherent_Radar_Depth_Sounder"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/41db9c48-4af8-40db-8632-a86983d81258> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/d49b2313-2fb1-464c-a2f8-5ff5799344a7> ;
@@ -45992,10 +46058,17 @@ In 2009, three BeiDou-2 spacecraft are planned to be launched. More than 10 sate
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/440da7dc-72d9-4963-8dc1-2084d1a51294> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/6c5ca722-0bc7-4ccd-ad24-39b9d8710140> ;
+    skos:changeNote """2025-03-07 09:57:14.0 [tstevens]  
+insert Definition (id: null
+text: The millimeter wavelength cloud radar (MMCR) systems probe the extent and composition of clouds at millimeter wavelengths. The MMCR is a zenith-pointing radar that operates at a frequency of 35 GHz. The main purpose of this radar is to determine cloud boundaries (e.g., bottoms and tops). This radar will also report radar reflectivity (dBZ) of the atmosphere up to 20 km. The radar has a Doppler capability that allows measurement of cloud constituent vertical velocities.
+language code: en); 
+""" ;
+    skos:definition "The millimeter wavelength cloud radar (MMCR) systems probe the extent and composition of clouds at millimeter wavelengths. The MMCR is a zenith-pointing radar that operates at a frequency of 35 GHz. The main purpose of this radar is to determine cloud boundaries (e.g., bottoms and tops). This radar will also report radar reflectivity (dBZ) of the atmosphere up to 20 km. The radar has a Doppler capability that allows measurement of cloud constituent vertical velocities."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "MMCR"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Millimeter-Wavelength Cloud Radar"@en ] .
+            gcmd:text "Millimeter-Wavelength Cloud Radar"@en ] ;
+    gcmd:reference [ gcmd:text "https://arm.gov/capabilities/instruments/mmcr"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/441ce068-91f2-4412-8893-c0096d8f9079> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/048df94e-841d-4f4d-a5c5-6683d1d07aa6> ;
@@ -46229,10 +46302,17 @@ add broader relation (SEVERE CYCLONIC STORMS (N. INDIAN) [446a22b7-3ea1-43db-917
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4472cb27-6e0b-4b25-92e0-b0fb8a3070fa> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8143e95e-a438-4a2a-82b2-6d7ae079fba7> ;
+    skos:changeNote """2025-03-07 10:15:23.0 [tstevens]  
+insert Definition (id: null
+text: A device used to measure radiation exposure by detecting and counting individual photons emitted from a thermoluminescent dosimeter (TLD) when it is heated.
+language code: en); 
+""" ;
+    skos:definition "A device used to measure radiation exposure by detecting and counting individual photons emitted from a thermoluminescent dosimeter (TLD) when it is heated."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "TLPCS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Thermoluminescence Photon Counting System"@en ] .
+            gcmd:text "Thermoluminescence Photon Counting System"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.ipses.com/site/assets/files/1192/ipses_-_photon_counting_system.pdf"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/447794f3-b2e3-4fed-b742-fee124f44349> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
@@ -47533,10 +47613,17 @@ update Definition (Permafrost Monitoring Stations measure the underlying state o
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/465e0298-da06-4bd8-bc57-b167a5253793> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/b56d53ea-511f-486f-b917-26000794ab51> ;
+    skos:changeNote """2025-03-07 09:51:29.0 [tstevens]  
+insert Definition (id: null
+text: A multibeam mapping system uses sonar to map the ocean floor and detect objects in the water. It can create detailed maps of the seafloor, including the depth, type, and characteristics of the seabed.
+language code: en); 
+""" ;
+    skos:definition "A multibeam mapping system uses sonar to map the ocean floor and detect objects in the water. It can create detailed maps of the seafloor, including the depth, type, and characteristics of the seabed."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "MBES"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Multibeam Mapping System"@en ] .
+            gcmd:text "Multibeam Mapping System"@en ] ;
+    gcmd:reference [ gcmd:text "https://oceanexplorer.noaa.gov/technology/sonar/multibeam.html"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4690d6a8-78cd-48bc-82f5-36fb16d4c52e> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/42c6d91b-afef-4638-95c5-0d130828b2e7> ;
@@ -47744,11 +47831,18 @@ insert AltLabel (id: null
 category: primary
 text: NETS
 language code: en); 
+""",
+        """2025-03-07 09:41:54.0 [tstevens]  
+insert Definition (id: null
+text: A length of open-meshed material made of twine, cord, rope, or something similar, used typically for catching fish or other animals.
+language code: en); 
 """ ;
+    skos:definition "A length of open-meshed material made of twine, cord, rope, or something similar, used typically for catching fish or other animals."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "NETS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "NETS"@en ] .
+            gcmd:text "NETS"@en ] ;
+    gcmd:reference [ gcmd:text "Merriam-Webster Dictionary"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/46bca879-0cf7-4c8a-984e-e41b2f8a7c2f> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/1b41692e-c7fe-4567-bed9-b938a7400462> ;
@@ -48522,10 +48616,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/47b1f007-ab9b-41ca-abdf-fcaa2b5b83dc> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/4190ebdc-e89a-4f3f-bc74-b2af4c68d009> ;
+    skos:changeNote """2025-03-06 14:09:58.0 [tstevens]  
+insert Definition (id: null
+text: The TIROS Operational Vertical Sounder (TOVS) consisted of three instruments: the high-resolution infrared radiation sounder modification 2 (HIRS/2), the stratospheric sounding unit (SSU), and the microwave sounding unit (MSU). All three instruments were designed to determine radiances needed to calculate temperature and humidity profiles of the atmosphere from the surface to the stratosphere (approximately 1 mb).
+language code: en); 
+""" ;
+    skos:definition "The TIROS Operational Vertical Sounder (TOVS) consisted of three instruments: the high-resolution infrared radiation sounder modification 2 (HIRS/2), the stratospheric sounding unit (SSU), and the microwave sounding unit (MSU). All three instruments were designed to determine radiances needed to calculate temperature and humidity profiles of the atmosphere from the surface to the stratosphere (approximately 1 mb)."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "TIROS-N"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "TIROS-N OPERATIONAL VERTICAL SOUNDER"@en ] .
+            gcmd:text "TIROS-N OPERATIONAL VERTICAL SOUNDER"@en ] ;
+    gcmd:reference [ gcmd:text "https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1979-057A-02"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/47b6caf1-e14c-458c-84a1-ec64cf29b534> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/5b8e4067-db4e-42d4-b4a5-7de5e683125d> ;
@@ -51338,9 +51439,16 @@ update PrefLabel (SCOR WP-2 ZOOPLANKON NET);
 """,
         """2014-08-28 16:20:20.0 [saritz] S. Ritz fixed misspelled  
 update PrefLabel (SCOR WP-2 ZOOPLANKTON NET); 
+""",
+        """2025-03-07 10:25:54.0 [tstevens]  
+insert Definition (id: null
+text: A net that consists of a single, double, or triple hoop, allowing one, two or three samples to be obtained in each tow. The net is designed for vertical tows.
+language code: en); 
 """ ;
+    skos:definition "A net that consists of a single, double, or triple hoop, allowing one, two or three samples to be obtained in each tow. The net is designed for vertical tows."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:prefLabel "SCOR WP-2 ZOOPLANKTON NET"@en .
+    skos:prefLabel "SCOR WP-2 ZOOPLANKTON NET"@en ;
+    gcmd:reference [ gcmd:text "https://aquaticbiotechnology.com/en/plankton-nets/wp2-plankton-net"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4c93cc0b-ca0e-4421-ac60-559b6390b89b> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/bad22a08-f8ab-49b3-b266-005b21496626> ;
@@ -51850,10 +51958,17 @@ generated by: null);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4d76ff74-2e45-4e20-bb9d-41cf0f5dcc6d> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/5b753e40-b3f1-426a-8d92-ffee1d675468> ;
+    skos:changeNote """2025-03-06 14:03:25.0 [tstevens]  
+insert Definition (id: null
+text: A device that measures the naturally emitted microwave radiation from the Earth's surface and atmosphere at a ground-based location, allowing scientists to retrieve information about atmospheric conditions like temperature, humidity, and cloud liquid water content, primarily used in meteorology for weather forecasting and validation of satellite data; essentially, it passively listens to the microwave signals coming from the environment without actively emitting any radiation itself.
+language code: en); 
+""" ;
+    skos:definition "A device that measures the naturally emitted microwave radiation from the Earth's surface and atmosphere at a ground-based location, allowing scientists to retrieve information about atmospheric conditions like temperature, humidity, and cloud liquid water content, primarily used in meteorology for weather forecasting and validation of satellite data; essentially, it passively listens to the microwave signals coming from the environment without actively emitting any radiation itself."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "GBMR"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Ground Based Passive Microwave Radiometer"@en ] .
+            gcmd:text "Ground Based Passive Microwave Radiometer"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.mdpi.com/2072-4292/13/13/2527"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4d78ad33-3b1d-4ddc-9d4a-296600363d45> a skos:Concept ;
     skos:altLabel "DMSP-F15"@en ;
@@ -56709,8 +56824,15 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/54677c8a-4cfc-45ed-8f0c-2c9a6380d226> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/4190ebdc-e89a-4f3f-bc74-b2af4c68d009> ;
+    skos:changeNote """2025-03-06 14:22:29.0 [tstevens]  
+insert Definition (id: null
+text: A device used to measure upper air wind data. It is launched from a ship and uses Omega signals to determine vertical wind profiles.
+language code: en); 
+""" ;
+    skos:definition "A device used to measure upper air wind data. It is launched from a ship and uses Omega signals to determine vertical wind profiles."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:prefLabel "OMEGASONDE"@en .
+    skos:prefLabel "OMEGASONDE"@en ;
+    gcmd:reference [ gcmd:text "https://journals.ametsoc.org/view/journals/apme/13/8/1520-0450_1974_013_0934_wduos_2_0_co_2.xml"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/5469eec4-fead-4fc1-b287-a060b8444848> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/1bd529b0-060e-4371-96dd-f364c7784496> ;
@@ -58579,8 +58701,15 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/580df25f-c9f8-4f50-aec6-06440671d0d0> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/70815ca9-3685-4e93-a6c5-55ef53d6080c> ;
+    skos:changeNote """2025-03-07 09:30:31.0 [tstevens]  
+insert Definition (id: null
+text: Devices that capture wet precipitation like rain, sleet, snow, or fog. These devices can be used to monitor air quality and pollution levels.
+language code: en); 
+""" ;
+    skos:definition "Devices that capture wet precipitation like rain, sleet, snow, or fog. These devices can be used to monitor air quality and pollution levels."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:prefLabel "WET DEPOSITION COLLECTORS"@en .
+    skos:prefLabel "WET DEPOSITION COLLECTORS"@en ;
+    gcmd:reference [ gcmd:text "https://nadp.slh.wisc.edu/siteops/collectors/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/580ef100-0fb8-456c-a9ca-565d11392a26> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/d7b62912-5970-46b1-be45-6a603c9a6979> ;
@@ -63705,11 +63834,18 @@ language code: en);
 """,
         """2017-08-15 07:42:50.0 [tstevens]  
 update AltLabel (China's Satellite Navigation System Payload); 
+""",
+        """2025-03-07 10:13:21.0 [tstevens]  
+insert Definition (id: null
+text: The payload consists of of a "Radio Navigation Satellite Service (RNSS)" payload which includes an atomic clock, an L-band transmitter, signal processor, antenna array for transmitting navigation signals, an L-band uplink receiver, and a laser corner-cube reflector for orbit determination.
+language code: en); 
 """ ;
+    skos:definition "The payload consists of of a \"Radio Navigation Satellite Service (RNSS)\" payload which includes an atomic clock, an L-band transmitter, signal processor, antenna array for transmitting navigation signals, an L-band uplink receiver, and a laser corner-cube reflector for orbit determination."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "Beidou P"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "China's Satellite Navigation System Payload"@en ] .
+            gcmd:text "China's Satellite Navigation System Payload"@en ] ;
+    gcmd:reference [ gcmd:text "https://satellite-navigation.springeropen.com/articles/10.1186/s43020-020-00010-2"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/5cbfc557-f3a6-4558-9954-ce37f0510952> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/672d6958-4bbc-4b33-adc8-927e4348908b> ;
@@ -74271,11 +74407,18 @@ End_Group"""@en ;
     skos:changeNote """2018-06-08 16:57:43.0 [sritz] Move Concepts 
 delete broader relation (null); 
 add broader relation (UHSAS [6bbff5f7-727a-4c21-b322-2c2ff16aca8d,347521] - Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2ccecdba94,346879]); 
+""",
+        """2025-03-06 13:49:30.0 [tstevens]  
+insert Definition (id: null
+text: An optical-scattering, laser-based aerosol particle spectrometer for sizing particles in the 0.06 – 1 μm range. The instrument counts particles in up to 100 user-specified sizing bins, with a resolution as fine as 1 nm/bin. This high sensitivity makes the UHSAS ideal for aerosol research and filter testing. A laser illuminates’ particles, which scatter light that is then collected by two pairs of Mangin optics. One pair of optics images onto a highly sensitive avalanche photodiode (APD) for detecting the smallest particles. The other pair images onto a low-gain PIN photodiode for detecting particles in the larger size range of the instrument. Each detector is amplified in a current-to-voltage stage that feeds into the analog electronics system. The amplification allows the system to detect particles as small as 60 nm.
+language code: en); 
 """ ;
+    skos:definition "An optical-scattering, laser-based aerosol particle spectrometer for sizing particles in the 0.06 – 1 μm range. The instrument counts particles in up to 100 user-specified sizing bins, with a resolution as fine as 1 nm/bin. This high sensitivity makes the UHSAS ideal for aerosol research and filter testing. A laser illuminates’ particles, which scatter light that is then collected by two pairs of Mangin optics. One pair of optics images onto a highly sensitive avalanche photodiode (APD) for detecting the smallest particles. The other pair images onto a low-gain PIN photodiode for detecting particles in the larger size range of the instrument. Each detector is amplified in a current-to-voltage stage that feeds into the analog electronics system. The amplification allows the system to detect particles as small as 60 nm."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "UHSAS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Ultra-High Sensitivity Aerosol Spectrometer"@en ] .
+            gcmd:text "Ultra-High Sensitivity Aerosol Spectrometer"@en ] ;
+    gcmd:reference [ gcmd:text "https://airbornescience.nasa.gov/instrument/Ultra_High_Sensitivity_Aerosol_Spectrometer"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/6bc39a6d-cc60-467a-9181-d8b4e02a1cb0> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/860e2af9-ce29-4f3f-b027-ae3747eb3e01> ;
@@ -80762,6 +80905,29 @@ interacting with Information Management Services."""@en ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/d06090e8-3dbb-401a-b8df-b2409fdcc4ec> ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/discipline> ;
     skos:prefLabel "X-RAY OBSERVATIONS"@en .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/7624902c-55ff-4149-826e-403dfa0d3ef7> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-20 17:17:07.0 [sritz] Insert Concept 
+add broader relation (2D-Gray [7624902c-55ff-4149-826e-403dfa0d3ef7,2118384] - Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2ccecdba94,2109256]); 
+""",
+        """2025-03-20 17:17:33.0 [sritz]  
+insert AltLabel (id: null
+category: primary
+text: 2D-Gray Particle Probe
+language code: en); 
+""",
+        """2025-03-20 17:19:36.0 [sritz]  
+insert Definition (id: null
+text: Fast 2D-Gray Probe . Compared with 2D-Mono (Black and White) optical array probes, the additional two gray levels provide enhanced detail of ice crystals, the ability to better re-size out-of-focus water drops and delete out-of-focus that break up at the edge of the depth of field (DOF).
+language code: en); 
+""" ;
+    skos:definition "Fast 2D-Gray Probe . Compared with 2D-Mono (Black and White) optical array probes, the additional two gray levels provide enhanced detail of ice crystals, the ability to better re-size out-of-focus water drops and delete out-of-focus that break up at the edge of the depth of field (DOF)."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "2D-Gray"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "2D-Gray Particle Probe"@en ] ;
+    gcmd:reference [ gcmd:text "http://www.specinc.com/node/288"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/762f9d7f-5f2d-423d-81c4-288350f64b9d> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/cda9b483-8711-42b8-82f9-e7d22ce9c62c> ;
@@ -87514,10 +87680,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/7f96c0f8-d032-4055-95e6-2dcb4f3cc045> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-07 09:33:13.0 [tstevens]  
+insert Definition (id: null
+text: A piece of equipment that analyzes the organic and mineral carbon content of rocks and soils. It's used to evaluate the potential of rocks to produce oil and gas.
+language code: en); 
+""" ;
+    skos:definition "A piece of equipment that analyzes the organic and mineral carbon content of rocks and soils. It's used to evaluate the potential of rocks to produce oil and gas."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "ROCK-EVAL IV"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Rock-Eval 6 Analyzer"@en ] .
+            gcmd:text "Rock-Eval 6 Analyzer"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.ifpenergiesnouvelles.com/brief/rock-evalr-thermal-analysis-rocks-and-soils"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/7fa9d5ef-690e-4daf-8503-363b6b1cb6e4> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/b609e525-db71-4634-b569-f8aab5ad544e> ;
@@ -98330,6 +98503,29 @@ The nominal satellite bus will remain unchanged for different missions, but of c
             gcmd:text "Bi-spectral InfraRed Optical System"@en ] ;
     gcmd:reference [ gcmd:text "https://directory.eoportal.org/web/eoportal/satellite-missions/b/biros"@en ] .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/8e63f495-844d-4e31-b6a3-5918c2bda66c> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ebfff02c-2e5a-476e-aafb-c00167bf2daa> ;
+    skos:changeNote """2025-03-20 17:22:18.0 [sritz] Insert Concept 
+add broader relation (UNS-1Fw [8e63f495-844d-4e31-b6a3-5918c2bda66c,2118385] - Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,2110440]); 
+""",
+        """2025-03-20 17:23:25.0 [sritz]  
+insert AltLabel (id: null
+category: primary
+text: UNS-1Fw Flight Management System
+language code: en); 
+insert Definition (id: null
+text: The UNS-1Fw is comprised of an FPCDU and a remotely mounted Navigation Computer Unit (NCU). Three FPCDUs are available: a compact FPCDU with 4-inch color display, the standard FPCDU with 5-inch color display and an airlinetype Multi-Function CDU (MCDU). The NCU is housed in a 2-MCU sized LRU which includes the integral GPS/SBAS receiver.
+The UNS-1Fw is comprised of an FPCDU and a remotely mounted Navigation Computer Unit (NCU). Three FPCDUs are available: a compact FPCDU with 4-inch color display, the standard FPCDU with 5-inch color display and an airlinetype Multi-Function CDU (MCDU). The NCU is housed in a 2-MCU sized LRU which includes the integral GPS/SBAS receiver.
+language code: en); 
+""" ;
+    skos:definition """The UNS-1Fw is comprised of an FPCDU and a remotely mounted Navigation Computer Unit (NCU). Three FPCDUs are available: a compact FPCDU with 4-inch color display, the standard FPCDU with 5-inch color display and an airlinetype Multi-Function CDU (MCDU). The NCU is housed in a 2-MCU sized LRU which includes the integral GPS/SBAS receiver.
+The UNS-1Fw is comprised of an FPCDU and a remotely mounted Navigation Computer Unit (NCU). Three FPCDUs are available: a compact FPCDU with 4-inch color display, the standard FPCDU with 5-inch color display and an airlinetype Multi-Function CDU (MCDU). The NCU is housed in a 2-MCU sized LRU which includes the integral GPS/SBAS receiver."""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "UNS-1Fw"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "UNS-1Fw Flight Management System"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.banyanair.com/uns-1fw/"@en ] .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/8e6991d1-cbb3-451e-84bb-e592e07f022a> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3910e051-f05b-4f1c-937e-c3e4f249847e> ;
     skos:changeNote """2017-08-14 15:43:47.0 [tstevens] Insert Concept 
@@ -101743,6 +101939,29 @@ by mechanical means, from a state of suspension in water or air."""@en ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/eceec9a6-1311-4028-8433-1f6d21b62d4d> ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "BENTHIC GRABS"@en .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/9465fa95-2698-4d95-bee6-6af447b27f7b> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-21 14:38:16.0 [sritz] Insert Concept 
+add broader relation (TSI CPC-3772 [9465fa95-2698-4d95-bee6-6af447b27f7b,2118388] - Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2ccecdba94,2109256]); 
+""",
+        """2025-03-21 14:38:45.0 [sritz]  
+insert AltLabel (id: null
+category: primary
+text: SI Condensation Particle Counter 3772 Manufactured by TSI Inc.
+language code: en); 
+""",
+        """2025-03-21 14:40:11.0 [sritz]  
+insert Definition (id: null
+text: The successor to our Model 3010, this value-priced CPC offers features found on our top-of-the-line CPCs. Like a front-panel display, anti-spill design, water-removal capability, built-in data logging and storage with removable memory card, and USB and Ethernet ports. Plus, the 3772 has built-in Scanning Mobility Particle Sizer™ (SMPS™) spectrometer compatibility, and it includes our Aerosol Instrument Manager™ software. It requires an external vacuum pump, available separately.
+language code: en); 
+""" ;
+    skos:definition "The successor to our Model 3010, this value-priced CPC offers features found on our top-of-the-line CPCs. Like a front-panel display, anti-spill design, water-removal capability, built-in data logging and storage with removable memory card, and USB and Ethernet ports. Plus, the 3772 has built-in Scanning Mobility Particle Sizer™ (SMPS™) spectrometer compatibility, and it includes our Aerosol Instrument Manager™ software. It requires an external vacuum pump, available separately."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "TSI CPC-3772"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "SI Condensation Particle Counter 3772 Manufactured by TSI Inc."@en ] ;
+    gcmd:reference [ gcmd:text "https://tsi.com/discontinued-products/condensation-particle-counter-3772"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/9466020a-db25-40ba-a76f-4720800efc92> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/1532e590-a62d-46e3-8d03-2351bc48166a> ;
@@ -108681,6 +108900,12 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/9fb77604-82f9-4ad1-9995-c0a99df09629> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-06 14:15:43.0 [tstevens]  
+insert Definition (id: null
+text: Measure and monitor contamination levels in a clean and controlled environment.
+language code: en); 
+""" ;
+    skos:definition "Measure and monitor contamination levels in a clean and controlled environment."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "PMS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
@@ -109501,6 +109726,34 @@ radiation."""@en ;
     skos:prefLabel "SUNFLECK CEPTOMETER"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "SUNFLECK CEPTOMETER"@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/a13ed6f0-715b-497a-8c87-9ea62d4d4930> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ecd58f82-8f96-45e1-9547-dd4a02291bd9> ;
+    skos:changeNote """2025-03-20 17:25:52.0 [sritz] Insert Concept 
+add broader relation (PUTLS [a13ed6f0-715b-497a-8c87-9ea62d4d4930,2118386] - Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,2110446]); 
+""",
+        """2025-03-20 17:26:59.0 [sritz]  
+insert AltLabel (id: null
+category: null
+text: Particles in the Upper Troposphere/Lower Stratosphere
+language code: en); 
+insert Definition (id: null
+text: The PUTLS comprises three individual instruments for the measurement of aerosol number size distribution in the upper troposphere and lower stratosphere: a Nucleation Mode Aerosol Size Spectrometer (NMASS), an Ultra-High Sensitivity Aerosol Spectrometer (UHSAS), and a Portable Optical Particle Spectrometer (POPS). These instruments, along with a Passive, Near-Isokinetic Inlet for sampling atmospheric particles from a fast-moving aircraft, provide a measurement of the UT/LS particle size distribution from 4 to 3000 nm diameter. Aerosol microphysical measurements in the UT/LS are integral to understanding the chemical and radiative processes that control the Earth’s climate, and PUTLS provides data for investigation of topics ranging from new particle formation to long range transport of dust and fine volcanic ash.
+language code: en); 
+""",
+        """2025-03-21 15:03:16.0 [sritz]  
+delete AltLabel (null); 
+insert AltLabel (id: null
+category: primary
+text: Particles in the Upper Troposphere/Lower Stratosphere
+language code: en); 
+""" ;
+    skos:definition "The PUTLS comprises three individual instruments for the measurement of aerosol number size distribution in the upper troposphere and lower stratosphere: a Nucleation Mode Aerosol Size Spectrometer (NMASS), an Ultra-High Sensitivity Aerosol Spectrometer (UHSAS), and a Portable Optical Particle Spectrometer (POPS). These instruments, along with a Passive, Near-Isokinetic Inlet for sampling atmospheric particles from a fast-moving aircraft, provide a measurement of the UT/LS particle size distribution from 4 to 3000 nm diameter. Aerosol microphysical measurements in the UT/LS are integral to understanding the chemical and radiative processes that control the Earth’s climate, and PUTLS provides data for investigation of topics ranging from new particle formation to long range transport of dust and fine volcanic ash."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "PUTLS"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Particles in the Upper Troposphere/Lower Stratosphere"@en ] ;
+    gcmd:reference [ gcmd:text "https://airbornescience.nasa.gov/instrument/Particles_in_the_Upper_Troposphere_Lower_Stratosphere"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/a1451fce-9e69-4f2d-b2cf-27238a7577ce> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/dff4d4af-e1e0-4991-884b-a1c088a802b2> ;
@@ -123416,6 +123669,43 @@ IDN_Node: USA/NASA"""@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Atmospheric Lyman-Alpha Emissions"@en ] .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/b4286b92-417b-4f83-98c9-c86d44509d81> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ecd58f82-8f96-45e1-9547-dd4a02291bd9> ;
+    skos:changeNote """2025-03-21 14:56:06.0 [sritz] Insert Concept 
+add broader relation (GVR [b4286b92-417b-4f83-98c9-c86d44509d81,2118389] - Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,2110446]); 
+""",
+        """2025-03-21 14:56:35.0 [sritz]  
+insert AltLabel (id: null
+category: primary
+text: G-Band Vapor Radiometer
+language code: en); 
+""",
+        """2025-03-21 14:59:27.0 [sritz]  
+insert Definition (id: null
+text: The G-Band Vapor Radiometer (GVR) provides time-series measurements of brightness temperatures
+from four double sideband channels centered at ± 1, ± 3, ± 7, and ± 14 GHz around the 183.31-GHz water
+vapor line. Atmospheric emission in this spectral region is primarily due to water vapor, with some
+influence from liquid water. The 183.31 ± 14-GHz channel is particularly sensitive to the presence of
+liquid water. The sensitivity to water vapor of the 183.31-GHz line is approximately 30 times higher than
+at the frequencies of the two-channel microwave radiometer (MWR) for a precipitable water vapor
+(PWV) amount of less than 2.5 mm. Measurements from this instrument are therefore especially useful
+during low-humidity conditions (PWV < 5 mm).
+language code: en); 
+""" ;
+    skos:definition """The G-Band Vapor Radiometer (GVR) provides time-series measurements of brightness temperatures
+from four double sideband channels centered at ± 1, ± 3, ± 7, and ± 14 GHz around the 183.31-GHz water
+vapor line. Atmospheric emission in this spectral region is primarily due to water vapor, with some
+influence from liquid water. The 183.31 ± 14-GHz channel is particularly sensitive to the presence of
+liquid water. The sensitivity to water vapor of the 183.31-GHz line is approximately 30 times higher than
+at the frequencies of the two-channel microwave radiometer (MWR) for a precipitable water vapor
+(PWV) amount of less than 2.5 mm. Measurements from this instrument are therefore especially useful
+during low-humidity conditions (PWV < 5 mm)."""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "GVR"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "G-Band Vapor Radiometer"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.arm.gov/publications/tech_reports/handbooks/gvr_handbook.pdf"@en ] .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/b428ba89-4638-4989-90c1-f5e4f0d0a6f6> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/dff4d4af-e1e0-4991-884b-a1c088a802b2> ;
     skos:changeNote """2013-02-18 12:24:16.0 [tbs1979] Insert Concept 
@@ -127467,11 +127757,18 @@ language code: en);
 """,
         """2017-06-28 12:23:18.0 [sritz]  
 update AltLabel (LI-6252 Differential Mid-Infrared Absorption of CO2 Sensor Manufactured by LI-COR Biosciences); 
+""",
+        """2025-03-06 12:31:40.0 [tstevens]  
+insert Definition (id: null
+text: The LI-6252 is a differential, non-dispersive, infrared (NDIR) gas analyzer.
+language code: en); 
 """ ;
+    skos:definition "The LI-6252 is a differential, non-dispersive, infrared (NDIR) gas analyzer."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "AVOCET"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "LI-6252 Differential Mid-Infrared Absorption of CO2 Sensor Manufactured by LI-COR Biosciences"@en ] .
+            gcmd:text "LI-6252 Differential Mid-Infrared Absorption of CO2 Sensor Manufactured by LI-COR Biosciences"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.aoml.noaa.gov/ocd/ocdweb/brown/Licor_6252_Manual.pdf"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/b9cfc6af-a424-42b9-8e89-6b332262e841> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/6eb3919b-85ce-4988-8b78-9d0018fd8089> ;
@@ -133586,10 +133883,17 @@ temperature.htm"
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/c3673c5c-4210-42bc-b0ca-a5cd320de100> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/4190ebdc-e89a-4f3f-bc74-b2af4c68d009> ;
+    skos:changeNote """2025-03-07 10:43:41.0 [tstevens]  
+insert Definition (id: null
+text: A Fourier Transform Infrared (FTIR) spectrometer that can analyze a variety of materials. It is designed for use in laboratories and remote testing environments.
+language code: en); 
+""" ;
+    skos:definition "A Fourier Transform Infrared (FTIR) spectrometer that can analyze a variety of materials. It is designed for use in laboratories and remote testing environments."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "IRFS-2"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Infrared Fourier Spectrometer-2"@en ] .
+            gcmd:text "Infrared Fourier Spectrometer-2"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.perkinelmer.com/product/spectrum-two-ft-ir-sp10-s-w-dtgs-apv-l160000f"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/c37c3a9c-7eaa-4f3f-ae3a-dd1e62924388> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/59b97a6c-385e-40a2-8422-ecbdb6023c4c> ;
@@ -135315,10 +135619,17 @@ language code: en);
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/c6962bbc-9332-48fb-96d7-0e2cb14fb4d9> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/47d0c7c0-683c-42a9-b53b-53b684972b52> ;
+    skos:changeNote """2025-03-07 10:39:45.0 [tstevens]  
+insert Definition (id: null
+text: A device that combines the capabilities of both a GNSS receiver and an IMU. These systems provide highly accurate and reliable navigation and positioning data, and are widely used in a variety of applications, such as aviation, maritime navigation, and autonomous vehicles. A GNSS receiver is a device that receives signals from satellites orbiting the Earth and uses the information contained in these signals to determine the user’s position and velocity. An IMU, on the other hand, is a device that measures the user’s acceleration and angular velocity. When a GNSS IMU system is in operation, it receives signals from multiple GNSS satellites and uses this information to determine the user’s position and velocity. At the same time, it also measures the user’s acceleration and angular velocity using an IMU. This data is then combined to provide a highly accurate and reliable estimate of the user’s position, velocity, and orientation.
+language code: en); 
+""" ;
+    skos:definition "A device that combines the capabilities of both a GNSS receiver and an IMU. These systems provide highly accurate and reliable navigation and positioning data, and are widely used in a variety of applications, such as aviation, maritime navigation, and autonomous vehicles. A GNSS receiver is a device that receives signals from satellites orbiting the Earth and uses the information contained in these signals to determine the user’s position and velocity. An IMU, on the other hand, is a device that measures the user’s acceleration and angular velocity. When a GNSS IMU system is in operation, it receives signals from multiple GNSS satellites and uses this information to determine the user’s position and velocity. At the same time, it also measures the user’s acceleration and angular velocity using an IMU. This data is then combined to provide a highly accurate and reliable estimate of the user’s position, velocity, and orientation."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "GPS/IMU"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Global Positioning System/Inertial Measurement Unit"@en ] .
+            gcmd:text "Global Positioning System/Inertial Measurement Unit"@en ] ;
+    gcmd:reference [ gcmd:text "https://globalgpssystems.com/gnss/introduction-to-gnss-imu-systems/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/c6a6369a-e95b-450d-b5aa-46e0034d5fea> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3910e051-f05b-4f1c-937e-c3e4f249847e> ;
@@ -144405,10 +144716,17 @@ Revegetation: Reestablishment of vegetation which may take  place naturally or b
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/d57eaaed-a3e4-4d41-8fce-48ebaff1d5df> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-06 13:59:16.0 [tstevens]  
+insert Definition (id: null
+text: An instrument that measures the fluorescence signature of an analyte in a sample based on its specific excitation and emission wavelengths. The fluorescence signature can be correlated to the concentration level of the analyte in the sample.
+language code: en); 
+""" ;
+    skos:definition "An instrument that measures the fluorescence signature of an analyte in a sample based on its specific excitation and emission wavelengths. The fluorescence signature can be correlated to the concentration level of the analyte in the sample."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "SFM"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Spectrofluorometer"@en ] .
+            gcmd:text "Spectrofluorometer"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.labcompare.com/10-Featured-Articles/171083-Spectrofluorometers-Tools-for-Measuring-Fluorescence-Signature/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/d583f653-7a8d-414a-aff7-7d9006a138cc> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/5b753e40-b3f1-426a-8d92-ffee1d675468> ;
@@ -147652,7 +147970,13 @@ add narrower relation (FRRF [d9e2e316-5a3e-42f4-b10a-b51bd53d0f9a,348857] - PICA
 """,
         """2018-05-23 18:23:16.0 [sritz] Move Concepts 
 delete narrower relation (null); 
+""",
+        """2025-03-06 13:13:13.0 [tstevens]  
+insert Definition (id: null
+text: Fast repetition rate fluorometry (FRRF) is a non-invasive technique that measures chlorophyll fluorescence to assess the health of phytoplankton. It can be used to estimate the rate of photosynthesis in phytoplankton, as well as the effects of environmental stress on them.
+language code: en); 
 """ ;
+    skos:definition "Fast repetition rate fluorometry (FRRF) is a non-invasive technique that measures chlorophyll fluorescence to assess the health of phytoplankton. It can be used to estimate the rate of photosynthesis in phytoplankton, as well as the effects of environmental stress on them."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "FRRF"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
@@ -153682,10 +154006,17 @@ update Definition (Encyclopedia of Machine Learning and Data Science: https://do
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e3f31009-e95d-411f-b5ce-2e17e5905ac5> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-06 13:31:38.0 [tstevens]  
+insert Definition (id: null
+text: The Ultrafine Condensation Particle Counter is a types of condensation particle counter (CPC) is designed primarily for researchers interested in airborne particles smaller than 20 nm. It is a continuous-flow instrument that detects particles down to 2.5 nm. It uses a special sheath-air flow design that improves response to changes in particle concentration and increases counting efficiency for ultrafine particles.
+language code: en); 
+""" ;
+    skos:definition "The Ultrafine Condensation Particle Counter is a types of condensation particle counter (CPC) is designed primarily for researchers interested in airborne particles smaller than 20 nm. It is a continuous-flow instrument that detects particles down to 2.5 nm. It uses a special sheath-air flow design that improves response to changes in particle concentration and increases counting efficiency for ultrafine particles."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "UCN"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Ultrafine Condensation Nucleus Counter"@en ] .
+            gcmd:text "Ultrafine Condensation Nucleus Counter"@en ] ;
+    gcmd:reference [ gcmd:text "https://tsi.com/discontinued-products/ultrafine-condensation-particle-counter-3776"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e4009ba2-7e5d-41ea-b4f9-c45788ad8589> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/6cca285c-edc4-4147-ba57-9cbbffbc0ae6> ;
@@ -154971,10 +155302,17 @@ update Definition (Pertains to the production and processing of natural gas and 
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e5e172d6-34e8-4cf7-8734-e5dbe487794f> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-06 13:51:20.0 [tstevens]  
+insert Definition (id: null
+text: The SSIES is an improved version of the Special Sensor for Ions and Electrons (SSIE). The SSIE instruments measured the ambient electron density and temperatures, the ambient ion density, and the average ion temperature and molecular weight at the DMSP orbital altitude.
+language code: en); 
+""" ;
+    skos:definition "The SSIES is an improved version of the Special Sensor for Ions and Electrons (SSIE). The SSIE instruments measured the ambient electron density and temperatures, the ambient ion density, and the average ion temperature and molecular weight at the DMSP orbital altitude."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "SSIES"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Ion Scintallation Monitor"@en ] .
+            gcmd:text "Ion Scintallation Monitor"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.ncei.noaa.gov/products/dmsp-ion-electron-scintillation"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e5eb6afb-5d3e-4767-ad08-5293c5b2d88b> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3466eed1-2fbb-49bf-ab0b-dc08731d502b> ;
@@ -155102,10 +155440,17 @@ End_Group"""@en ;
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e605cb42-8974-4401-857e-ecd524390353> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/46238695-5577-4fad-91bf-0a2fdf8a9b19> ;
+    skos:changeNote """2025-03-07 09:27:32.0 [tstevens]  
+insert Definition (id: null
+text: Particulate contamination on smooth surfaces such as polished silicon wafers can be detected by observing scattered light with an optical microscope or by using a scanning laser microscope which integrates all the scattered light. Laser scattering is a sensitive technique and is capable of detecting particles as small as 0.2–0.15 μm in diameter with a probability of 90–50% respectively. Using angle-resolved light scattering it is possible to obtain compositional and morphological data on the particle. Scanning interferometry can also be used to detect particles on smooth surfaces. Ultraviolet luminescence can be used to detect some types of particles. Particles on surfaces can be observed using scanning electron microscopy (SEM) and in special cases transmission electron microscopy (TEM). Compositional analysis of inorganic particles can be done using the SEM in the EDAX mode (SEM/EDAX) and by small area electron diffraction in the TEM.
+language code: en); 
+""" ;
+    skos:definition "Particulate contamination on smooth surfaces such as polished silicon wafers can be detected by observing scattered light with an optical microscope or by using a scanning laser microscope which integrates all the scattered light. Laser scattering is a sensitive technique and is capable of detecting particles as small as 0.2–0.15 μm in diameter with a probability of 90–50% respectively. Using angle-resolved light scattering it is possible to obtain compositional and morphological data on the particle. Scanning interferometry can also be used to detect particles on smooth surfaces. Ultraviolet luminescence can be used to detect some types of particles. Particles on surfaces can be observed using scanning electron microscopy (SEM) and in special cases transmission electron microscopy (TEM). Compositional analysis of inorganic particles can be done using the SEM in the EDAX mode (SEM/EDAX) and by small area electron diffraction in the TEM."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "LLS"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Laser-Light Scattering"@en ] .
+            gcmd:text "Laser-Light Scattering"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.sciencedirect.com/topics/materials-science/laser-scattering"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e6080f1a-96ea-4ec8-aa25-d71c0d873ab3> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/84496caa-d54c-491a-8ff7-fe0e54851341> ;
@@ -156229,8 +156574,15 @@ dioxide. [Science News; v146; 260-262; 1994] [Science; v242;555-558;1988.]"""@en
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e83fdef6-eca3-4ce2-b3b3-8e92c385836b> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3d25724b-832f-4a61-b0b2-4f2ccecdba94> ;
+    skos:changeNote """2025-03-06 13:21:33.0 [tstevens]  
+insert Definition (id: null
+text: Stripping voltammetry is a technique used to quantify ions in a solution by analyzing the current generated when an analyte is oxidized or reduced on an electrode. It's a type of electrochemical analysis that's often used to detect trace metals.
+language code: en); 
+""" ;
+    skos:definition "Stripping voltammetry is a technique used to quantify ions in a solution by analyzing the current generated when an analyte is oxidized or reduced on an electrode. It's a type of electrochemical analysis that's often used to detect trace metals."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:prefLabel "STRIPPING VOLTAMMETRY"@en .
+    skos:prefLabel "STRIPPING VOLTAMMETRY"@en ;
+    gcmd:reference [ gcmd:text "https://www.google.com/search?q=STRIPPING+VOLTAMMETRY"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e848dbd1-b70a-4820-a630-98bd642ae357> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/42c6d91b-afef-4638-95c5-0d130828b2e7> ;
@@ -157960,10 +158312,10 @@ Group: Platform_Details
 End_Group"""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "Aqua"@en ;
-    gcmd:altLabel [ gcmd:category "outdated"@en ;
-            gcmd:text "AQUA"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Earth Observing System, Aqua"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Earth Observing System, Aqua"@en ],
+        [ gcmd:category "outdated"@en ;
+            gcmd:text "AQUA"@en ] ;
     gcmd:reference [ gcmd:text """https://aqua.nasa.gov/ 
 https://global.jaxa.jp/projects/sat/aqua/index.html"""@en ] ;
     gcmd:resource [ gcmd:type "provider" ;
@@ -161217,6 +161569,24 @@ language code: en);
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/discipline> ;
     skos:prefLabel "PHARMACOLOGY"@en .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/f03cac2e-6ee5-4734-9ab7-eb8521ba2654> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3f4cfc81-7745-43d9-b313-f68cdf72359b> ;
+    skos:changeNote """2025-03-10 09:31:04.0 [tstevens] Insert Concept 
+add broader relation (GREENHOUSE GASES [f03cac2e-6ee5-4734-9ab7-eb8521ba2654,2103180] - ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,2099764]); 
+""",
+        """2025-03-10 09:32:12.0 [tstevens]  
+insert Definition (id: null
+text: Greenhouse gases, including carbon dioxide, methane, and water vapor, absorb and re-emit thermal infrared radiation, thereby regulating Earth’s temperature and climate. While they are essential for maintaining habitable conditions by preventing heat loss into space, excessive emissions from human activities amplify this effect, contributing to climate change.
+language code: en); 
+""",
+        """2025-03-10 11:29:47.0 [tstevens]  
+update Definition (Stephen H. Schneider, The Greenhouse Effect: Science and Policy. Science 243, 771-781 (1989). DOI: 10.1126/science.243.4892.771); 
+""" ;
+    skos:definition "Greenhouse gases, including carbon dioxide, methane, and water vapor, absorb and re-emit thermal infrared radiation, thereby regulating Earth’s temperature and climate. While they are essential for maintaining habitable conditions by preventing heat loss into space, excessive emissions from human activities amplify this effect, contributing to climate change."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
+    skos:prefLabel "GREENHOUSE GASES"@en ;
+    gcmd:reference [ gcmd:text "Stephen H. Schneider, The Greenhouse Effect: Science and Policy. Science 243, 771-781 (1989). DOI: 10.1126/science.243.4892.771"@en ] .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/f03dc3d3-f280-4ff4-b0e6-de800bb21ebb> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3ef93fbf-1e19-42a9-a91f-502d125dbb7c> ;
     skos:changeNote """2021-11-30 12:09:17.0 [tstevens] Move Concepts 
@@ -161746,11 +162116,18 @@ insert AltLabel (id: null
 category: primary
 text: Automatic C-Axis Fabric Analyzer
 language code: en); 
+""",
+        """2025-03-06 13:54:00.0 [tstevens]  
+insert Definition (id: null
+text: A specialized microscope system used in fields like glaciology to automatically measure the orientation of crystal "c-axes" within a thin section of a material, typically ice, by analyzing polarized light images under a computer-controlled rotation, providing detailed information about the crystal fabric structure within the sample; essentially, it automates the process of determining the dominant crystal alignment in a material by capturing and analyzing images at various angles under polarized light.
+language code: en); 
 """ ;
+    skos:definition "A specialized microscope system used in fields like glaciology to automatically measure the orientation of crystal \"c-axes\" within a thin section of a material, typically ice, by analyzing polarized light images under a computer-controlled rotation, providing detailed information about the crystal fabric structure within the sample; essentially, it automates the process of determining the dominant crystal alignment in a material by capturing and analyzing images at various angles under polarized light."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "ACFA"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Automatic C-Axis Fabric Analyzer"@en ] .
+            gcmd:text "Automatic C-Axis Fabric Analyzer"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.cambridge.org/core/journals/journal-of-glaciology/article/performance-and-applications-of-an-automated-caxis-icefabric-analyzer/510714EF17A3FD4AC1AAFFDE9A462FFC"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/f138394c-f106-4f0f-b8b0-1ef9ecc3f7c2> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8143e95e-a438-4a2a-82b2-6d7ae079fba7> ;
@@ -165756,12 +166133,12 @@ End_Group"""@en ;
     skos:prefLabel "GRACE-FO"@en ;
     gcmd:altLabel [ gcmd:category "outdated"@en ;
             gcmd:text "The Gravity Recovery and Climate Experiment Follow-on"@en ],
-        [ gcmd:category "outdated"@en ;
-            gcmd:text "GRACE-II"@en ],
         [ gcmd:category "primary"@en ;
             gcmd:text "Gravity Recovery and Climate Experiment Follow-On"@en ],
         [ gcmd:category "outdated"@en ;
-            gcmd:text "Gravity Recovery and Climate Experiment II"@en ] .
+            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
+        [ gcmd:category "outdated"@en ;
+            gcmd:text "GRACE-II"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/f75f9011-903e-4757-9fcf-fefac2599b59> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/58f39353-7e1c-4884-9501-376cd0377fbf> ;
@@ -178891,10 +179268,10 @@ URI: https://earth.esa.int/concept/sentinel-3"""@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Copernicus: Sentinel-3"@en ] ;
     gcmd:reference [ gcmd:text "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3"@en ] ;
-    gcmd:resource [ gcmd:type "image" ;
-            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ],
-        [ gcmd:type "provider" ;
-            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ] .
+    gcmd:resource [ gcmd:type "provider" ;
+            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ],
+        [ gcmd:type "image" ;
+            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/8ce319a5-9b49-49e3-8981-3ce512c7efb0> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/705cd3a0-ea07-40c8-bfa1-9c26f22d13ba> ;
@@ -179041,11 +179418,18 @@ add narrower relation (Infrared Pyrometers [9669f608-8f98-46d3-a74e-6b9750d3e5e7
 """,
         """2018-09-26 07:53:46.0 [tstevens] Insert Concept 
 add narrower relation (Infrared Pyrometers [9669f608-8f98-46d3-a74e-6b9750d3e5e7,348009] - KT15 Pyrometer [47aef999-3e01-4a9f-815b-8c7b853c6e8c,368139]); 
+""",
+        """2025-03-07 10:41:31.0 [tstevens]  
+insert Definition (id: null
+text: An infrared thermometer, sometimes called an infrared pyrometer or radiation thermometer, is a device used for non-contact temperature measurement. Infrared thermometers are most often applied to measure the surface temperature of an opaque object. They are also used to measure a semi-transparent target such as high temperature combustion gas or molten glass that acquires the measurement into a depth of the target. Non-contact temperature measurement can be made over a wide range of distances, provided the sight path is free and clear of potential sources of error such as steam, dust, mechanical obstructions, dirty windows etc.
+language code: en); 
 """ ;
+    skos:definition "An infrared thermometer, sometimes called an infrared pyrometer or radiation thermometer, is a device used for non-contact temperature measurement. Infrared thermometers are most often applied to measure the surface temperature of an opaque object. They are also used to measure a semi-transparent target such as high temperature combustion gas or molten glass that acquires the measurement into a depth of the target. Non-contact temperature measurement can be made over a wide range of distances, provided the sight path is free and clear of potential sources of error such as steam, dust, mechanical obstructions, dirty windows etc."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/47aef999-3e01-4a9f-815b-8c7b853c6e8c>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b8e1857c-ea38-4341-a01b-2879e63ac2d8> ;
-    skos:prefLabel "Infrared Pyrometers"@en .
+    skos:prefLabel "Infrared Pyrometers"@en ;
+    gcmd:reference [ gcmd:text "https://wintron.com/infrared-pyrometers-explained"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/96af39dd-d4eb-4188-bc48-2349a97c5918> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/c052239f-e386-42ff-a8d3-9ca170367d5c> ;
@@ -194682,8 +195066,8 @@ language code: en);
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9728ca44-7bb3-40a4-9dd2-49470ad47fa5> ;
     gcmd:hits "8" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:51:55" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:20:58" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/verticalresolutionrange" .
 
@@ -198859,8 +199243,8 @@ End_Group"""@en ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
     gcmd:hits "13" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:52:26" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:24" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/PlatformType" .
 
@@ -199982,8 +200366,8 @@ add narrower relation (Lidar/Laser Altimeters [ec76ff59-7450-48a0-9152-7c3531e60
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1499785c-8b74-45f4-bbf7-19d2d4e43b2f> ;
     gcmd:hits "15" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:51:55" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:20:58" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/horizontalresolutionrange" .
 
@@ -200949,8 +201333,8 @@ Science, Wadsworth Publishing Co., p. 526."""@en ] .
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/6eb7a3bb-2330-4086-9a77-79e46470f1e6> ;
     gcmd:hits "17" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:52:26" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:25" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProductLevelId" .
 
@@ -202946,8 +203330,8 @@ update Definition (Describes the major physical characteristics of water that re
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/e97d2b88-a545-4882-801b-40964a2bc723> ;
     gcmd:hits "21" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:52:55" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:54" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/Operations" .
 
@@ -203154,8 +203538,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/27fa831b-f131-4f6d-8020-cc4ab0896249> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:51:55" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:20:58" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/isotopiccategory" .
 
@@ -203163,8 +203547,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/502ad03c-dba8-4b32-8af5-13fa947c3988> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:51:56" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:20:59" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/temporalresolutionrange" .
 
@@ -203502,6 +203886,9 @@ add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf7235
 """,
         """2022-12-15 08:00:58.0 [tstevens] Insert Concept 
 add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,1140464] - MECHANICAL DISTURBANCE [e84f5068-2123-4594-aa07-bc1389346093,1143778]); 
+""",
+        """2025-03-10 09:31:04.0 [tstevens] Insert Concept 
+add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf72359b,2099764] - GREENHOUSE GASES [f03cac2e-6ee5-4734-9ab7-eb8521ba2654,2103180]); 
 """ ;
     skos:definition "Refers to the types of impacts that humans have on their environment."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
@@ -203526,7 +203913,8 @@ add narrower relation (ENVIRONMENTAL IMPACTS [3f4cfc81-7745-43d9-b313-f68cdf7235
         <https://gcmd.earthdata.nasa.gov/kms/concept/e84f5068-2123-4594-aa07-bc1389346093>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ed96cfbb-6fc5-4f02-baba-4c37b813c259>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/edfbff1e-b24b-40b9-be54-e1823b4d7f49>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ee3e296f-fdc0-4695-95af-dbe63f43b679> ;
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ee3e296f-fdc0-4695-95af-dbe63f43b679>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/f03cac2e-6ee5-4734-9ab7-eb8521ba2654> ;
     skos:prefLabel "ENVIRONMENTAL IMPACTS"@en ;
     gcmd:reference [ gcmd:text "NASA GCMD"@en ] .
 
@@ -206891,107 +207279,6 @@ language code: en);
     skos:prefLabel "Imaging Radars"@en ;
     gcmd:reference [ gcmd:text "https://www.allthescience.org/what-is-an-imaging-radar.htm"@en ] .
 
-<https://gcmd.earthdata.nasa.gov/kms/concept/ebfff02c-2e5a-476e-aafb-c00167bf2daa> a skos:Concept ;
-    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ff564c87-78f2-47eb-a857-a4bdc0a71ae5> ;
-    skos:changeNote """2012-08-09 08:33:05.0 [tbs1979] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,32649] - IMU [16268fa7-9efd-403d-9bcb-fc622d535ff6,40483]); 
-""",
-        """2015-06-02 14:05:36.0 [aaleman] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,144693] - GLS [8fb78564-566c-462a-88c2-8857f89a4194,157973]); 
-""",
-        """2016-11-15 12:11:44.0 [aaleman] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,260535] - TC [e37e2077-0af4-483f-80f5-67f21ec5004d,278511]); 
-""",
-        """2017-05-31 12:07:01.0 [sritz] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,291639] - Passive Acoustic Recorder [e455f0cf-b95e-4b05-9aab-fb0a2bfae36f,309617]); 
-""",
-        """2017-06-28 12:28:43.0 [sritz] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,291639] - PDS [7566c63e-dfb9-4af2-8a15-7a30dde73b0c,309765]); 
-""",
-        """2017-09-14 15:13:01.0 [sritz] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,291639] - ICATS [c00e5c26-4a6b-4e1a-90fe-2e6e9625724f,310187]); 
-""",
-        """2018-07-05 07:01:00.0 [mmorahan] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,349073] - HKTLM [e18c90cb-7dfe-4135-83c8-97a393c1d057,367759]); 
-""",
-        """2018-07-10 12:48:21.0 [mmorahan] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,349073] - HKTM [8f4238da-89a6-4498-95d7-e23f3ccd5e8b,367811]); 
-""",
-        """2020-01-14 07:41:47.0 [tstevens] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - UNDERWATER VIDEO CAMERA [0e775789-4ce9-4a71-857b-1cfdcfc9331b,559625]); 
-""",
-        """2020-07-20 08:47:37.0 [tstevens] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - TAMMS [172007bb-2b5d-478a-8875-2aa653b9103d,560534]); 
-""",
-        """2020-09-28 09:01:41.0 [tstevens] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - COSMOS-SSP [1f4a8787-557f-4211-8617-c17bc09b6415,560722]); 
-""",
-        """2020-09-28 09:04:31.0 [tstevens] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - COSMOS-Rover [692a171f-865c-4b9e-ace7-a0bff623a3e3,560724]); 
-""",
-        """2020-11-12 16:16:22.0 [sritz] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - Kestrel [542917b2-f088-43eb-bd6f-abe54968db5b,560769]); 
-""",
-        """2021-05-11 09:16:02.0 [tstevens] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,599787] - Campbell Scientific CR800 [743b0b2c-9489-43cf-a3df-ba6e3ce80642,606923]); 
-""",
-        """2021-05-11 09:24:48.0 [tstevens] Insert Concept 
-add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,599787] - Campbell Scientific CR3000 [accd5364-a684-425d-b064-f681456ee89c,606924]); 
-""",
-        """2024-12-04 10:12:35.0 [tstevens]  
-insert Definition (id: null
-text: Instruments that monitor and records/logs changes in conditions over time. They can be single, stand-alone units or consist of multiple channels. Most stand-alone units are battery-powered, allowing them to record while in transit and for extended periods of time.
-language code: en); 
-""" ;
-    skos:definition "Instruments that monitor and records/logs changes in conditions over time. They can be single, stand-alone units or consist of multiple channels. Most stand-alone units are battery-powered, allowing them to record while in transit and for extended periods of time."@en ;
-    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/00c994a8-64eb-4263-a3fa-85fd902bb91b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/05be4881-c1ea-43fb-ab51-fd1196f61616>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0648b8de-c21e-4707-8148-c37b66c86207>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/08ed1af5-b984-40d8-bedc-3c9d9e77c11a>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0e775789-4ce9-4a71-857b-1cfdcfc9331b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0fad63bc-18ed-4a01-96ef-786a29de50fc>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/16268fa7-9efd-403d-9bcb-fc622d535ff6>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/172007bb-2b5d-478a-8875-2aa653b9103d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/1d185518-66d4-49cf-9c35-e8fa7740b66d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/1f4a8787-557f-4211-8617-c17bc09b6415>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/2c839e60-aa49-4854-92f7-1c149177c45b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/2fc6cda0-bc5f-4614-95f2-0abadee5d476>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/34929d50-da72-4ed0-90dd-b4b72153c9b4>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3d579721-c916-4e6d-aa13-2633ea0a7fac>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/48e65023-3282-4774-9174-5141435579c3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/542917b2-f088-43eb-bd6f-abe54968db5b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/692a171f-865c-4b9e-ace7-a0bff623a3e3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6a61127a-80e8-48ec-88d4-7e64ea689164>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/709e6e72-0f04-4847-8eed-bb0cfd7ca9d7>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/743b0b2c-9489-43cf-a3df-ba6e3ce80642>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/7566c63e-dfb9-4af2-8a15-7a30dde73b0c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/84b4d4c6-3477-4616-92a4-bca59ad62a26>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/8742da0d-37b0-4807-8f6b-fc9fd0a82c39>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/8f4238da-89a6-4498-95d7-e23f3ccd5e8b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/8fb78564-566c-462a-88c2-8857f89a4194>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/904d513b-585a-45c8-a568-a574fac7e954>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9ed30338-eced-4102-b6e8-4a3b2affd490>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/a17e3ad4-d8f4-4f0d-86bd-777faf5ef2c7>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/aa58ecd2-c726-48c5-86a3-ec592f6dc95e>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/abbbe80b-be42-436f-a387-a5368aca9121>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/accd5364-a684-425d-b064-f681456ee89c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ae6487a4-eda6-4480-96a6-40f06f9c90b7>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/b103e3e4-093f-4ddb-a93b-29e0e950cc50>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/b301234c-2e9d-4266-9f32-74e323fffa7c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/b892aed3-2fcb-476a-86ae-a5d35cf6defc>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/bbf6e856-4ca2-452b-9e47-3ee9bdd4010a>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/c00e5c26-4a6b-4e1a-90fe-2e6e9625724f>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/c050b29e-dea3-4d49-8f1f-db858ab87cbf>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/c8b93e51-f52c-439f-8307-46ae6edb8389>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/e18c90cb-7dfe-4135-83c8-97a393c1d057>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/e37e2077-0af4-483f-80f5-67f21ec5004d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/e455f0cf-b95e-4b05-9aab-fb0a2bfae36f>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ed79ec7b-a2df-4948-9877-b75e1fcb8782>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/f724bf90-7f0a-472f-950f-747201f7c711> ;
-    skos:prefLabel "Recorders/Loggers"@en ;
-    gcmd:reference [ gcmd:text "https://www.omega.com/en-us/resources/data-loggers"@en ] .
-
 <https://gcmd.earthdata.nasa.gov/kms/concept/72227178-bb4c-4ff5-98a3-f976aa3f3714> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/4f81c61c-f100-4bc4-9664-d9b70d2f162f> ;
     skos:changeNote """2012-12-07 15:02:12.0 [gee-cee] Insert Concept 
@@ -207113,6 +207400,111 @@ add narrower relation (Photon/Optical Detectors [72227178-bb4c-4ff5-98a3-f976aa3
         <https://gcmd.earthdata.nasa.gov/kms/concept/f66daf4f-4d71-49a0-9d3d-205dc7f1faed>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/fe7c93d2-1460-4292-9dda-2338c3f6120d> ;
     skos:prefLabel "Photon/Optical Detectors"@en .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/ebfff02c-2e5a-476e-aafb-c00167bf2daa> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ff564c87-78f2-47eb-a857-a4bdc0a71ae5> ;
+    skos:changeNote """2012-08-09 08:33:05.0 [tbs1979] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,32649] - IMU [16268fa7-9efd-403d-9bcb-fc622d535ff6,40483]); 
+""",
+        """2015-06-02 14:05:36.0 [aaleman] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,144693] - GLS [8fb78564-566c-462a-88c2-8857f89a4194,157973]); 
+""",
+        """2016-11-15 12:11:44.0 [aaleman] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,260535] - TC [e37e2077-0af4-483f-80f5-67f21ec5004d,278511]); 
+""",
+        """2017-05-31 12:07:01.0 [sritz] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,291639] - Passive Acoustic Recorder [e455f0cf-b95e-4b05-9aab-fb0a2bfae36f,309617]); 
+""",
+        """2017-06-28 12:28:43.0 [sritz] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,291639] - PDS [7566c63e-dfb9-4af2-8a15-7a30dde73b0c,309765]); 
+""",
+        """2017-09-14 15:13:01.0 [sritz] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,291639] - ICATS [c00e5c26-4a6b-4e1a-90fe-2e6e9625724f,310187]); 
+""",
+        """2018-07-05 07:01:00.0 [mmorahan] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,349073] - HKTLM [e18c90cb-7dfe-4135-83c8-97a393c1d057,367759]); 
+""",
+        """2018-07-10 12:48:21.0 [mmorahan] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,349073] - HKTM [8f4238da-89a6-4498-95d7-e23f3ccd5e8b,367811]); 
+""",
+        """2020-01-14 07:41:47.0 [tstevens] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - UNDERWATER VIDEO CAMERA [0e775789-4ce9-4a71-857b-1cfdcfc9331b,559625]); 
+""",
+        """2020-07-20 08:47:37.0 [tstevens] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - TAMMS [172007bb-2b5d-478a-8875-2aa653b9103d,560534]); 
+""",
+        """2020-09-28 09:01:41.0 [tstevens] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - COSMOS-SSP [1f4a8787-557f-4211-8617-c17bc09b6415,560722]); 
+""",
+        """2020-09-28 09:04:31.0 [tstevens] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - COSMOS-Rover [692a171f-865c-4b9e-ace7-a0bff623a3e3,560724]); 
+""",
+        """2020-11-12 16:16:22.0 [sritz] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,546147] - Kestrel [542917b2-f088-43eb-bd6f-abe54968db5b,560769]); 
+""",
+        """2021-05-11 09:16:02.0 [tstevens] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,599787] - Campbell Scientific CR800 [743b0b2c-9489-43cf-a3df-ba6e3ce80642,606923]); 
+""",
+        """2021-05-11 09:24:48.0 [tstevens] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,599787] - Campbell Scientific CR3000 [accd5364-a684-425d-b064-f681456ee89c,606924]); 
+""",
+        """2024-12-04 10:12:35.0 [tstevens]  
+insert Definition (id: null
+text: Instruments that monitor and records/logs changes in conditions over time. They can be single, stand-alone units or consist of multiple channels. Most stand-alone units are battery-powered, allowing them to record while in transit and for extended periods of time.
+language code: en); 
+""",
+        """2025-03-20 17:22:18.0 [sritz] Insert Concept 
+add narrower relation (Recorders/Loggers [ebfff02c-2e5a-476e-aafb-c00167bf2daa,2110440] - UNS-1Fw [8e63f495-844d-4e31-b6a3-5918c2bda66c,2118385]); 
+""" ;
+    skos:definition "Instruments that monitor and records/logs changes in conditions over time. They can be single, stand-alone units or consist of multiple channels. Most stand-alone units are battery-powered, allowing them to record while in transit and for extended periods of time."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/00c994a8-64eb-4263-a3fa-85fd902bb91b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/05be4881-c1ea-43fb-ab51-fd1196f61616>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0648b8de-c21e-4707-8148-c37b66c86207>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/08ed1af5-b984-40d8-bedc-3c9d9e77c11a>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0e775789-4ce9-4a71-857b-1cfdcfc9331b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0fad63bc-18ed-4a01-96ef-786a29de50fc>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/16268fa7-9efd-403d-9bcb-fc622d535ff6>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/172007bb-2b5d-478a-8875-2aa653b9103d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/1d185518-66d4-49cf-9c35-e8fa7740b66d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/1f4a8787-557f-4211-8617-c17bc09b6415>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2c839e60-aa49-4854-92f7-1c149177c45b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2fc6cda0-bc5f-4614-95f2-0abadee5d476>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/34929d50-da72-4ed0-90dd-b4b72153c9b4>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3d579721-c916-4e6d-aa13-2633ea0a7fac>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/48e65023-3282-4774-9174-5141435579c3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/542917b2-f088-43eb-bd6f-abe54968db5b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/692a171f-865c-4b9e-ace7-a0bff623a3e3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6a61127a-80e8-48ec-88d4-7e64ea689164>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/709e6e72-0f04-4847-8eed-bb0cfd7ca9d7>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/743b0b2c-9489-43cf-a3df-ba6e3ce80642>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/7566c63e-dfb9-4af2-8a15-7a30dde73b0c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/84b4d4c6-3477-4616-92a4-bca59ad62a26>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/8742da0d-37b0-4807-8f6b-fc9fd0a82c39>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/8e63f495-844d-4e31-b6a3-5918c2bda66c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/8f4238da-89a6-4498-95d7-e23f3ccd5e8b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/8fb78564-566c-462a-88c2-8857f89a4194>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/904d513b-585a-45c8-a568-a574fac7e954>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9ed30338-eced-4102-b6e8-4a3b2affd490>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/a17e3ad4-d8f4-4f0d-86bd-777faf5ef2c7>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/aa58ecd2-c726-48c5-86a3-ec592f6dc95e>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/abbbe80b-be42-436f-a387-a5368aca9121>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/accd5364-a684-425d-b064-f681456ee89c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ae6487a4-eda6-4480-96a6-40f06f9c90b7>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b103e3e4-093f-4ddb-a93b-29e0e950cc50>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b301234c-2e9d-4266-9f32-74e323fffa7c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b892aed3-2fcb-476a-86ae-a5d35cf6defc>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/bbf6e856-4ca2-452b-9e47-3ee9bdd4010a>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c00e5c26-4a6b-4e1a-90fe-2e6e9625724f>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c050b29e-dea3-4d49-8f1f-db858ab87cbf>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c8b93e51-f52c-439f-8307-46ae6edb8389>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/e18c90cb-7dfe-4135-83c8-97a393c1d057>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/e37e2077-0af4-483f-80f5-67f21ec5004d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/e455f0cf-b95e-4b05-9aab-fb0a2bfae36f>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ed79ec7b-a2df-4948-9877-b75e1fcb8782>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/f724bf90-7f0a-472f-950f-747201f7c711> ;
+    skos:prefLabel "Recorders/Loggers"@en ;
+    gcmd:reference [ gcmd:text "https://www.omega.com/en-us/resources/data-loggers"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/ad11e2b2-db98-4820-b2dc-c075560baca8> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
@@ -207871,8 +208263,8 @@ add narrower relation (Projection Name [9d37b0bc-31fa-4b2e-b39d-1e19ceefa103,423
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9d37b0bc-31fa-4b2e-b39d-1e19ceefa103> ;
     gcmd:hits "52" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:52:52" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:51" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProjectionName" .
 
@@ -208628,9 +209020,19 @@ add narrower relation (Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02
 """,
         """2024-06-12 09:53:08.0 [sritz] Insert Concept 
 add narrower relation (Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,1701115] - PRISM [25bd25fe-6ee4-4baf-aa86-465882fdd0c2,1708978]); 
+""",
+        """2025-03-20 17:25:52.0 [sritz] Insert Concept 
+add narrower relation (Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,2110446] - PUTLS [a13ed6f0-715b-497a-8c87-9ea62d4d4930,2118386]); 
+""",
+        """2025-03-20 17:30:22.0 [sritz] Insert Concept 
+add narrower relation (Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,2110446] - MARLi [0da2873b-8614-4de9-90b4-b4e5e44b0139,2118387]); 
+""",
+        """2025-03-21 14:56:06.0 [sritz] Insert Concept 
+add narrower relation (Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02291bd9,2110446] - GVR [b4286b92-417b-4f83-98c9-c86d44509d81,2118389]); 
 """ ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/09c35c61-d1ed-4591-b4d5-c539a2a0aec2>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0da2873b-8614-4de9-90b4-b4e5e44b0139>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/0db71d4f-2329-4adf-9e90-0a1af3458b1d>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/16237051-45ba-458f-99c2-18d4a8940630>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/195f7965-459d-49e4-aad1-b1f23fa035da>,
@@ -208666,12 +209068,14 @@ add narrower relation (Spectrometers/Radiometers [ecd58f82-8f96-45e1-9547-dd4a02
         <https://gcmd.earthdata.nasa.gov/kms/concept/8f04fca0-2c0a-4265-8590-219d5c24e5b0>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/8ff9bae1-ef19-4e13-b5e3-12954e84e9dd>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/9bfce406-fc85-473e-b40a-2764c6a95371>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/a13ed6f0-715b-497a-8c87-9ea62d4d4930>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/a939b8df-475b-4ea5-9e03-192ef969521a>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/aa0f2b35-e7f2-47fe-a782-6c8040d5eb57>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/abdf08cd-03c5-4497-87a4-65493584e2c7>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/abdf6205-bd05-4431-83bb-fa3f9a481cca>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b0f93e6a-c766-4957-8762-5c7709487459>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b2f03a5a-056d-44c9-af48-b0e46a1b94fb>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b4286b92-417b-4f83-98c9-c86d44509d81>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ba49c933-5787-4e1f-a408-bc4af632e00a>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/cbaf0199-e56a-4cc3-8792-c6b6abbd6719>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/cf316624-64e4-4d14-9c67-79232dc4ae23>,
@@ -211050,8 +211454,8 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
     gcmd:hits "154" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:52:35" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:33" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/DataFormat" .
 
@@ -211389,6 +211793,12 @@ add narrower relation (Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2cce
 """,
         """2024-11-08 12:26:44.0 [tstevens] Insert Concept 
 add narrower relation (Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2ccecdba94,1881583] - LI-850 [8cb92cc6-917b-4ed5-b26e-ccf2274787c5,1890664]); 
+""",
+        """2025-03-20 17:17:07.0 [sritz] Insert Concept 
+add narrower relation (Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2ccecdba94,2109256] - 2D-Gray [7624902c-55ff-4149-826e-403dfa0d3ef7,2118384]); 
+""",
+        """2025-03-21 14:38:16.0 [sritz] Insert Concept 
+add narrower relation (Chemical Meters/Analyzers [3d25724b-832f-4a61-b0b2-4f2ccecdba94,2109256] - TSI CPC-3772 [9465fa95-2698-4d95-bee6-6af447b27f7b,2118388]); 
 """ ;
     skos:definition """Instrument for monitoring, measuring, or recording the rate of flow, pressure, or discharge of a fluid, particularly those with a distinct molecular composition that is produced by or used in a chemical process.  
 
@@ -211480,6 +211890,7 @@ End_Group"""@en ;
         <https://gcmd.earthdata.nasa.gov/kms/concept/6e67cba9-163d-41f6-b9bc-177298e24f55>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/704ba472-0a31-414e-9d3d-6d1aa90335bd>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/74e78bef-2b00-4f6d-b422-8644db6a6e31>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/7624902c-55ff-4149-826e-403dfa0d3ef7>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/77d3b352-f1e4-4080-b2d3-b8fc64469bdf>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/78090906-ba69-42f4-97a0-c770556e236e>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/78de14ea-63ce-4555-8aa1-2fa61b3d12aa>,
@@ -211502,6 +211913,7 @@ End_Group"""@en ;
         <https://gcmd.earthdata.nasa.gov/kms/concept/8d753940-10cf-49d6-811c-e757cb8fbdc1>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/9044c133-fbd1-440c-abd9-eccc8c0fa72c>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/92f99316-b581-4adb-9980-aeb6bed64eee>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9465fa95-2698-4d95-bee6-6af447b27f7b>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/950f43fd-6ae5-4843-92b4-90777ae8f0be>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/965f5727-1ea6-44ad-915c-962614ba9253>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/96caaaf9-c813-4973-9491-772a7963b792>,
@@ -213521,8 +213933,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/2bc6e372-93d8-4672-96b1-ec159aff2e19> ;
     gcmd:hits "251" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:52:42" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:40" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/MeasurementName" .
 
@@ -213530,8 +213942,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
     gcmd:hits "450" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:51:46" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:20:49" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/discipline" .
 
@@ -213539,26 +213951,26 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12> ;
     gcmd:hits "1246" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-03 09:49:37" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:18:55" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/platforms" .
 
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/b2140059-b3ca-415c-b0a7-3e142783ffe8> ;
-    gcmd:hits "2057" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-07 10:43:44" ;
+    gcmd:hits "2063" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-25 09:11:35" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/instruments" .
 
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1eb0ea0a-312c-4d74-8d42-6f1ad758f999> ;
-    gcmd:hits "3622" ;
-    gcmd:keywordVersion "20.9" ;
-    gcmd:schemeVersion "2025-03-10 11:29:50" ;
+    gcmd:hits "3623" ;
+    gcmd:keywordVersion "21.0" ;
+    gcmd:schemeVersion "2025-03-14 10:21:55" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/sciencekeywords" .
 
