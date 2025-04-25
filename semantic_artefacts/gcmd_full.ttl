@@ -166132,11 +166132,11 @@ End_Group"""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "GRACE-FO"@en ;
     gcmd:altLabel [ gcmd:category "outdated"@en ;
+            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
+        [ gcmd:category "outdated"@en ;
             gcmd:text "The Gravity Recovery and Climate Experiment Follow-on"@en ],
         [ gcmd:category "primary"@en ;
             gcmd:text "Gravity Recovery and Climate Experiment Follow-On"@en ],
-        [ gcmd:category "outdated"@en ;
-            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
         [ gcmd:category "outdated"@en ;
             gcmd:text "GRACE-II"@en ] .
 
@@ -179268,10 +179268,10 @@ URI: https://earth.esa.int/concept/sentinel-3"""@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Copernicus: Sentinel-3"@en ] ;
     gcmd:reference [ gcmd:text "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3"@en ] ;
-    gcmd:resource [ gcmd:type "provider" ;
-            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ],
-        [ gcmd:type "image" ;
-            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ] .
+    gcmd:resource [ gcmd:type "image" ;
+            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ],
+        [ gcmd:type "provider" ;
+            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/8ce319a5-9b49-49e3-8981-3ce512c7efb0> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/705cd3a0-ea07-40c8-bfa1-9c26f22d13ba> ;
@@ -195066,8 +195066,8 @@ language code: en);
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9728ca44-7bb3-40a4-9dd2-49470ad47fa5> ;
     gcmd:hits "8" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:20:58" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:17" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/verticalresolutionrange" .
 
@@ -199243,8 +199243,8 @@ End_Group"""@en ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
     gcmd:hits "13" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:24" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:45" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/PlatformType" .
 
@@ -200366,8 +200366,8 @@ add narrower relation (Lidar/Laser Altimeters [ec76ff59-7450-48a0-9152-7c3531e60
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1499785c-8b74-45f4-bbf7-19d2d4e43b2f> ;
     gcmd:hits "15" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:20:58" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:17" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/horizontalresolutionrange" .
 
@@ -201333,8 +201333,8 @@ Science, Wadsworth Publishing Co., p. 526."""@en ] .
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/6eb7a3bb-2330-4086-9a77-79e46470f1e6> ;
     gcmd:hits "17" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:25" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:46" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProductLevelId" .
 
@@ -203330,8 +203330,8 @@ update Definition (Describes the major physical characteristics of water that re
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/e97d2b88-a545-4882-801b-40964a2bc723> ;
     gcmd:hits "21" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:54" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:03:16" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/Operations" .
 
@@ -203538,8 +203538,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/27fa831b-f131-4f6d-8020-cc4ab0896249> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:20:58" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:17" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/isotopiccategory" .
 
@@ -203547,8 +203547,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/502ad03c-dba8-4b32-8af5-13fa947c3988> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:20:59" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:17" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/temporalresolutionrange" .
 
@@ -208263,8 +208263,8 @@ add narrower relation (Projection Name [9d37b0bc-31fa-4b2e-b39d-1e19ceefa103,423
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9d37b0bc-31fa-4b2e-b39d-1e19ceefa103> ;
     gcmd:hits "52" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:51" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:03:13" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProjectionName" .
 
@@ -211454,8 +211454,8 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
     gcmd:hits "154" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:33" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:54" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/DataFormat" .
 
@@ -213933,8 +213933,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/2bc6e372-93d8-4672-96b1-ec159aff2e19> ;
     gcmd:hits "251" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:40" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:03:02" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/MeasurementName" .
 
@@ -213942,8 +213942,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
     gcmd:hits "450" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:20:49" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:02:08" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/discipline" .
 
@@ -213951,8 +213951,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12> ;
     gcmd:hits "1246" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:18:55" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:00:09" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/platforms" .
 
@@ -213960,8 +213960,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/b2140059-b3ca-415c-b0a7-3e142783ffe8> ;
     gcmd:hits "2063" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-25 09:11:35" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:00:49" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/instruments" .
 
@@ -213969,8 +213969,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1eb0ea0a-312c-4d74-8d42-6f1ad758f999> ;
     gcmd:hits "3623" ;
-    gcmd:keywordVersion "21.0" ;
-    gcmd:schemeVersion "2025-03-14 10:21:55" ;
+    gcmd:keywordVersion "21.1" ;
+    gcmd:schemeVersion "2025-03-28 11:03:17" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/sciencekeywords" .
 
