@@ -31551,6 +31551,23 @@ language code: en);
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "Publications"@en .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/2e5c9035-16fc-438d-85a4-d7e26e233516> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote """2025-05-07 09:09:28.0 [tstevens] Insert Concept 
+add broader relation (Multiple [2e5c9035-16fc-438d-85a4-d7e26e233516,2148818] - Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774]); 
+""",
+        """2025-05-07 09:10:35.0 [tstevens]  
+insert Definition (id: null
+text: The collection or granule contains files of more than one type of data formats.
+language code: en); 
+""",
+        """2025-05-07 11:47:01.0 [tstevens]  
+update Definition (The collection or granule contains files of more than one type of data format.); 
+""" ;
+    skos:definition "The collection or granule contains files of more than one type of data format."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "Multiple"@en .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/2e62a5dd-5ea5-4cd6-8051-b5e162ef4e01> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/b895f4b5-5273-49ef-883f-b67d9f199505> ;
     skos:changeNote """2013-08-06 14:45:42.0 [tbs1979] Insert Concept 
@@ -41205,19 +41222,15 @@ Group: Instrument_Details
 End_Group); 
 update Definition (https://terra.nasa.gov/about/terra-instruments/mopitt); 
 delete Resource (null); 
-""" ;
-    skos:definition """The objective of the Measurement of Pollution in the Troposphere (MOPITT) spectrometer is to measure emitted and 
-reflected infrared radiance in the atmospheric column to permit retrieval of tropospheric carbon monoxide (CO) 
-profiles and total column methane. Observations of CO and methane will be used to study how these gases interact 
-with the surface, ocean, and biomass systems. The MOPITT instrument is bases on the principle of correlation 
-spectroscopy utilizing both pressure-modulated and length-modulated gas cells, with detectors at 2.3, 2.4, and 
-4.7 micrometer. Atmospheric profiles of CO are measured with the 4.7 micrometer detector. CO and methane are measured 
-by the 2.4 and 2.3 micrometer channels, respectively, sense solar radiation reflected from the surface. The MOPITT
-is a scanning instrument with a field-of-view of 1.8 degrees (22-km footprint at nadir). The scan line consists of 28
-pixels, each at 1.8 degree increments with a maximum scan angle of 25.2 degrees off-axis (swath width of 620-km). 
-MOPITT data products are expected to include gridded retrievals of methane with a horizontal resolution of 120 km 
-at 1 % accuracy and gridded CO soundings with 10 % accuracy in three vertical layers between 0 and 15 km.  The 
-MOPITT instrument was launched on the NASA Earth  Observing System (EOS) Terra spacecraft on December 18, 1999.  
+""",
+        """2025-04-28 17:11:31.0 [sritz]  
+update Definition (Status:
+MOPITT was put in to safe mode on February 1, 2025, due to power constraints onboard TERRA. While in safe mode no NRT or science data will be collected.
+
+
+The objective of the Measurement of Pollution in the Troposphere (MOPITT) spectrometer is to measure emitted and reflected infrared radiance in the atmospheric column to permit retrieval of tropospheric carbon monoxide (CO) profiles and total column methane. Observations of CO and methane will be used to study how these gases interact 
+with the surface, ocean, and biomass systems. The MOPITT instrument is bases on the principle of correlation spectroscopy utilizing both pressure-modulated and length-modulated gas cells, with detectors at 2.3, 2.4, and 4.7 micrometer. Atmospheric profiles of CO are measured with the 4.7 micrometer detector. CO and methane are measured 
+by the 2.4 and 2.3 micrometer channels, respectively, sense solar radiation reflected from the surface. The MOPITT is a scanning instrument with a field-of-view of 1.8 degrees (22-km footprint at nadir). The scan line consists of 28 pixels, each at 1.8 degree increments with a maximum scan angle of 25.2 degrees off-axis (swath width of 620-km). MOPITT data products are expected to include gridded retrievals of methane with a horizontal resolution of 120 km at 1 % accuracy and gridded CO soundings with 10 % accuracy in three vertical layers between 0 and 15 km.  The MOPITT instrument was launched on the NASA Earth  Observing System (EOS) Terra spacecraft on December 18, 1999.  
 
 Key MOPITT Facts:
 Joint with Canada
@@ -41247,7 +41260,7 @@ Prime Contractor: COM DEV
 The Canadian Space Agency provided the instrument
 
 More Information:
-https://terra.nasa.gov/about/terra-instruments/mopitt
+https://www.earthdata.nasa.gov/data/instruments/mopitt
 
 [Summary provided by NASA]
 
@@ -41277,7 +41290,83 @@ Group: Instrument_Details
    End_Group
    Online_Resource: https://terra.nasa.gov/about/terra-instruments/mopitt
    Online_Resource: https://mopitt.physics.utoronto.ca/
-   Online_Resource: https://www2.acom.ucar.edu/mopitt
+   Online_Resource: https://www.earthdata.nasa.gov/data/instruments/mopitt
+   Creation_Date: 2007-02-09
+   Group: Instrument_Logistics
+      Data_Rate: 28 kbps
+      Instrument_Start_Date: 1999-12-18
+      Instrument_Owner: Canada/CSA
+   End_Group
+End_Group); 
+update Definition (https://www.earthdata.nasa.gov/data/instruments/mopitt); 
+""" ;
+    skos:definition """Status:
+MOPITT was put in to safe mode on February 1, 2025, due to power constraints onboard TERRA. While in safe mode no NRT or science data will be collected.
+
+
+The objective of the Measurement of Pollution in the Troposphere (MOPITT) spectrometer is to measure emitted and reflected infrared radiance in the atmospheric column to permit retrieval of tropospheric carbon monoxide (CO) profiles and total column methane. Observations of CO and methane will be used to study how these gases interact 
+with the surface, ocean, and biomass systems. The MOPITT instrument is bases on the principle of correlation spectroscopy utilizing both pressure-modulated and length-modulated gas cells, with detectors at 2.3, 2.4, and 4.7 micrometer. Atmospheric profiles of CO are measured with the 4.7 micrometer detector. CO and methane are measured 
+by the 2.4 and 2.3 micrometer channels, respectively, sense solar radiation reflected from the surface. The MOPITT is a scanning instrument with a field-of-view of 1.8 degrees (22-km footprint at nadir). The scan line consists of 28 pixels, each at 1.8 degree increments with a maximum scan angle of 25.2 degrees off-axis (swath width of 620-km). MOPITT data products are expected to include gridded retrievals of methane with a horizontal resolution of 120 km at 1 % accuracy and gridded CO soundings with 10 % accuracy in three vertical layers between 0 and 15 km.  The MOPITT instrument was launched on the NASA Earth  Observing System (EOS) Terra spacecraft on December 18, 1999.  
+
+Key MOPITT Facts:
+Joint with Canada
+Heritage: Measurement of Air Pollution from Satellites (MAPS), Pressure
+Modulator Radiometer (PMR), Stratospheric and Mesospheric Sounder
+(SAMS), and Improved Stratospheric and Mesospheric Sounder (ISAMS) instruments
+Instrument Type: Eight-channel radiometer
+CO Concentration Accuracy: 10%
+CH4 Column Abundance Accuracy: 1%
+Swath: 640 km (29 fields of view)
+Spatial Resolution (each pixel):
+22 km ? 22 km (at nadir)
+Dimensions: 115 cm x 93 cm x 57 cm (stowed), 115 cm x 105 cm x 71 cm (deployed)
+Mass: 192 kg
+Power: 250 W (average), 260 W (peak)
+Duty Cycle: 100%
+Data Rate: 28 kbps
+Thermal Control: 80 K Stirling-cycle cooler, capillary-pumped cold plate and
+passive radiation
+Thermal Operating Range: 25°C (instrument), 100 K (detectors)
+Instrument IFOV: 22 km across track,
+88 km along track (1.8° x 7.2° x 4° pixels)
+Spectral Range: Correlation spectroscopy utilizing both pressure and
+length-modulated gas cells, with detectors at 2.3, 2.4, and 4.7 µm
+Direct Broadcast: No; Rapid Response processing available
+Prime Contractor: COM DEV
+The Canadian Space Agency provided the instrument
+
+More Information:
+https://www.earthdata.nasa.gov/data/instruments/mopitt
+
+[Summary provided by NASA]
+
+
+Group: Instrument_Details
+   Entry_ID: MOPITT
+   Group: Instrument_Identification
+      Instrument_Category: Earth Remote Sensing Instruments
+      Instrument_Class: Passive Remote Sensing
+      Instrument_Type: Profilers/Sounders
+      Short_Name: MOPITT
+      Long_Name: Measurements Of Pollution In The Troposphere
+   End_Group
+   Group: Instrument_Associated_Sensors
+      Short_Name: ISAMS
+      Short_Name: MAPS
+      Short_Name: SAMS
+      Short_Name: 2.4um Radiometer
+      Short_Name: 4.7um Radiometer
+   End_Group
+   Group: Associated_Platforms
+      Short_Name: TERRA
+   End_Group
+   Group: Spectral_Frequency_Information
+      Number_Channels: 8
+      Spectral_Frequency_Coverage_Range: 4.7 µm, 2.4 µm, 2.3 µm
+   End_Group
+   Online_Resource: https://terra.nasa.gov/about/terra-instruments/mopitt
+   Online_Resource: https://mopitt.physics.utoronto.ca/
+   Online_Resource: https://www.earthdata.nasa.gov/data/instruments/mopitt
    Creation_Date: 2007-02-09
    Group: Instrument_Logistics
       Data_Rate: 28 kbps
@@ -41289,7 +41378,7 @@ End_Group"""@en ;
     skos:prefLabel "MOPITT"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Measurements of Pollution In The Troposphere"@en ] ;
-    gcmd:reference [ gcmd:text "https://terra.nasa.gov/about/terra-instruments/mopitt"@en ] .
+    gcmd:reference [ gcmd:text "https://www.earthdata.nasa.gov/data/instruments/mopitt"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3d179cd8-3d64-47a8-b665-ac1382053aff> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/abc6f016-d1f0-4725-b847-639de054d13f> ;
@@ -60832,10 +60921,10 @@ Group: Platform_Details
 End_Group"""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "Aura"@en ;
-    gcmd:altLabel [ gcmd:category "outdated"@en ;
-            gcmd:text "AURA"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Earth Observing System, Aura"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Earth Observing System, Aura"@en ],
+        [ gcmd:category "outdated"@en ;
+            gcmd:text "AURA"@en ] ;
     gcmd:reference [ gcmd:text "https://aura.gsfc.nasa.gov/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/59dcd28c-9bd0-4b00-a68c-d892c68bf614> a skos:Concept ;
@@ -133580,6 +133669,27 @@ End_Group"""@en ;
     gcmd:resource [ gcmd:type "IMAGE" ;
             gcmd:url "http://saber.larc.nasa.gov/images/saber_inst2.jpg" ] .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/c2e5131f-1404-4652-a754-5f3c8332ef17> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/944b7691-af37-4fb4-9393-c114e7997829> ;
+    skos:changeNote """2025-05-05 09:39:23.0 [tstevens] Insert Concept 
+add broader relation (PICARD [c2e5131f-1404-4652-a754-5f3c8332ef17,2148817] - Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e7997829,2140265]); 
+""",
+        """2025-05-05 09:41:54.0 [tstevens]  
+insert AltLabel (id: null
+category: primary
+text: Pushbroom Imager for Cloud and Aerosol Research and Development
+language code: en); 
+insert Definition (id: null
+text: The Pushbroom Imager for Cloud and Aerosol Research and Development is a V/SWIR imaging spectrometer designed to support atmospheric research. It features an undistorted wide field of view, and 50 meter resolution pixels when flown on the ER-2 aircraft. It is intended to simulate existing satellite imager products (MODIS/VIIRS,) and to validate radiances and geophysical retrievals, with an emphasis on cloud and aerosol science. It will also be used to prototype future imager requirements and algorithms, and to contribute to multi-disciplinary NASA field studies.
+language code: en); 
+""" ;
+    skos:definition "The Pushbroom Imager for Cloud and Aerosol Research and Development is a V/SWIR imaging spectrometer designed to support atmospheric research. It features an undistorted wide field of view, and 50 meter resolution pixels when flown on the ER-2 aircraft. It is intended to simulate existing satellite imager products (MODIS/VIIRS,) and to validate radiances and geophysical retrievals, with an emphasis on cloud and aerosol science. It will also be used to prototype future imager requirements and algorithms, and to contribute to multi-disciplinary NASA field studies."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "PICARD"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Pushbroom Imager for Cloud and Aerosol Research and Development"@en ] ;
+    gcmd:reference [ gcmd:text "https://airbornescience.nasa.gov/instrument/Pushbroom_Imager_for_Cloud_and_Aerosol_Research_and_Development_-_GSFC"@en ] .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/c306d542-9be8-449d-ba33-28ad033c77aa> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/aa35a52f-e3d9-41bd-abd2-ec7e1a8101d1> ;
     skos:changeNote """2024-10-02 09:18:52.0 [tstevens]  
@@ -166132,11 +166242,11 @@ End_Group"""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "GRACE-FO"@en ;
     gcmd:altLabel [ gcmd:category "outdated"@en ;
-            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
-        [ gcmd:category "outdated"@en ;
             gcmd:text "The Gravity Recovery and Climate Experiment Follow-on"@en ],
         [ gcmd:category "primary"@en ;
             gcmd:text "Gravity Recovery and Climate Experiment Follow-On"@en ],
+        [ gcmd:category "outdated"@en ;
+            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
         [ gcmd:category "outdated"@en ;
             gcmd:text "GRACE-II"@en ] .
 
@@ -179268,10 +179378,10 @@ URI: https://earth.esa.int/concept/sentinel-3"""@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Copernicus: Sentinel-3"@en ] ;
     gcmd:reference [ gcmd:text "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3"@en ] ;
-    gcmd:resource [ gcmd:type "image" ;
-            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ],
-        [ gcmd:type "provider" ;
-            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ] .
+    gcmd:resource [ gcmd:type "provider" ;
+            gcmd:url "https://earth.esa.int/web/guest/missions/esa-eo-missions/sentinel-3" ],
+        [ gcmd:type "image" ;
+            gcmd:url "http://www.esa.int/images/sentinel_M.gif" ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/8ce319a5-9b49-49e3-8981-3ce512c7efb0> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/705cd3a0-ea07-40c8-bfa1-9c26f22d13ba> ;
@@ -195066,8 +195176,8 @@ language code: en);
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9728ca44-7bb3-40a4-9dd2-49470ad47fa5> ;
     gcmd:hits "8" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:17" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:37:32" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/verticalresolutionrange" .
 
@@ -199243,8 +199353,8 @@ End_Group"""@en ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
     gcmd:hits "13" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:45" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:38:02" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/PlatformType" .
 
@@ -200366,8 +200476,8 @@ add narrower relation (Lidar/Laser Altimeters [ec76ff59-7450-48a0-9152-7c3531e60
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1499785c-8b74-45f4-bbf7-19d2d4e43b2f> ;
     gcmd:hits "15" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:17" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:37:32" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/horizontalresolutionrange" .
 
@@ -201333,8 +201443,8 @@ Science, Wadsworth Publishing Co., p. 526."""@en ] .
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/6eb7a3bb-2330-4086-9a77-79e46470f1e6> ;
     gcmd:hits "17" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:46" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:38:03" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProductLevelId" .
 
@@ -203330,8 +203440,8 @@ update Definition (Describes the major physical characteristics of water that re
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/e97d2b88-a545-4882-801b-40964a2bc723> ;
     gcmd:hits "21" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:03:16" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:38:33" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/Operations" .
 
@@ -203538,8 +203648,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/27fa831b-f131-4f6d-8020-cc4ab0896249> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:17" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:37:31" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/isotopiccategory" .
 
@@ -203547,8 +203657,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/502ad03c-dba8-4b32-8af5-13fa947c3988> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:17" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:37:32" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/temporalresolutionrange" .
 
@@ -208263,8 +208373,8 @@ add narrower relation (Projection Name [9d37b0bc-31fa-4b2e-b39d-1e19ceefa103,423
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9d37b0bc-31fa-4b2e-b39d-1e19ceefa103> ;
     gcmd:hits "52" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:03:13" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:38:30" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProjectionName" .
 
@@ -211291,6 +211401,9 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1629396
 """,
         """2024-05-08 15:13:05.0 [sritz] Insert Concept 
 add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695] - WAV [ea7c4eed-f0c4-47a6-9ba9-1a4aafee19c4,1678724]); 
+""",
+        """2025-05-07 09:09:28.0 [tstevens] Insert Concept 
+add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple [2e5c9035-16fc-438d-85a4-d7e26e233516,2148818]); 
 """ ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/0225ee3e-c3b1-4a5d-bd22-b36462330b00>,
@@ -211320,6 +211433,7 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695
         <https://gcmd.earthdata.nasa.gov/kms/concept/2a6763f9-0ef9-4879-9b7d-6ce023c75871>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/2c37a52f-c159-4d16-a5c1-36ca833863e1>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/2da9aa88-c3d4-4307-a86f-e048b6297899>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2e5c9035-16fc-438d-85a4-d7e26e233516>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/30ea4e9a-4741-42c9-ad8f-f10930b35294>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/31aab472-99df-43a4-a4bb-09cd087af860>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/3449b74c-42f8-47c5-8d12-fc62bf909749>,
@@ -211454,8 +211568,8 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
     gcmd:hits "154" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:54" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-05-07 11:47:01" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/DataFormat" .
 
@@ -212301,6 +212415,9 @@ add narrower relation (Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-939
 """,
         """2025-01-17 18:26:35.0 [mmorahan] Insert Concept 
 add narrower relation (Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e7997829,1958017] - MWIR [8b23a6ab-24bf-40af-a46b-1a77234af4c6,1966526]); 
+""",
+        """2025-05-05 09:39:23.0 [tstevens] Insert Concept 
+add narrower relation (Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e7997829,2140265] - PICARD [c2e5131f-1404-4652-a754-5f3c8332ef17,2148817]); 
 """ ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/05ddbe55-9c47-4ebb-9f2b-168c8731057e>,
@@ -212456,6 +212573,7 @@ add narrower relation (Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-939
         <https://gcmd.earthdata.nasa.gov/kms/concept/c075c75b-4e28-4ace-9347-f2b8f95db18f>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c087ba2c-2ea3-4907-9477-ad9233c9f921>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c1e7af7f-5610-4714-a79c-b1573a32cf01>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c2e5131f-1404-4652-a754-5f3c8332ef17>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c5058bd9-6183-4c0a-a6aa-611540ba1196>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c6c96647-5ff7-4407-992a-ff343ba158ca>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c6ff04f5-a31f-4c9f-9c37-82f053905736>,
@@ -213933,8 +214051,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/2bc6e372-93d8-4672-96b1-ec159aff2e19> ;
     gcmd:hits "251" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:03:02" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:38:20" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/MeasurementName" .
 
@@ -213942,8 +214060,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
     gcmd:hits "450" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:02:08" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:37:22" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/discipline" .
 
@@ -213951,8 +214069,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12> ;
     gcmd:hits "1246" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:00:09" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-05-01 08:14:38" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/platforms" .
 
@@ -213960,8 +214078,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/b2140059-b3ca-415c-b0a7-3e142783ffe8> ;
     gcmd:hits "2063" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:00:49" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-05-05 09:41:57" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/instruments" .
 
@@ -213969,8 +214087,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1eb0ea0a-312c-4d74-8d42-6f1ad758f999> ;
     gcmd:hits "3623" ;
-    gcmd:keywordVersion "21.1" ;
-    gcmd:schemeVersion "2025-03-28 11:03:17" ;
+    gcmd:keywordVersion "21.2" ;
+    gcmd:schemeVersion "2025-04-25 09:38:34" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/sciencekeywords" .
 
