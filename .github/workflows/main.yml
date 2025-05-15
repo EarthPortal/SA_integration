@@ -26,10 +26,21 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      - name: Run Python script
+      - name: Update GCMD
         run: |
           python scripts/concat_GCMD.py
           python scripts/concat_GCMD.py --all
+      
+      - name: Update NVS vocabularies
+        run: |
+          python3 scripts/nvs_updater.py --input semantic_artefacts/C17.ttl --url https://vocab.nerc.ac.uk/collection/C17/current/?_profile=nvs&_mediatype=text/turtle
+          python3 scripts/nvs_updater.py --input semantic_artefacts/C19.ttl --url https://vocab.nerc.ac.uk/collection/C19/current/?_profile=nvs&_mediatype=text/turtle
+          python3 scripts/nvs_updater.py --input semantic_artefacts/L06.ttl --url https://vocab.nerc.ac.uk/collection/L06/current/?_profile=nvs&_mediatype=text/turtle
+          python3 scripts/nvs_updater.py --input semantic_artefacts/L22.ttl --url https://vocab.nerc.ac.uk/collection/L22/current/?_profile=nvs&_mediatype=text/turtle
+          python3 scripts/nvs_updater.py --input semantic_artefacts/P02.ttl --url https://vocab.nerc.ac.uk/collection/P02/current/?_profile=nvs&_mediatype=text/turtle
+          python3 scripts/nvs_updater.py --input semantic_artefacts/P07.ttl --url https://vocab.nerc.ac.uk/collection/P07/current/?_profile=nvs&_mediatype=text/turtle
+          python3 scripts/nvs_updater.py --input semantic_artefacts/P06.ttl --url https://vocab.nerc.ac.uk/collection/P06/current/?_profile=nvs&_mediatype=text/turtle
+          
 
       # Compare the output file and commit changes if different
       - name: Check if file has been updated and commit changes
