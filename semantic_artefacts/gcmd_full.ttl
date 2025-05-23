@@ -35226,6 +35226,24 @@ language code: en);
     skos:prefLabel "VULNERABILITY LEVELS/INDEX"@en ;
     gcmd:reference [ gcmd:text "Natural Disaster Management Authority"@en ] .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/34033240-5675-4760-9fad-0c0d9b67b7ce> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/a031952d-9f00-4ba5-9966-5f87ab9dfdd4> ;
+    skos:changeNote """2025-05-22 10:02:44.0 [tstevens] Insert Concept 
+add broader relation (Finite Time Lyapunov Exponent [34033240-5675-4760-9fad-0c0d9b67b7ce,2164038] - OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,2160676]); 
+""",
+        """2025-05-22 10:05:06.0 [tstevens]  
+insert Definition (id: null
+text: 
+language code: en); 
+""",
+        """2025-05-22 10:12:45.0 [tstevens]  
+update Definition (The Finite-Time Lyapunov Exponent (FTLE) is a well-established numerical tool for assessing stretching rates of initial parcels of fluid. FTLE is referenced as part of the Global multi-scale Eulerian and Lagrangian oceanic 2 environmental variables for the period 2000-2009.); 
+""" ;
+    skos:definition "The Finite-Time Lyapunov Exponent (FTLE) is a well-established numerical tool for assessing stretching rates of initial parcels of fluid. FTLE is referenced as part of the Global multi-scale Eulerian and Lagrangian oceanic 2 environmental variables for the period 2000-2009."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
+    skos:prefLabel "Finite Time Lyapunov Exponent"@en ;
+    gcmd:reference [ gcmd:text "https://essopenarchive.org/users/798053/articles/1148596-global-multi-scale-eulerian-and-lagrangian-oceanic-environmental-variables-for-the-period-2000-2009"@en ] .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/340b5b79-16c4-4cb7-9476-5cbab3efd834> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/96dcdb2e-3861-4a4b-97f4-764fd117a0f1> ;
     skos:definition """The Atmospheric Explorer-E (AE-E) spacecraft (Designation: 08440 /
@@ -50632,6 +50650,31 @@ lithosphere plates, presumed to indicate relative motion between plates."""@en ;
     skos:prefLabel "PLATE BOUNDARIES"@en ;
     gcmd:reference [ gcmd:text """Jackson, J.A.(1997) Glossary of Geology. 4th ed. Alexandria, VA:American  \r
 Geological Institute.769 p."""@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/4b0e1c87-a60a-400e-807b-4603754925f9> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/e31e924e-9e50-4856-b85d-862ee3d084a4> ;
+    skos:changeNote """2025-05-01 08:11:59.0 [tstevens] Insert Concept 
+add broader relation (GOES-19 [4b0e1c87-a60a-400e-807b-4603754925f9,2148816] - Geostationary Operational Environmental Satellite (GOES) [e31e924e-9e50-4856-b85d-862ee3d084a4,2139143]); 
+""",
+        """2025-05-01 08:14:17.0 [tstevens]  
+insert AltLabel (id: null
+category: primary
+text: Geostationary Operational Environmental Satellite 19
+language code: en); 
+insert Definition (id: null
+text: NOAA’s GOES-19 satellite, the latest and final satellite in NOAA’s GOES-R Series, officially began operations as GOES East on April 2025. This milestone comes after its June 25, 2024 launch, and subsequent post-launch testing of its instruments, systems and data.
+
+GOES-19 replaces GOES-16 as GOES East, positioned 22,236 miles above the equator at 75.2 degrees west longitude. GOES-16 will now become a backup for NOAA’s operational geostationary constellation, maintaining its operational readiness for future use, if needed.
+language code: en); 
+""" ;
+    skos:definition """NOAA’s GOES-19 satellite, the latest and final satellite in NOAA’s GOES-R Series, officially began operations as GOES East on April 2025. This milestone comes after its June 25, 2024 launch, and subsequent post-launch testing of its instruments, systems and data.
+
+GOES-19 replaces GOES-16 as GOES East, positioned 22,236 miles above the equator at 75.2 degrees west longitude. GOES-16 will now become a backup for NOAA’s operational geostationary constellation, maintaining its operational readiness for future use, if needed."""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
+    skos:prefLabel "GOES-19"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Geostationary Operational Environmental Satellite 19"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.goes-r.gov/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/4b12439a-45fc-42fa-ae19-535826f6247b> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3487d350-a5a5-43d9-a60d-c1407dd2f0ce> ;
@@ -68681,6 +68724,27 @@ commerce."""@en ;
     skos:prefLabel "FIELD CROP PRODUCTS"@en ;
     gcmd:reference [ gcmd:text """Adapted from: Herren, R.V., and R.L. Donahue.  1991.  The Agriculture
 Dictionary, Delmar Publishers INC.  Albany, New york.  553pp."""@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/6341b4e2-e5c5-45c7-85df-9363a64d8c4b> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/6c5ca722-0bc7-4ccd-ad24-39b9d8710140> ;
+    skos:changeNote """2025-05-13 08:19:57.0 [tstevens] Insert Concept 
+add broader relation (KPR [6341b4e2-e5c5-45c7-85df-9363a64d8c4b,2164037] - Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,2155237]); 
+""",
+        """2025-05-13 08:20:51.0 [tstevens]  
+insert AltLabel (id: null
+category: primary
+text: Ka-Band Probe Radar-Radiometer
+language code: en); 
+insert Definition (id: null
+text: KPR is a compact Ka-band Probe Radar and radiometer for measuring vertical profiles of reflectivity and Doppler velocity. Key features of the instrument are: a pair of flat-plate array antennas pointing in the zenith and nadir directions, 10 W peak power solid state transmitter amplifier and a low-loss switch network. KPR includes an integrated noise source and ambient load for sky brightness temperature measurements and radiometric calibration of its receiver. The instrument is packaged to install in a standard (6″ ID x 24″ L) PMS probe canister. KPR is also available as a dual-polarized radar with a single antenna in either zenith, nadir, or forward looking configuration.
+language code: en); 
+""" ;
+    skos:definition "KPR is a compact Ka-band Probe Radar and radiometer for measuring vertical profiles of reflectivity and Doppler velocity. Key features of the instrument are: a pair of flat-plate array antennas pointing in the zenith and nadir directions, 10 W peak power solid state transmitter amplifier and a low-loss switch network. KPR includes an integrated noise source and ambient load for sky brightness temperature measurements and radiometric calibration of its receiver. The instrument is packaged to install in a standard (6″ ID x 24″ L) PMS probe canister. KPR is also available as a dual-polarized radar with a single antenna in either zenith, nadir, or forward looking configuration."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:prefLabel "KPR"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Ka-Band Probe Radar-Radiometer"@en ] ;
+    gcmd:reference [ gcmd:text "https://www.prosensing.com/kpr-2/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/63437bc6-f068-4d54-8b46-53e27ab00b8c> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/5b753e40-b3f1-426a-8d92-ffee1d675468> ;
@@ -89118,13 +89182,20 @@ add broader relation (Terra [80eca755-c564-4616-b910-a4c4387b7c54,826435] - Eart
 update Definition (Terra, the flagship of NASA’s Earth Observing System satellites, studies the interactions among Earth's atmosphere, lands, oceans, and radiant energy, providing insight into how the Earth system is changing, revealing humanity's impact on the planet, and providing crucial data about natural hazards such as fires and volcanoes.); 
 update Definition (https://science.nasa.gov/mission/terra/); 
 delete Resource (null); 
+""",
+        """2025-04-28 17:41:17.0 [sritz]  
+update Definition (https://terra.nasa.gov/
+https://science.nasa.gov/mission/terra/
+https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/terra); 
 """ ;
     skos:definition "Terra, the flagship of NASA’s Earth Observing System satellites, studies the interactions among Earth's atmosphere, lands, oceans, and radiant energy, providing insight into how the Earth system is changing, revealing humanity's impact on the planet, and providing crucial data about natural hazards such as fires and volcanoes."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "Terra"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Earth Observing System, Terra (AM-1)"@en ] ;
-    gcmd:reference [ gcmd:text "https://science.nasa.gov/mission/terra/"@en ] .
+    gcmd:reference [ gcmd:text """https://terra.nasa.gov/
+https://science.nasa.gov/mission/terra/
+https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/terra"""@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/810bc419-c1ea-4f38-b05f-6471e3621274> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/59b97a6c-385e-40a2-8422-ecbdb6023c4c> ;
@@ -109780,6 +109851,28 @@ solar irradiance, and shortwave radiation."""@en ;
     gcmd:reference [ gcmd:text """WMO. 1966. International Meteorological Vocabulary. WMO/OMM/BMO, No. 182. TP.
 91., Switzerland. Huschke, R.E., ed. 1959. Glossary of Meteorology, American
 Meteorological Society, Boston, MA."""@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/a110c0bd-0d41-4ac3-8463-16f97c57b266> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/a031952d-9f00-4ba5-9966-5f87ab9dfdd4> ;
+    skos:changeNote """2025-05-22 10:02:58.0 [tstevens] Insert Concept 
+add broader relation (Lagrangian feature [a110c0bd-0d41-4ac3-8463-16f97c57b266,2164039] - OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,2160676]); 
+""",
+        """2025-05-22 10:05:43.0 [tstevens]  
+insert Definition (id: null
+text: 
+language code: en); 
+""",
+        """2025-05-22 10:19:19.0 [tstevens]  
+update Definition (The Lagrangian feature refers to a function that characterizes the state of a physical system. The Lagrangian feature is referenced in the Global multi-scale Eulerian and Lagrangian oceanic
+2 environmental variables for the period 2000-2009. Daily near-global maps of two Lagrangian synoptic quantities (namely the finite-time Lyapunov exponent (FTLE) and dilation 78 rate) are computed here. Both of these variables are derived from the deformation tensor derived from 3-day gridded trajectories 79 computed from 3-hourly archived model velocities from the Hybrid Coordinate Ocean Model (HYCOM, see below) or OSCAR 80 (see below) The HYCOM archive is missing data for several times in the target decade. When the gap is less than 18 hours, 81 integration is performed with the existing data, linearly interpolating across the gap. For longer gaps, linear interpolation is 82 insufficient, and the fields for the affected dates are not computed. Hence, over the computed period, Lagrangian products 83 could not be computed with HYCOM for the period May 21 – 25, 2000.); 
+""",
+        """2025-05-22 10:33:54.0 [tstevens]  
+update Definition (The Lagrangian feature refers to a function that characterizes the state of a physical system. The Lagrangian feature is referenced in the Global multi-scale Eulerian and Lagrangian oceanic 2 environmental variables for the period 2000-2009. Daily near-global maps of two Lagrangian synoptic quantities (namely the finite-time Lyapunov exponent (FTLE) and dilation 78 rate) are computed here. Both of these variables are derived from the deformation tensor derived from 3-day gridded trajectories 79 computed from 3-hourly archived model velocities from the Hybrid Coordinate Ocean Model (HYCOM, see below) or OSCAR 80 (see below) The HYCOM archive is missing data for several times in the target decade. When the gap is less than 18 hours, 81 integration is performed with the existing data, linearly interpolating across the gap. For longer gaps, linear interpolation is 82 insufficient, and the fields for the affected dates are not computed. Hence, over the computed period, Lagrangian products 83 could not be computed with HYCOM for the period May 21 – 25, 2000.); 
+""" ;
+    skos:definition "The Lagrangian feature refers to a function that characterizes the state of a physical system. The Lagrangian feature is referenced in the Global multi-scale Eulerian and Lagrangian oceanic 2 environmental variables for the period 2000-2009. Daily near-global maps of two Lagrangian synoptic quantities (namely the finite-time Lyapunov exponent (FTLE) and dilation 78 rate) are computed here. Both of these variables are derived from the deformation tensor derived from 3-day gridded trajectories 79 computed from 3-hourly archived model velocities from the Hybrid Coordinate Ocean Model (HYCOM, see below) or OSCAR 80 (see below) The HYCOM archive is missing data for several times in the target decade. When the gap is less than 18 hours, 81 integration is performed with the existing data, linearly interpolating across the gap. For longer gaps, linear interpolation is 82 insufficient, and the fields for the affected dates are not computed. Hence, over the computed period, Lagrangian products 83 could not be computed with HYCOM for the period May 21 – 25, 2000."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
+    skos:prefLabel "Lagrangian feature"@en ;
+    gcmd:reference [ gcmd:text "https://essopenarchive.org/users/798053/articles/1148596-global-multi-scale-eulerian-and-lagrangian-oceanic-environmental-variables-for-the-period-2000-2009"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/a1135cb4-a824-4e32-b5b1-7c0633d5f817> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/78c70202-ab05-40d6-90db-563be2a8dc90> ;
@@ -155433,6 +155526,54 @@ add broader relation (TOPEX/POSEIDON [e5eb6afb-5d3e-4767-ad08-5293c5b2d88b,82685
         """2021-11-30 09:37:54.0 [tstevens] Move Concepts 
 delete broader relation (null); 
 add broader relation (TOPEX/POSEIDON [e5eb6afb-5d3e-4767-ad08-5293c5b2d88b,826851] - Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc08731d502b,826121]); 
+""",
+        """2025-04-28 17:55:56.0 [sritz]  
+update Definition (TOPEX/Poseidon was an oceanography mission to monitor global ocean circulation, improve global climate predictions, and monitor events such as El Niño and ocean eddies. These data have greatly enhanced our understanding of the role of the ocean in the formation of Earth?s weather and climate.
+
+Key TOPEX/Poseidon Facts
+Joint with France
+Mass: 2388 kg
+Power: 3,385 W
+Operating Life: Over 13 years, until October 9, 2005
+
+
+Group: Platform_Details
+   Entry_ID: TOPEX/POSEIDON
+   Group: Platform_Identification
+      Platform_Category: Earth Observation Satellites
+      Short_Name: TOPEX/POSEIDON
+      Long_Name: Topography Experiment/Poseidon
+   End_Group
+   Group: Platform_Associated_Instruments
+      Short_Name: SSALT
+      Short_Name: TMR
+      Short_Name: LRA
+      Short_Name: DORIS
+      Short_Name: NRA
+      Short_Name: TRSR
+   End_Group
+   Group: Orbit
+      Orbit_Altitude: 1336 km
+      Orbit_Inclination: 66 degrees
+      Period: 112.4 minutes
+      Repeat_Cycle: 10 days
+      Perigee: 1,331 km (827 mi)
+      Apogee: 1,344 km (835 mi)
+      Orbit_Type: LEO > Low Earth Orbit > Polar Non-Sun-Synchronous
+   End_Group
+   Creation_Date: 2007-04-16
+   Online_Resource:  https://sealevel.jpl.nasa.gov/missions/topex-poseidon/summary/
+   Online_Resource:  https://eospso.nasa.gov/missions/topexposeidon
+   Group: Platform_Logistics
+      Launch_Date: 1992-08-10
+      Launch_Site: KOUROU, FRENCH GUIANA
+      Design_Life: 5 years
+      Primary_Sponsor: NASA
+      Primary_Sponsor: CNES
+   End_Group
+End_Group); 
+update Definition (https://eospso.nasa.gov/missions/topexposeidon); 
+delete Resource (null); 
 """ ;
     skos:definition """TOPEX/Poseidon was an oceanography mission to monitor global ocean circulation, improve global climate predictions, and monitor events such as El Niño and ocean eddies. These data have greatly enhanced our understanding of the role of the ocean in the formation of Earth?s weather and climate.
 
@@ -155468,10 +155609,8 @@ Group: Platform_Details
       Orbit_Type: LEO > Low Earth Orbit > Polar Non-Sun-Synchronous
    End_Group
    Creation_Date: 2007-04-16
-   Online_Resource: http://sealevel.jpl.nasa.gov/mission/topex.html
-   Online_Resource: http://science.hq.nasa.gov/missions/satellite_14.htm
-   Online_Resource: http://topex-www.jpl.nasa.gov/
-   Sample_Image: http://sealevel.jpl.nasa.gov/gallery/spacecraft/gifs/BHT.jpg
+   Online_Resource:  https://sealevel.jpl.nasa.gov/missions/topex-poseidon/summary/
+   Online_Resource:  https://eospso.nasa.gov/missions/topexposeidon
    Group: Platform_Logistics
       Launch_Date: 1992-08-10
       Launch_Site: KOUROU, FRENCH GUIANA
@@ -155484,8 +155623,7 @@ End_Group"""@en ;
     skos:prefLabel "TOPEX/POSEIDON"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Ocean Topography Experiment"@en ] ;
-    gcmd:resource [ gcmd:type "IMAGE" ;
-            gcmd:url "http://sealevel.jpl.nasa.gov/gallery/spacecraft/gifs/BHT.jpg" ] .
+    gcmd:reference [ gcmd:text "https://eospso.nasa.gov/missions/topexposeidon"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e5f94c93-e8af-4919-827f-9059dab9cf27> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/e1f20631-b5b9-438c-b5c2-b1fa0fce100a> ;
@@ -158365,6 +158503,10 @@ generated by: null);
 """,
         """2025-01-22 11:25:23.0 [mmorahan]  
 delete WeightedRelation (null); 
+""",
+        """2025-04-28 17:46:19.0 [sritz]  
+update Definition (https://aqua.nasa.gov/ 
+https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/aqua); 
 """ ;
     skos:definition """Aqua is a major international Earth Science satellite mission centered at NASA. Launched on May 4, 2002, the satellite has six different Earth-observing instruments on board and is named for the large amount of information being obtained about water in the Earth system from its stream of approximately 89 Gigabytes of data a day. The water variables being measured include almost all elements of the water cycle and involve water in its liquid, solid, and vapor forms. Additional variables being measured include radiative energy fluxes, aerosols, vegetation cover on the land, phytoplankton and dissolved organic matter in the oceans, and air, land, and water temperatures.
 
@@ -158427,7 +158569,7 @@ End_Group"""@en ;
         [ gcmd:category "outdated"@en ;
             gcmd:text "AQUA"@en ] ;
     gcmd:reference [ gcmd:text """https://aqua.nasa.gov/ 
-https://global.jaxa.jp/projects/sat/aqua/index.html"""@en ] ;
+https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/aqua"""@en ] ;
     gcmd:resource [ gcmd:type "provider" ;
             gcmd:url "https://aqua.nasa.gov/" ] .
 
@@ -166241,14 +166383,14 @@ Group: Platform_Details
 End_Group"""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
     skos:prefLabel "GRACE-FO"@en ;
-    gcmd:altLabel [ gcmd:category "outdated"@en ;
-            gcmd:text "The Gravity Recovery and Climate Experiment Follow-on"@en ],
-        [ gcmd:category "primary"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
             gcmd:text "Gravity Recovery and Climate Experiment Follow-On"@en ],
         [ gcmd:category "outdated"@en ;
-            gcmd:text "Gravity Recovery and Climate Experiment II"@en ],
+            gcmd:text "GRACE-II"@en ],
         [ gcmd:category "outdated"@en ;
-            gcmd:text "GRACE-II"@en ] .
+            gcmd:text "The Gravity Recovery and Climate Experiment Follow-on"@en ],
+        [ gcmd:category "outdated"@en ;
+            gcmd:text "Gravity Recovery and Climate Experiment II"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/f75f9011-903e-4757-9fcf-fefac2599b59> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/58f39353-7e1c-4884-9501-376cd0377fbf> ;
@@ -195176,8 +195318,8 @@ language code: en);
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9728ca44-7bb3-40a4-9dd2-49470ad47fa5> ;
     gcmd:hits "8" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:37:32" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:19:42" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/verticalresolutionrange" .
 
@@ -199353,8 +199495,8 @@ End_Group"""@en ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
     gcmd:hits "13" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:38:02" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:20:18" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/PlatformType" .
 
@@ -200476,8 +200618,8 @@ add narrower relation (Lidar/Laser Altimeters [ec76ff59-7450-48a0-9152-7c3531e60
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1499785c-8b74-45f4-bbf7-19d2d4e43b2f> ;
     gcmd:hits "15" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:37:32" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:19:42" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/horizontalresolutionrange" .
 
@@ -201443,8 +201585,8 @@ Science, Wadsworth Publishing Co., p. 526."""@en ] .
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/6eb7a3bb-2330-4086-9a77-79e46470f1e6> ;
     gcmd:hits "17" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:38:03" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:20:19" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProductLevelId" .
 
@@ -201656,38 +201798,6 @@ measurable characteristics of underwater light."""@en ;
         <https://gcmd.earthdata.nasa.gov/kms/concept/ea4a3a46-e75b-459f-bea4-381620ac13c8>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ee8e806a-fbb0-41d7-88a4-a6c93e0dd548> ;
     skos:prefLabel "LIFE SCIENCES"@en .
-
-<https://gcmd.earthdata.nasa.gov/kms/concept/a031952d-9f00-4ba5-9966-5f87ab9dfdd4> a skos:Concept ;
-    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/91697b7d-8f2b-4954-850e-61d5f61c867d> ;
-    skos:changeNote """2021-05-14 09:10:44.0 [tstevens] Insert Concept 
-add narrower relation (OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,603790] - OCEAN MASS [d96bcb09-f240-41cc-84d0-6af9fb3509de,606941]); 
-""",
-        """2021-10-20 09:23:40.0 [tstevens] Insert Concept 
-add narrower relation (OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,775052] - SUBDUCTION [c6f748f7-3a2a-4c76-90bd-8e8d7a691b21,778211]); 
-""" ;
-    skos:definition """Pertaining to or measuring the movement of water in the marine
-environment. Variables include types of motion, as well as, circulation
-features. Proper names of oceanic currents are not included."""@en ;
-    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
-    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/03fbea0a-74b9-4c78-8752-a588cff27f17>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0cb7f2c6-5e99-4781-8d4f-19ecbad2e2e0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/10a9c153-f37d-48fe-920d-c790d946ab07>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/113edd07-7b1a-4082-b054-b58d3f23b93a>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/13927300-c59c-491a-91f3-f1540bcb2d8d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/22b339b5-1af5-46e3-8191-d93729001eeb>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/48ec6449-373c-41f6-8a61-8f1e9ed95737>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/510c5f78-e19e-4ce4-b59a-8937aeb84631>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/55715ed3-471e-46a8-97b6-b463708a2cbe>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6fe4680b-96e8-4304-ab32-c17a0769932c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/75ab3537-34b1-4025-b758-7296626079ba>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/81f51367-8467-4183-baea-6b526780fcc7>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/aa1bc71c-daeb-401e-9e29-ebde975482cf>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/b9f343a1-0b8d-4e88-91bc-21f5d551963f>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/bdd42024-d1a4-4fb2-a16a-06ac0cc1dedc>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/c6f748f7-3a2a-4c76-90bd-8e8d7a691b21>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/d96bcb09-f240-41cc-84d0-6af9fb3509de>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/fc0a6bb2-27f0-48e8-89f1-ebfc7ccd4823> ;
-    skos:prefLabel "OCEAN CIRCULATION"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/b7d562cf-9b9b-4461-900b-50423a8c4d29> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/c47f6052-634e-40ef-a5ac-13f69f6f4c2a> ;
@@ -202496,54 +202606,6 @@ wave-cut cliffs, beaches, and wave-cut benches."""@en ;
     skos:prefLabel "COASTAL PROCESSES"@en ;
     gcmd:reference [ gcmd:text "Adapted from the Glossary of Coastal Terminology, NOAA Coastal Services Center and Washington State Department of Ecology, \"http://www.csc.noaa.gov/text/glossary.html#glossary\" and from Thurman, Harold V., Essentials of Oceanography, 5th Ed.  Prentice Hall:  Upper Saddle River, NJ, 1996."@en ] .
 
-<https://gcmd.earthdata.nasa.gov/kms/concept/e31e924e-9e50-4856-b85d-862ee3d084a4> a skos:Concept ;
-    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3466eed1-2fbb-49bf-ab0b-dc08731d502b> ;
-    skos:changeNote """2018-03-02 10:41:19.0 [tstevens] Insert Concept 
-add narrower relation (GOES (Geostationary Operational Environmental Satellite) [e31e924e-9e50-4856-b85d-862ee3d084a4,288727] - GOES-17 [bec0b215-7fe0-46e8-855a-d1807779f004,310619]); 
-""",
-        """2021-12-02 09:06:04.0 [tstevens]  
-update PrefLabel (Geostationary Operational Environmental Satellite (GOES)); 
-""",
-        """2022-03-02 13:58:02.0 [tstevens]  
-insert Definition (id: null
-text: The Geostationary Operational Environmental Satellite Program (GOES) is a joint effort of NASA and the National Oceanic and Atmospheric Administration (NOAA).
-
-The GOES system currently consists of GOES-13, operating as GOES-East, in the eastern part of the constellation at 75 degrees west longitude and GOES-15, operating as GOES-West, at 135 degrees west longitude. The GOES-R series will maintain the two-satellite system implemented by the current GOES series. However, the locations of the operational GOES-R satellites will be 75 degrees west longitude and 137 degrees west longitude. The latter is a shift in order to eliminate conflicts with other satellite systems. The GOES-R series operational lifetime extends through December 2036.
-
-These spacecraft help meteorologists observe and predict local weather events, including thunderstorms, tornadoes, fog, hurricanes, flash floods and other severe weather. In addition, GOES observations have proven helpful in monitoring dust storms, volcanic eruptions and forest fires.
-language code: en); 
-""",
-        """2022-09-30 13:40:53.0 [sritz] Insert Concept 
-add narrower relation (Geostationary Operational Environmental Satellite (GOES) [e31e924e-9e50-4856-b85d-862ee3d084a4,1060892] - GOES-18 [1d7d9f4c-18f5-49f2-bb53-1fb93efbbbc3,1070162]); 
-""" ;
-    skos:definition """The Geostationary Operational Environmental Satellite Program (GOES) is a joint effort of NASA and the National Oceanic and Atmospheric Administration (NOAA).
-
-The GOES system currently consists of GOES-13, operating as GOES-East, in the eastern part of the constellation at 75 degrees west longitude and GOES-15, operating as GOES-West, at 135 degrees west longitude. The GOES-R series will maintain the two-satellite system implemented by the current GOES series. However, the locations of the operational GOES-R satellites will be 75 degrees west longitude and 137 degrees west longitude. The latter is a shift in order to eliminate conflicts with other satellite systems. The GOES-R series operational lifetime extends through December 2036.
-
-These spacecraft help meteorologists observe and predict local weather events, including thunderstorms, tornadoes, fog, hurricanes, flash floods and other severe weather. In addition, GOES observations have proven helpful in monitoring dust storms, volcanic eruptions and forest fires."""@en ;
-    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
-    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/1d7d9f4c-18f5-49f2-bb53-1fb93efbbbc3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/2304694e-c900-4d63-b458-80163d5dcd86>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/2b10bfcf-f7ab-4ce1-9a4e-0b6f397a7ae0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/2c8920b1-3ed2-417f-90d7-f94a387c77ac>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3c57a713-8cfe-4e65-8d6c-d30a59786313>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/54aa88e0-f005-4525-bb26-1b8ed615b5f2>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/59b9924a-a10f-4205-9051-ed611164fd97>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/64fabc3c-0684-4325-9831-bf7cc461684d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6b9ee582-1641-4f3b-8ce2-22ad3aae93fa>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6decd6f7-1572-4716-908e-53320218efa1>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/93ca4f6a-2552-408b-adc2-2a3ca64a4a66>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9a5e161d-6979-4c0f-a6bd-7d3c268fef18>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9dfc4f09-66e5-4e70-b4f9-72f52855c9c3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/a93b5d7d-5bf4-49d3-b05f-b5f0b55b1bf6>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/bec0b215-7fe0-46e8-855a-d1807779f004>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/cbc78fde-7247-4906-b553-92c125fd848d>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/cc07c141-768f-4e46-a222-5a423b6018a0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/e9415082-d8d2-4073-ba8a-fe22a2c521b6>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/eb1b830e-d451-46df-a8c6-4538ed9a5960> ;
-    skos:prefLabel "Geostationary Operational Environmental Satellite (GOES)"@en ;
-    gcmd:reference [ gcmd:text "https://www.nasa.gov/content/goes-overview/index.html"@en ] .
-
 <https://gcmd.earthdata.nasa.gov/kms/concept/3c78951a-0293-4fb0-baff-ec7372fe784d> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/b5cb1fab-7281-478f-bb3b-ff04f900b3fc> ;
     skos:changeNote """2013-02-18 10:18:32.0 [tbs1979] Move Concepts 
@@ -202657,6 +202719,46 @@ the erosive action of meltwater streams."""@en ;
     skos:prefLabel "GLACIAL LANDFORMS"@en ;
     gcmd:reference [ gcmd:text """Adapted from Jackson, J.A. (1997) <i>Glossary of Geology.</i> 4th ed.
 Alexandria, VA: American Geological Institute. 769 p."""@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/a031952d-9f00-4ba5-9966-5f87ab9dfdd4> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/91697b7d-8f2b-4954-850e-61d5f61c867d> ;
+    skos:changeNote """2021-05-14 09:10:44.0 [tstevens] Insert Concept 
+add narrower relation (OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,603790] - OCEAN MASS [d96bcb09-f240-41cc-84d0-6af9fb3509de,606941]); 
+""",
+        """2021-10-20 09:23:40.0 [tstevens] Insert Concept 
+add narrower relation (OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,775052] - SUBDUCTION [c6f748f7-3a2a-4c76-90bd-8e8d7a691b21,778211]); 
+""",
+        """2025-05-22 10:02:44.0 [tstevens] Insert Concept 
+add narrower relation (OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,2160676] - Finite Time Lyapunov Exponent [34033240-5675-4760-9fad-0c0d9b67b7ce,2164038]); 
+""",
+        """2025-05-22 10:02:58.0 [tstevens] Insert Concept 
+add narrower relation (OCEAN CIRCULATION [a031952d-9f00-4ba5-9966-5f87ab9dfdd4,2160676] - Lagrangian feature [a110c0bd-0d41-4ac3-8463-16f97c57b266,2164039]); 
+""" ;
+    skos:definition """Pertaining to or measuring the movement of water in the marine
+environment. Variables include types of motion, as well as, circulation
+features. Proper names of oceanic currents are not included."""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
+    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/03fbea0a-74b9-4c78-8752-a588cff27f17>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0cb7f2c6-5e99-4781-8d4f-19ecbad2e2e0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/10a9c153-f37d-48fe-920d-c790d946ab07>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/113edd07-7b1a-4082-b054-b58d3f23b93a>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/13927300-c59c-491a-91f3-f1540bcb2d8d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/22b339b5-1af5-46e3-8191-d93729001eeb>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/34033240-5675-4760-9fad-0c0d9b67b7ce>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/48ec6449-373c-41f6-8a61-8f1e9ed95737>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/510c5f78-e19e-4ce4-b59a-8937aeb84631>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/55715ed3-471e-46a8-97b6-b463708a2cbe>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6fe4680b-96e8-4304-ab32-c17a0769932c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/75ab3537-34b1-4025-b758-7296626079ba>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/81f51367-8467-4183-baea-6b526780fcc7>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/a110c0bd-0d41-4ac3-8463-16f97c57b266>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/aa1bc71c-daeb-401e-9e29-ebde975482cf>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b9f343a1-0b8d-4e88-91bc-21f5d551963f>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/bdd42024-d1a4-4fb2-a16a-06ac0cc1dedc>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c6f748f7-3a2a-4c76-90bd-8e8d7a691b21>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/d96bcb09-f240-41cc-84d0-6af9fb3509de>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/fc0a6bb2-27f0-48e8-89f1-ebfc7ccd4823> ;
+    skos:prefLabel "OCEAN CIRCULATION"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/b56d53ea-511f-486f-b917-26000794ab51> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ffa3a835-903a-462a-adfb-fc0d25ba07d0> ;
@@ -202796,6 +202898,58 @@ generated by: null);
         <https://gcmd.earthdata.nasa.gov/kms/concept/fcbf8f96-ac53-41b6-9c98-a87425a4ec82> ;
     skos:prefLabel "GLACIAL LANDFORMS"@en ;
     gcmd:reference [ gcmd:text "National Snow and Ice Data Center"@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/e31e924e-9e50-4856-b85d-862ee3d084a4> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3466eed1-2fbb-49bf-ab0b-dc08731d502b> ;
+    skos:changeNote """2018-03-02 10:41:19.0 [tstevens] Insert Concept 
+add narrower relation (GOES (Geostationary Operational Environmental Satellite) [e31e924e-9e50-4856-b85d-862ee3d084a4,288727] - GOES-17 [bec0b215-7fe0-46e8-855a-d1807779f004,310619]); 
+""",
+        """2021-12-02 09:06:04.0 [tstevens]  
+update PrefLabel (Geostationary Operational Environmental Satellite (GOES)); 
+""",
+        """2022-03-02 13:58:02.0 [tstevens]  
+insert Definition (id: null
+text: The Geostationary Operational Environmental Satellite Program (GOES) is a joint effort of NASA and the National Oceanic and Atmospheric Administration (NOAA).
+
+The GOES system currently consists of GOES-13, operating as GOES-East, in the eastern part of the constellation at 75 degrees west longitude and GOES-15, operating as GOES-West, at 135 degrees west longitude. The GOES-R series will maintain the two-satellite system implemented by the current GOES series. However, the locations of the operational GOES-R satellites will be 75 degrees west longitude and 137 degrees west longitude. The latter is a shift in order to eliminate conflicts with other satellite systems. The GOES-R series operational lifetime extends through December 2036.
+
+These spacecraft help meteorologists observe and predict local weather events, including thunderstorms, tornadoes, fog, hurricanes, flash floods and other severe weather. In addition, GOES observations have proven helpful in monitoring dust storms, volcanic eruptions and forest fires.
+language code: en); 
+""",
+        """2022-09-30 13:40:53.0 [sritz] Insert Concept 
+add narrower relation (Geostationary Operational Environmental Satellite (GOES) [e31e924e-9e50-4856-b85d-862ee3d084a4,1060892] - GOES-18 [1d7d9f4c-18f5-49f2-bb53-1fb93efbbbc3,1070162]); 
+""",
+        """2025-05-01 08:11:59.0 [tstevens] Insert Concept 
+add narrower relation (Geostationary Operational Environmental Satellite (GOES) [e31e924e-9e50-4856-b85d-862ee3d084a4,2139143] - GOES-19 [4b0e1c87-a60a-400e-807b-4603754925f9,2148816]); 
+""" ;
+    skos:definition """The Geostationary Operational Environmental Satellite Program (GOES) is a joint effort of NASA and the National Oceanic and Atmospheric Administration (NOAA).
+
+The GOES system currently consists of GOES-13, operating as GOES-East, in the eastern part of the constellation at 75 degrees west longitude and GOES-15, operating as GOES-West, at 135 degrees west longitude. The GOES-R series will maintain the two-satellite system implemented by the current GOES series. However, the locations of the operational GOES-R satellites will be 75 degrees west longitude and 137 degrees west longitude. The latter is a shift in order to eliminate conflicts with other satellite systems. The GOES-R series operational lifetime extends through December 2036.
+
+These spacecraft help meteorologists observe and predict local weather events, including thunderstorms, tornadoes, fog, hurricanes, flash floods and other severe weather. In addition, GOES observations have proven helpful in monitoring dust storms, volcanic eruptions and forest fires."""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> ;
+    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/1d7d9f4c-18f5-49f2-bb53-1fb93efbbbc3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2304694e-c900-4d63-b458-80163d5dcd86>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2b10bfcf-f7ab-4ce1-9a4e-0b6f397a7ae0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2c8920b1-3ed2-417f-90d7-f94a387c77ac>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3c57a713-8cfe-4e65-8d6c-d30a59786313>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/4b0e1c87-a60a-400e-807b-4603754925f9>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/54aa88e0-f005-4525-bb26-1b8ed615b5f2>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/59b9924a-a10f-4205-9051-ed611164fd97>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/64fabc3c-0684-4325-9831-bf7cc461684d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6b9ee582-1641-4f3b-8ce2-22ad3aae93fa>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6decd6f7-1572-4716-908e-53320218efa1>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/93ca4f6a-2552-408b-adc2-2a3ca64a4a66>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9a5e161d-6979-4c0f-a6bd-7d3c268fef18>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9dfc4f09-66e5-4e70-b4f9-72f52855c9c3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/a93b5d7d-5bf4-49d3-b05f-b5f0b55b1bf6>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/bec0b215-7fe0-46e8-855a-d1807779f004>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/cbc78fde-7247-4906-b553-92c125fd848d>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/cc07c141-768f-4e46-a222-5a423b6018a0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/e9415082-d8d2-4073-ba8a-fe22a2c521b6>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/eb1b830e-d451-46df-a8c6-4538ed9a5960> ;
+    skos:prefLabel "Geostationary Operational Environmental Satellite (GOES)"@en ;
+    gcmd:reference [ gcmd:text "https://www.nasa.gov/content/goes-overview/index.html"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e8baa3a4-ef5a-455a-bf25-d61e59fc9bb3> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3466eed1-2fbb-49bf-ab0b-dc08731d502b> ;
@@ -203440,8 +203594,8 @@ update Definition (Describes the major physical characteristics of water that re
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/e97d2b88-a545-4882-801b-40964a2bc723> ;
     gcmd:hits "21" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:38:33" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:20:50" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/Operations" .
 
@@ -203648,8 +203802,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/27fa831b-f131-4f6d-8020-cc4ab0896249> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:37:31" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:19:41" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/isotopiccategory" .
 
@@ -203657,8 +203811,8 @@ add narrower relation (Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c3
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/502ad03c-dba8-4b32-8af5-13fa947c3988> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:37:32" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:19:42" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/temporalresolutionrange" .
 
@@ -208373,8 +208527,8 @@ add narrower relation (Projection Name [9d37b0bc-31fa-4b2e-b39d-1e19ceefa103,423
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9d37b0bc-31fa-4b2e-b39d-1e19ceefa103> ;
     gcmd:hits "52" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:38:30" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:20:47" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/ProjectionName" .
 
@@ -208616,172 +208770,6 @@ add narrower relation (Surface [59b97a6c-385e-40a2-8422-ecbdb6023c4c,1340598] - 
     skos:prefLabel "Surface"@en ;
     gcmd:reference [ gcmd:text "NOAA"@en ] .
 
-<https://gcmd.earthdata.nasa.gov/kms/concept/6c5ca722-0bc7-4ccd-ad24-39b9d8710140> a skos:Concept ;
-    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/662347ea-36e2-42fe-9189-f22eb8f022ee> ;
-    skos:changeNote """2012-11-16 16:24:21.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MRR [137c2486-95ec-4bb9-9ac9-da5a2b2c30ab,81997]); 
-""",
-        """2012-11-16 16:28:06.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MRR [4046a144-ca32-4207-8831-31b8d780ace2,82001]); 
-""",
-        """2012-11-20 12:02:26.0 [gee-cee] Remove Concepts 
-delete narrower relation (null); 
-""",
-        """2013-06-17 10:24:09.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - WCR [f41e9e06-c769-46ed-a79c-2ff2184eee4a,105241]); 
-""",
-        """2013-06-17 10:24:34.0 [saritz] Move Concepts 
-delete narrower relation (null); 
-""",
-        """2013-08-29 16:38:01.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - POSS [0fb52f3d-d45a-4c77-8159-c5f07e042fba,105777]); 
-""",
-        """2013-10-04 15:30:31.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - LAP-3000 [d0e9ba6a-81e3-459b-87c3-20d00039c0de,105873]); 
-""",
-        """2013-11-19 16:02:56.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - WISE [ab8905ed-90e2-4b71-8252-f859fc9e9d56,105933]); 
-""",
-        """2013-11-19 16:06:17.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MCoRDS [5a8adb1b-9f47-460c-8f5a-c570b8b6eb0c,105937]); 
-""",
-        """2013-11-19 16:07:13.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - HiCARS [1fda092b-8f01-4810-a8e5-284efa1210c8,105941]); 
-""",
-        """2013-11-19 16:09:56.0 [aaleman] Remove Concepts 
-delete narrower relation (null); 
-""",
-        """2013-11-19 16:10:14.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - WISE [3c769989-de85-49c0-820e-8870b39ce3e3,105945]); 
-""",
-        """2013-12-19 12:35:06.0 [tbs1979] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - W-Band Radar [dc5ee11d-a90e-4a70-9bcb-93d106c1583f,106045]); 
-""",
-        """2013-12-20 07:05:08.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - ACCUMULATION RADAR [b7e9c174-3993-434f-becd-c2ee25946aa2,106057]); 
-""",
-        """2013-12-20 07:08:59.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - SNOW RADAR [6cef88d9-ea3c-4f61-80c2-18b48affc583,106065]); 
-""",
-        """2014-02-09 20:16:17.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - D3R [08ec5716-b5d9-4e15-8d4a-c699f6e89283,106145]); 
-""",
-        """2014-04-09 06:19:58.0 [128.183.164.42] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MCoRDS [4cc79398-327b-4301-b81c-4edf718da8d3,106287]); 
-""",
-        """2014-04-09 06:20:48.0 [128.183.164.42] Remove Concepts 
-delete narrower relation (null); 
-""",
-        """2015-05-20 15:28:49.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - ICORDS [1b358511-67f9-43cb-85a3-7201f1d787db,157937]); 
-""",
-        """2015-05-20 15:33:55.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - ACORDS [41d3528f-8029-4b1a-ae82-9279c7466219,157941]); 
-""",
-        """2015-05-21 12:53:14.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - MCRDS [bd06c523-4e22-4cd4-975a-ba7bbab25ad0,157961]); 
-""",
-        """2015-10-02 13:51:26.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - SAPHIR [2671d26f-0624-466d-8b22-d0e4b1cf8b4b,158417]); 
-""",
-        """2015-10-02 14:15:44.0 [saritz] Remove Concepts 
-delete narrower relation (null); 
-""",
-        """2015-12-29 11:42:30.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - HiCARS1 [d840d468-4709-418d-b56c-3ea66b5fe1fd,158631]); 
-""",
-        """2015-12-29 11:42:54.0 [aaleman] Remove Concepts 
-delete narrower relation (null); 
-""",
-        """2016-09-09 15:53:02.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,259115] - PR-2 [734f3eb4-2be6-4da4-8751-62f7b6d7eff4,277839]); 
-""",
-        """2016-09-14 15:46:12.0 [saritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,259115] - EXRAD [a212d36d-2a4e-473f-b16a-6e2104b9dd8f,277847]); 
-""",
-        """2017-06-07 09:44:17.0 [sritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,290203] - APR-3 [abe7e571-142e-4ca1-96d9-d56b9a5311e2,309633]); 
-""",
-        """2017-07-28 10:12:22.0 [aaleman] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,290203] - HICARS1 [12f1957f-f37b-43d6-a962-42f3422f5806,309863]); 
-""",
-        """2017-08-10 14:57:12.0 [sritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,290203] - X-POW [2e3fe1ff-8b6e-42df-9b4f-e7a13d9577f0,309867]); 
-""",
-        """2018-04-05 14:51:32.0 [sritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,347533] - MASC [f59652c5-eaa8-49c0-b65f-a0166048b1dd,367479]); 
-""",
-        """2019-12-19 15:43:09.0 [sritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,544471] - DDMI [640cd1f2-73c3-42bd-9fd4-527f61f533a5,559577]); 
-""",
-        """2020-08-12 15:39:03.0 [sritz] Insert Concept 
-add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,544471] - SEA-POL [09dc5c8f-ab07-412e-9f0d-652239cfbafb,560598]); 
-""",
-        """2024-12-04 10:32:22.0 [tstevens]  
-insert Definition (id: null
-text: Active sensors that use radar pulses to image the subsurface of planets and the Earth.
-language code: en); 
-""" ;
-    skos:definition "Active sensors that use radar pulses to image the subsurface of planets and the Earth."@en ;
-    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/08ec5716-b5d9-4e15-8d4a-c699f6e89283>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/09dc5c8f-ab07-412e-9f0d-652239cfbafb>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0a63da59-87bd-4294-a51f-0f21baf20429>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0b748b90-fe0d-4179-9bdc-d65cd5cadaf4>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/0fb52f3d-d45a-4c77-8159-c5f07e042fba>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/12f1957f-f37b-43d6-a962-42f3422f5806>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/1b358511-67f9-43cb-85a3-7201f1d787db>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/1fda092b-8f01-4810-a8e5-284efa1210c8>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/20186f0a-7a29-4868-9ddd-2bb332b68505>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/240304d3-2cf8-40e0-b65f-670be88fdf4e>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/24c6b787-4d3d-4252-a9b8-b99aeca73c00>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/2e3fe1ff-8b6e-42df-9b4f-e7a13d9577f0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/32fabcaa-08a3-4660-8dcf-882211b33881>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/34f702ec-4273-4281-a2d5-5b80459fbc3b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/34f982b6-85ed-4a23-a886-b5c88a16de9b>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3604e8a3-6e1e-4f11-9b33-1d9b3ddfe6ae>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3c2d43d1-8017-4616-8075-3678e66b7513>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3c769989-de85-49c0-820e-8870b39ce3e3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3d040403-e6ab-4e42-b54a-14cce4033f6e>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/3f90fc9d-03a6-4297-a887-5295b2bd6ff9>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/4046a144-ca32-4207-8831-31b8d780ace2>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/41d3528f-8029-4b1a-ae82-9279c7466219>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/440da7dc-72d9-4963-8dc1-2084d1a51294>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/509e6d6f-eb4e-4c4b-807a-617610eace3a>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/51b9980d-4225-47bd-92d9-3268f023791f>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/56d66737-1ad5-4f21-bb87-bb8b5c0736fa>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/5a8adb1b-9f47-460c-8f5a-c570b8b6eb0c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/62309600-7c79-4ae1-a232-9f968bd81ac3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/62cd7e76-9926-43e9-aabb-71f44ad367eb>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/640cd1f2-73c3-42bd-9fd4-527f61f533a5>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6cef88d9-ea3c-4f61-80c2-18b48affc583>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/6d513201-491c-4359-8e8f-20acb6a6537e>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/734f3eb4-2be6-4da4-8751-62f7b6d7eff4>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/7b04b051-2ec0-47e4-854e-22ce47ee872c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9c01c5b0-bc0f-404f-9ae4-8e9012ed6d60>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9c131051-30ac-4346-9e5c-38516ca69350>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/9f26c022-321a-4523-b30f-0406377fe9f3>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/a212d36d-2a4e-473f-b16a-6e2104b9dd8f>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/aa8a18c9-5cc7-462c-9841-91775178a58c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/abe7e571-142e-4ca1-96d9-d56b9a5311e2>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ae74b4c1-18e6-4079-b740-d65a6394ba37>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/aefa950a-e310-4ae3-814e-38b4aa0aec04>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/b3977ebf-401c-4731-be75-4184a4b4afd1>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/b7e9c174-3993-434f-becd-c2ee25946aa2>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/ba3de3fc-b958-4f98-94a0-e322a290cc1c>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/bd06c523-4e22-4cd4-975a-ba7bbab25ad0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/bd87a5d1-fe86-4e45-8beb-d8be5dc35677>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/c9443a85-ca1d-4220-be2f-fa4c8e09b0f0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/d0c0ab2c-14a4-41a0-8d9b-ac1c13312b40>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/d0e9ba6a-81e3-459b-87c3-20d00039c0de>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/dc5ee11d-a90e-4a70-9bcb-93d106c1583f>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/eb04b68b-0652-4881-a933-c84602364ee5>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/f343a9c5-994a-4447-8634-28d2fe2227b0>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/f39fb827-591d-4153-81aa-30b78f7389d8>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/f59652c5-eaa8-49c0-b65f-a0166048b1dd> ;
-    skos:prefLabel "Radar Sounders"@en ;
-    gcmd:reference [ gcmd:text "https://ieeexplore.ieee.org/document/9884343"@en ] .
-
 <https://gcmd.earthdata.nasa.gov/kms/concept/0ec10fd9-492c-498a-b6d8-e2840cc3643b> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/3850efdc-1839-4881-a7c0-347b57587850> ;
     skos:changeNote """2021-11-17 13:44:14.0 [tstevens] Insert Concept 
@@ -209020,6 +209008,176 @@ language code: en);
         <https://gcmd.earthdata.nasa.gov/kms/concept/feb61055-a920-4fe3-90a2-caac0c4fd08a> ;
     skos:prefLabel "Permanent Land Sites"@en ;
     gcmd:reference [ gcmd:text "Allaby M., 2008. Dictionary of Earth Sciences, Oxford University Press, ISBN 978-0-19-921194-4"@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/6c5ca722-0bc7-4ccd-ad24-39b9d8710140> a skos:Concept ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/662347ea-36e2-42fe-9189-f22eb8f022ee> ;
+    skos:changeNote """2012-11-16 16:24:21.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MRR [137c2486-95ec-4bb9-9ac9-da5a2b2c30ab,81997]); 
+""",
+        """2012-11-16 16:28:06.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MRR [4046a144-ca32-4207-8831-31b8d780ace2,82001]); 
+""",
+        """2012-11-20 12:02:26.0 [gee-cee] Remove Concepts 
+delete narrower relation (null); 
+""",
+        """2013-06-17 10:24:09.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - WCR [f41e9e06-c769-46ed-a79c-2ff2184eee4a,105241]); 
+""",
+        """2013-06-17 10:24:34.0 [saritz] Move Concepts 
+delete narrower relation (null); 
+""",
+        """2013-08-29 16:38:01.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - POSS [0fb52f3d-d45a-4c77-8159-c5f07e042fba,105777]); 
+""",
+        """2013-10-04 15:30:31.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - LAP-3000 [d0e9ba6a-81e3-459b-87c3-20d00039c0de,105873]); 
+""",
+        """2013-11-19 16:02:56.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - WISE [ab8905ed-90e2-4b71-8252-f859fc9e9d56,105933]); 
+""",
+        """2013-11-19 16:06:17.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MCoRDS [5a8adb1b-9f47-460c-8f5a-c570b8b6eb0c,105937]); 
+""",
+        """2013-11-19 16:07:13.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - HiCARS [1fda092b-8f01-4810-a8e5-284efa1210c8,105941]); 
+""",
+        """2013-11-19 16:09:56.0 [aaleman] Remove Concepts 
+delete narrower relation (null); 
+""",
+        """2013-11-19 16:10:14.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - WISE [3c769989-de85-49c0-820e-8870b39ce3e3,105945]); 
+""",
+        """2013-12-19 12:35:06.0 [tbs1979] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - W-Band Radar [dc5ee11d-a90e-4a70-9bcb-93d106c1583f,106045]); 
+""",
+        """2013-12-20 07:05:08.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - ACCUMULATION RADAR [b7e9c174-3993-434f-becd-c2ee25946aa2,106057]); 
+""",
+        """2013-12-20 07:08:59.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - SNOW RADAR [6cef88d9-ea3c-4f61-80c2-18b48affc583,106065]); 
+""",
+        """2014-02-09 20:16:17.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - D3R [08ec5716-b5d9-4e15-8d4a-c699f6e89283,106145]); 
+""",
+        """2014-04-09 06:19:58.0 [128.183.164.42] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,74849] - MCoRDS [4cc79398-327b-4301-b81c-4edf718da8d3,106287]); 
+""",
+        """2014-04-09 06:20:48.0 [128.183.164.42] Remove Concepts 
+delete narrower relation (null); 
+""",
+        """2015-05-20 15:28:49.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - ICORDS [1b358511-67f9-43cb-85a3-7201f1d787db,157937]); 
+""",
+        """2015-05-20 15:33:55.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - ACORDS [41d3528f-8029-4b1a-ae82-9279c7466219,157941]); 
+""",
+        """2015-05-21 12:53:14.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - MCRDS [bd06c523-4e22-4cd4-975a-ba7bbab25ad0,157961]); 
+""",
+        """2015-10-02 13:51:26.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - SAPHIR [2671d26f-0624-466d-8b22-d0e4b1cf8b4b,158417]); 
+""",
+        """2015-10-02 14:15:44.0 [saritz] Remove Concepts 
+delete narrower relation (null); 
+""",
+        """2015-12-29 11:42:30.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,144655] - HiCARS1 [d840d468-4709-418d-b56c-3ea66b5fe1fd,158631]); 
+""",
+        """2015-12-29 11:42:54.0 [aaleman] Remove Concepts 
+delete narrower relation (null); 
+""",
+        """2016-09-09 15:53:02.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,259115] - PR-2 [734f3eb4-2be6-4da4-8751-62f7b6d7eff4,277839]); 
+""",
+        """2016-09-14 15:46:12.0 [saritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,259115] - EXRAD [a212d36d-2a4e-473f-b16a-6e2104b9dd8f,277847]); 
+""",
+        """2017-06-07 09:44:17.0 [sritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,290203] - APR-3 [abe7e571-142e-4ca1-96d9-d56b9a5311e2,309633]); 
+""",
+        """2017-07-28 10:12:22.0 [aaleman] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,290203] - HICARS1 [12f1957f-f37b-43d6-a962-42f3422f5806,309863]); 
+""",
+        """2017-08-10 14:57:12.0 [sritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,290203] - X-POW [2e3fe1ff-8b6e-42df-9b4f-e7a13d9577f0,309867]); 
+""",
+        """2018-04-05 14:51:32.0 [sritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,347533] - MASC [f59652c5-eaa8-49c0-b65f-a0166048b1dd,367479]); 
+""",
+        """2019-12-19 15:43:09.0 [sritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,544471] - DDMI [640cd1f2-73c3-42bd-9fd4-527f61f533a5,559577]); 
+""",
+        """2020-08-12 15:39:03.0 [sritz] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,544471] - SEA-POL [09dc5c8f-ab07-412e-9f0d-652239cfbafb,560598]); 
+""",
+        """2024-12-04 10:32:22.0 [tstevens]  
+insert Definition (id: null
+text: Active sensors that use radar pulses to image the subsurface of planets and the Earth.
+language code: en); 
+""",
+        """2025-05-13 08:19:57.0 [tstevens] Insert Concept 
+add narrower relation (Radar Sounders [6c5ca722-0bc7-4ccd-ad24-39b9d8710140,2155237] - KPR [6341b4e2-e5c5-45c7-85df-9363a64d8c4b,2164037]); 
+""" ;
+    skos:definition "Active sensors that use radar pulses to image the subsurface of planets and the Earth."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
+    skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/08ec5716-b5d9-4e15-8d4a-c699f6e89283>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/09dc5c8f-ab07-412e-9f0d-652239cfbafb>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0a63da59-87bd-4294-a51f-0f21baf20429>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0b748b90-fe0d-4179-9bdc-d65cd5cadaf4>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/0fb52f3d-d45a-4c77-8159-c5f07e042fba>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/12f1957f-f37b-43d6-a962-42f3422f5806>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/1b358511-67f9-43cb-85a3-7201f1d787db>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/1fda092b-8f01-4810-a8e5-284efa1210c8>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/20186f0a-7a29-4868-9ddd-2bb332b68505>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/240304d3-2cf8-40e0-b65f-670be88fdf4e>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/24c6b787-4d3d-4252-a9b8-b99aeca73c00>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/2e3fe1ff-8b6e-42df-9b4f-e7a13d9577f0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/32fabcaa-08a3-4660-8dcf-882211b33881>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/34f702ec-4273-4281-a2d5-5b80459fbc3b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/34f982b6-85ed-4a23-a886-b5c88a16de9b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3604e8a3-6e1e-4f11-9b33-1d9b3ddfe6ae>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3c2d43d1-8017-4616-8075-3678e66b7513>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3c769989-de85-49c0-820e-8870b39ce3e3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3d040403-e6ab-4e42-b54a-14cce4033f6e>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/3f90fc9d-03a6-4297-a887-5295b2bd6ff9>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/4046a144-ca32-4207-8831-31b8d780ace2>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/41d3528f-8029-4b1a-ae82-9279c7466219>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/440da7dc-72d9-4963-8dc1-2084d1a51294>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/509e6d6f-eb4e-4c4b-807a-617610eace3a>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/51b9980d-4225-47bd-92d9-3268f023791f>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/56d66737-1ad5-4f21-bb87-bb8b5c0736fa>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/5a8adb1b-9f47-460c-8f5a-c570b8b6eb0c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/62309600-7c79-4ae1-a232-9f968bd81ac3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/62cd7e76-9926-43e9-aabb-71f44ad367eb>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6341b4e2-e5c5-45c7-85df-9363a64d8c4b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/640cd1f2-73c3-42bd-9fd4-527f61f533a5>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6cef88d9-ea3c-4f61-80c2-18b48affc583>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/6d513201-491c-4359-8e8f-20acb6a6537e>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/734f3eb4-2be6-4da4-8751-62f7b6d7eff4>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/7b04b051-2ec0-47e4-854e-22ce47ee872c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9c01c5b0-bc0f-404f-9ae4-8e9012ed6d60>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9c131051-30ac-4346-9e5c-38516ca69350>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/9f26c022-321a-4523-b30f-0406377fe9f3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/a212d36d-2a4e-473f-b16a-6e2104b9dd8f>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/aa8a18c9-5cc7-462c-9841-91775178a58c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/abe7e571-142e-4ca1-96d9-d56b9a5311e2>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ae74b4c1-18e6-4079-b740-d65a6394ba37>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/aefa950a-e310-4ae3-814e-38b4aa0aec04>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b3977ebf-401c-4731-be75-4184a4b4afd1>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b7e9c174-3993-434f-becd-c2ee25946aa2>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ba3de3fc-b958-4f98-94a0-e322a290cc1c>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/bd06c523-4e22-4cd4-975a-ba7bbab25ad0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/bd87a5d1-fe86-4e45-8beb-d8be5dc35677>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/c9443a85-ca1d-4220-be2f-fa4c8e09b0f0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/d0c0ab2c-14a4-41a0-8d9b-ac1c13312b40>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/d0e9ba6a-81e3-459b-87c3-20d00039c0de>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/dc5ee11d-a90e-4a70-9bcb-93d106c1583f>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/eb04b68b-0652-4881-a933-c84602364ee5>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/f343a9c5-994a-4447-8634-28d2fe2227b0>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/f39fb827-591d-4153-81aa-30b78f7389d8>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/f59652c5-eaa8-49c0-b65f-a0166048b1dd> ;
+    skos:prefLabel "Radar Sounders"@en ;
+    gcmd:reference [ gcmd:text "https://ieeexplore.ieee.org/document/9884343"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/ecd58f82-8f96-45e1-9547-dd4a02291bd9> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ff564c87-78f2-47eb-a857-a4bdc0a71ae5> ;
@@ -211567,9 +211725,9 @@ add narrower relation (Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
-    gcmd:hits "154" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-05-07 11:47:01" ;
+    gcmd:hits "155" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:20:30" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/DataFormat" .
 
@@ -214051,8 +214209,8 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/2bc6e372-93d8-4672-96b1-ec159aff2e19> ;
     gcmd:hits "251" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:38:20" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:20:37" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/MeasurementName" .
 
@@ -214060,35 +214218,35 @@ add narrower relation (Earth Observation Satellites [3466eed1-2fbb-49bf-ab0b-dc0
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
     gcmd:hits "450" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:37:22" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:19:30" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/discipline" .
 
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/platforms> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/f3261de5-34c1-4980-af22-f9d7e7206d12> ;
-    gcmd:hits "1246" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-05-01 08:14:38" ;
+    gcmd:hits "1247" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-09 09:17:06" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/platforms" .
 
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/b2140059-b3ca-415c-b0a7-3e142783ffe8> ;
-    gcmd:hits "2063" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-05-05 09:41:57" ;
+    gcmd:hits "2065" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-13 08:20:56" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/instruments" .
 
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1eb0ea0a-312c-4d74-8d42-6f1ad758f999> ;
-    gcmd:hits "3623" ;
-    gcmd:keywordVersion "21.2" ;
-    gcmd:schemeVersion "2025-04-25 09:38:34" ;
+    gcmd:hits "3625" ;
+    gcmd:keywordVersion "21.3" ;
+    gcmd:schemeVersion "2025-05-22 10:33:57" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/sciencekeywords" .
 
