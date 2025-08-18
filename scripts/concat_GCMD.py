@@ -151,6 +151,7 @@ def save_rdf_to_file(graph, file_path):
 def main():
     parser = argparse.ArgumentParser(description="Fetch and concatenate GCMD RDF data from the API.")
     parser.add_argument("--all", action='store_true', help="Compute all concept schemes and not just the ones of interest for Data Terra")
+    parser.add_argument("--update", action='store_true', help="Force update the file, even if the version number did not change")
     args = parser.parse_args()
 
     # Fetch RDF data from the API
@@ -188,10 +189,10 @@ def main():
     else:
         sciencekeywords_version = sciencekeywords_version[0]
     current_version = list(merged_graph.objects(sciencekeywords, GCMD.keywordVersion))[0]
-    if sciencekeywords_version == current_version:
+    if not args.update and sciencekeywords_version == current_version:
         print("Version number did not change (", str(current_version), "), skipping save...")
     else:
-        print("New version detected:", str(current_version))
+        print("Current version:", str(current_version))
         save_rdf_to_file(merged_graph, old_file)
 
 if __name__ == "__main__":
