@@ -30,6 +30,8 @@ jobs:
         run: |
           python scripts/concat_GCMD.py
           python scripts/concat_GCMD.py --all
+          sed -Ei 's/<([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12})>/<https:\/\/gcmd.earthdata.nasa.gov\/kms\/concept\/\1>/g' semantic_artefacts/gcmd_full.ttl
+          sed -Ei 's/<([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12})>/<https:\/\/gcmd.earthdata.nasa.gov\/kms\/concept\/\1>/g' semantic_artefacts/gcmd_all.ttl
       
       - name: Update NVS vocabularies
         run: |
