@@ -966,12 +966,14 @@ New Value=Metadata Association Type [9d03a2d8-132d-49ea-95d5-6dea6d769053,265795
     skos:prefLabel "Metadata Association Type"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/a158f804-b000-4013-9513-cee7790381c3> a skos:Concept ;
+    skos:changeNote "Date=2025-08-28 User Id=system System Note=Added narrower relation from Providers [a158f804-b000-4013-9513-cee7790381c3] to Not provided [84f97b9b-1803-40f4-9d32-3151adfc2d7a]" ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/providers> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/1bb6821d-8534-40ce-a6ee-7c88ce4d3c9f>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/224d4001-e30d-4069-81ac-8211750ac641>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/2b890e5b-1b50-4454-90a9-538dd891da9a>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/756a90f8-4203-46f1-87e9-9e0d64bdee50>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/7700280b-68ee-4644-bf5e-84e7a6adf897>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/84f97b9b-1803-40f4-9d32-3151adfc2d7a>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/aef2fc80-def0-46a4-9259-9dc37e80ed08>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/c2dbd735-cc3c-4645-91c7-1f72a7f2b938>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f8762581-b92f-48f9-b077-964ee6b0c8ee> ;
@@ -2163,8 +2165,8 @@ New Value=FOODBORNE DISEASES""" ;
     skos:definition "Illness or disease caused by consumption of foods or drinkscontaminated with biological or chemical toxins or pathogens, includingdisease-causing microbes or toxic chemicals."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "FOODBORNE DISEASES"@en ;
-    gcmd:altLabel [ gcmd:text "FOODBORNE INFECTIONS"@en ],
-        [ gcmd:text "FOODBORNE ILLNESSES"@en ] ;
+    gcmd:altLabel [ gcmd:text "FOODBORNE ILLNESSES"@en ],
+        [ gcmd:text "FOODBORNE INFECTIONS"@en ] ;
     gcmd:reference [ gcmd:text "USGCRP Glossary (https://health2016.globalchange.gov/glossary-and-acronyms#letter-f)"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/008708ac-65a4-481a-8e03-640376f42f56> a skos:Concept ;
@@ -4015,9 +4017,9 @@ language code: en""" ;
     skos:definition "Beijing-1 Panchromatic Imager is a high-resolution remote sensing device with a 4-meter panchromatic resolution and a width 24 km.Group: Instrument_Details   Entry_ID: BJ-1 PAN   Group: Instrument_Identification      Instrument_Category: Earth Remote Sensing Instruments      Instrument_Class: Passive Remote Sensing      Instrument_Type: Photon/Optical Detectors      Instrument_Subtype: Cameras      Short_Name: BJ-1 PAN      Long_Name: BJ-1 Panchromatic Imager   End_Group   Group: Associated_Platforms      Short_Name: BEIJING-1   End_Group   Group: Spectral_Frequency_Information      Wavelength_Keyword: VISIBLE      Spectral_Frequency_Coverage_Range: VIS (~0.40 µm - ~0.75 µm)   End_Group   Online_Resource: http://www.blmit.com.cn/document/weixingjieshao.jsp   Creation_Date: 2011-08-31   Group: Instrument_Logistics      Instrument_Start_Date: 2005-10-27      Instrument_Owner: China/NRSCC   End_GroupEnd_Group"@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "BJ-1 PAN"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "BJ-1 Panchromatic Imager"@en ],
-        [ gcmd:text "HRPAN"@en ] ;
+    gcmd:altLabel [ gcmd:text "HRPAN"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "BJ-1 Panchromatic Imager"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/05d8035f-176b-451a-a52b-43d2cc6286bb> .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/05a868db-43ca-4f45-85b1-00fda3130a53> a skos:Concept ;
@@ -4042,9 +4044,9 @@ New Value=CLOUD LIQUID WATER/ICE [05ac9d3e-bc44-41fa-ace0-c41bf3ebee97,63283] - 
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "CLOUD LIQUID WATER/ICE"@en ;
     gcmd:altLabel [ gcmd:text "Total Cloud Liquid Water/Ice"@en ],
+        [ gcmd:text "CLW"@en ],
         [ gcmd:text "Cloud Ice/Water Content"@en ],
         [ gcmd:text "Liquid Water Content"@en ],
-        [ gcmd:text "CLW"@en ],
         [ gcmd:text "LWC"@en ] ;
     gcmd:reference [ gcmd:text "Atmospheric Science: An Introductory Survey, John M. Wallace and Peter V. Hobbs, Academic Press, Inc., 1977."@en ] .
 
@@ -7949,9 +7951,9 @@ language code: en""" ;
     skos:definition "MATLAB is a proprietary multi-paradigm programming language and numeric computing environment developed by MathWorks. MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "MAT"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "MATLAB"@en ],
-        [ gcmd:text "matlab, Matlab files, .mat"@en ] ;
+    gcmd:altLabel [ gcmd:text "matlab, Matlab files, .mat"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "MATLAB"@en ] ;
     gcmd:reference [ gcmd:text "https://www.mathworks.com/help/pdf_doc/matlab/rn.pdf"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/10deaf31-ae63-43a6-90b8-994487a71edb> a skos:Concept ;
@@ -10549,9 +10551,9 @@ generated by: null""" ;
     skos:definition "The Swarm STR (Star Tracker) assembly provides the attitude of the VFM. Both instruments are co-mounted in a common optical bench to ensure proper alignment for the determination of the highly accurate magnetic field components."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "SWARM-STR"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Swarm Star Tracker"@en ],
-        [ gcmd:text "Start Tracker"@en ] ;
+    gcmd:altLabel [ gcmd:text "Start Tracker"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Swarm Star Tracker"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/054787a6-0c47-43af-a4ee-05c572dd1705>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/1d6d5f82-acd5-4bd2-9324-12884718b353>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/769a52d4-7db1-4b8e-8d39-6fee4e74d34f>,
@@ -11435,9 +11437,9 @@ language code: en""" ;
     skos:definition "An MDB file is a database file created by Microsoft Access, a widely-used desktop relational database program. It contains the database structure (tables and fields) and database entries (table rows). MDB files may also store data entry forms, queries, stored procedures, reports, and database security settings."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "MDB"@en ;
-    gcmd:altLabel [ gcmd:text "Microsoft Access pre-2007"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Microsoft Access MDB File Format Family"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Microsoft Access MDB File Format Family"@en ],
+        [ gcmd:text "Microsoft Access pre-2007"@en ] ;
     gcmd:reference [ gcmd:text "https://fileinfo.com/extension/mdb"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/1b6265cd-b638-4ed1-97b9-9cc8f65f9449> a skos:Concept ;
@@ -11730,9 +11732,9 @@ language code: en""" ;
     skos:definition "HDF5 is a high performance data software library and file format to manage, process, and store your heterogeneous data. HDF5 is built for fast I/O processing and storage."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "HDF5"@en ;
-    gcmd:altLabel [ gcmd:text "HDF-5, HDF, .h5"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Hierarchical Data Format Version 5"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Hierarchical Data Format Version 5"@en ],
+        [ gcmd:text "HDF-5, HDF, .h5"@en ] ;
     gcmd:reference [ gcmd:text "https://www.hdfgroup.org/solutions/hdf5"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/1c441454-851f-48e0-abb3-053ae44c0d4e> a skos:Concept ;
@@ -12226,8 +12228,8 @@ New Value=VECTOR SPECIES [1d9f0eb8-7233-4969-b40c-979d601ebaa7,368623] - BIOSPHE
     skos:definition "An organism, such as an insect, that transmits disease-causing microorganisms such as viruses or bacteria."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "VECTOR SPECIES"@en ;
-    gcmd:altLabel [ gcmd:text "Disease Transmitters"@en ],
-        [ gcmd:text "Disease Carriers"@en ],
+    gcmd:altLabel [ gcmd:text "Disease Carriers"@en ],
+        [ gcmd:text "Disease Transmitters"@en ],
         [ gcmd:text "Disease Vectors"@en ] ;
     gcmd:reference [ gcmd:text "USGCRP Glossary"@en ] .
 
@@ -15627,8 +15629,7 @@ New Value=MACROCLIMATE [273973f1-ccc5-4ae8-9872-17e249023c53,560101] - REGIONAL 
     gcmd:reference [ gcmd:text "Charlson, R.J. and J. Heintzenberg, eds. 1994. Aerosol Forcing of Climate, Report of the Dahlem Workshop on Aerosol Forcing of Climate, Berlin, April 24-29, 1994, John Wiley & Sons, New York."@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/275efdbc-5d2c-49c1-9e08-c2b50d2ff115> a skos:Concept ;
-    dcterms:created "2019-04-29" ;
-    dcterms:modified "2021-07-02 12:49:04.0" ;
+    dcterms:modified "2025-08-27T17:34:13.848Z" ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/563f30c8-43f8-48be-b649-4b548f877fa4> ;
     skos:changeNote """Date=2019-04-29 User Id=sritz Entity=AltLabel Operation=INSERT 
 System Note=insert AltLabel
@@ -15664,7 +15665,7 @@ New Value=1""" ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "RapidScat"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Rapid Scatterometer (RapidScat)"@en ] ;
+            gcmd:text "Rapid Scatterometer"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/93c5d18c-be62-46c4-9545-42f73a854d85> ;
     gcmd:reference [ gcmd:text "https://podaac.jpl.nasa.gov/ISS-RapidScat"@en ] .
 
@@ -17461,8 +17462,8 @@ New Value=TRIBAL LANDS [2b4df9a9-ac03-4bdc-bee4-346045a75e05,368551] - HUMAN SET
     skos:definition "Areas of land reserved for, managed by, or associated with indigenous peoples or tribal nations."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "TRIBAL LANDS"@en ;
-    gcmd:altLabel [ gcmd:text "Indigenous Lands"@en ],
-        [ gcmd:text "Indian Reservations"@en ] .
+    gcmd:altLabel [ gcmd:text "Indian Reservations"@en ],
+        [ gcmd:text "Indigenous Lands"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/2b8cd7ca-5593-4561-a68d-468829da045f> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/e0b60b65-5850-4165-ba4b-e68adefd249b> ;
@@ -17746,9 +17747,9 @@ language code: en""" ;
     skos:definition "A file with the HGT file extension is a Shuttle Radar Topography Mission (SRTM) Data file. HGT files contain digital elevation models, which are 3D pictures of a surface, usually a planet, obtained during the Shuttle Radar Topography Mission (SRTM) by NASA and the National Geospatial-Intelligence Agency (NGA)."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "HGT"@en ;
-    gcmd:altLabel [ gcmd:text "Height"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Shuttle Radar Topography Mission (SRTM) Data file"@en ] .
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Shuttle Radar Topography Mission (SRTM) Data file"@en ],
+        [ gcmd:text "Height"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/2c5970fb-69a7-4701-a271-b4b211ed476b> a skos:Concept ;
     dcterms:created "2021-08-09" ;
@@ -19462,13 +19463,13 @@ language code: en""" ;
     skos:definition "The purpose of the Network Common Data Form (netCDF) interface is to allow you to create, access, and share array-oriented data in a form that is self-describing and portable. 'Self-describing' means that a dataset includes information defining the data it contains. 'Portable' means that the data in a dataset is represented in a form that can be accessed by computers with different ways of storing integers, characters, and floating-point numbers."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "netCDF-4"@en ;
-    gcmd:altLabel [ gcmd:text "NetCDF4"@en ],
+    gcmd:altLabel [ gcmd:text "NETCDF-4"@en ],
         [ gcmd:text "NetCDF-4"@en ],
         [ gcmd:text "NetCDF"@en ],
         [ gcmd:category "primary"@en ;
             gcmd:text "Network Common Data Format Version 4"@en ],
-        [ gcmd:text "netCDF"@en ],
-        [ gcmd:text "NETCDF-4"@en ] ;
+        [ gcmd:text "NetCDF4"@en ],
+        [ gcmd:text "netCDF"@en ] ;
     gcmd:reference [ gcmd:text "NetCDF Users Guide: https://docs.unidata.ucar.edu/nug/current/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/310c5663-1825-46ed-8b64-d1ba7c93ff6d> a skos:Concept ;
@@ -21683,9 +21684,9 @@ language code: en""" ;
     skos:definition "SQLite, version 3, is the file format used as the publicly documented native format for the SQLite database engine since June 2004. Software and associated documentation are available at https://www.sqlite.org/. The code, software, and accompanying documentation have been dedicated to the public domain. SQLite is an embedded SQL database engine that requires no configuration and reads and writes directly to ordinary disk files. A complete SQL database with tables, indexes, triggers, and views, is contained in a single disk file. The engine, and thus the file format, support a full-featured SQL implementation. The database file format, referred to here as 'SQLite_3', is cross-platform, transferable between 32-bit and 64-bit systems or between big-endian and little-endian architectures. These features make SQLite_3 a popular choice as an application file format. See Adoption under Sustainability Factors below for examples of the many operating systems and software applications in which it is distributed or used.SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle, PostgreSQL, or SQL Server. They are designed to implement a shared repository of enterprise data; SQLite is designed to provide local data storage for individual applications. See Appropriate Uses For SQLite for more detail on when SQLite is appropriate and examples of when a client/server SQL database engine would be more appropriate.The main SQLite_3 database file consists of one or more pages. All pages within the same database are the same size. The size of a page in bytes is a power of two between 512 and 65536 inclusive. The page size for a database file is indicated by the 2-byte integer located at an offset of 16 bytes from the beginning of the database file. The theoretical maximum size for an SQLite_3 database file is about 140 terabytes; typically, the file size limit of the underlying filesystem or hardware is the practical constraint. The smallest SQLite_3 database is a single 512-byte page."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "SQLite"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Standard Query Language Lite"@en ],
-        [ gcmd:text "SQLITE"@en ] ;
+    gcmd:altLabel [ gcmd:text "SQLITE"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Standard Query Language Lite"@en ] ;
     gcmd:reference [ gcmd:text "https://www.loc.gov/preservation/digital/formats/fdd/fdd000461.shtml"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/37ae8d4e-fe97-43d3-b8ee-a597e4ebfe87> a skos:Concept ;
@@ -23026,9 +23027,9 @@ language code: en""" ;
     skos:definition "The Graphics Interchange Format is a bitmap image format that was developed by a team at the online services provider CompuServe led by American computer scientist Steve Wilhite on June 15, 1987. It has since come into widespread usage on the World Wide Web due to its wide support and portability between applications and operating systems."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "GIF"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Graphics Interchange Format"@en ],
-        [ gcmd:text "gifs, GIF images"@en ] ;
+    gcmd:altLabel [ gcmd:text "gifs, GIF images"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Graphics Interchange Format"@en ] ;
     gcmd:reference [ gcmd:text "https://en.wikipedia.org/wiki/GIF"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/3bfc3d3d-48cb-44a8-91fe-5ed91a18aa85> a skos:Concept ;
@@ -26742,9 +26743,9 @@ language code: en""" ;
     skos:definition "A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format. A CSV file typically stores tabular data (numbers and text) in plain text, in which case each line will have the same number of fields."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "CSV"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Comma-Separated Values File"@en ],
-        [ gcmd:text "ASCII-csv, CSV (ASCII), Comma separated value file (.csv), text files (CSV), CSV (Comma delimited text file)"@en ] .
+    gcmd:altLabel [ gcmd:text "ASCII-csv, CSV (ASCII), Comma separated value file (.csv), text files (CSV), CSV (Comma delimited text file)"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Comma-Separated Values File"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/465e0298-da06-4bd8-bc57-b167a5253793> a skos:Concept ;
     dcterms:modified "2025-03-07 09:51:29.0" ;
@@ -27580,9 +27581,9 @@ language code: en""" ;
     skos:definition "A data interchange format for raw satellite navigation system data. This allows the user to post-process the received data to produce a more accurate result — usually with other data unknown to the original receiver, such as better models of the atmospheric conditions at time of measurement. The final output of a navigation receiver is usually its position, speed or other related physical quantities. However, the calculation of these quantities are based on a series of measurements from one or more satellite constellations. Although receivers calculate positions in real time, in many cases it is interesting to store intermediate measures for later use. RINEX is the standard format that allows the management and disposal of the measures generated by a receiver, as well as their off-line processing by a multitude of applications, whatever the manufacturer of both the receiver and the computer application."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "RINEX"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Receiver Independent Exchange Format"@en ],
-        [ gcmd:text "RINEX format"@en ] ;
+    gcmd:altLabel [ gcmd:text "RINEX format"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Receiver Independent Exchange Format"@en ] ;
     gcmd:reference [ gcmd:text "Teunissen, Peter; Montenbruck, Oliver (2017). Springer Handbook of Global Navigation Satellite Systems. Springer. p. 1209. ISBN 9783319429281."@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/485824e1-c539-45e6-8262-4e902b8542ed> a skos:Concept ;
@@ -30521,14 +30522,17 @@ New Value=GOES-16 Imager""" ;
     gcmd:reference [ gcmd:text "https://www.nesdis.noaa.gov/GOES-R-Spacecraft"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/51963b3c-d82e-441f-8f65-e21b005861ef> a skos:Concept ;
-    dcterms:created "2015-09-02" ;
+    dcterms:modified "2025-08-27T17:22:51.879Z" ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/fd7e2a51-5ccc-4592-8056-487b400ac350> ;
     skos:changeNote """Date=2015-09-02 User Id=tbs1979 Entity=BroaderRelation Operation=INSERT 
 User Note=Insert Concept
 System Note=add broader relation
 New Value=NOT APPLICABLE [51963b3c-d82e-441f-8f65-e21b005861ef,158359] - NOT APPLICABLE [fd7e2a51-5ccc-4592-8056-487b400ac350,158355]""" ;
+    skos:definition ""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
-    skos:prefLabel "NOT APPLICABLE"@en .
+    skos:prefLabel "NOT APPLICABLE"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "NOT APPLICABLE"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/519a7291-55a2-44a4-8f01-ca7742ff69cc> a skos:Concept ;
     dcterms:modified "2017-03-15 10:41:48.0" ;
@@ -34078,9 +34082,9 @@ New Value=Esri ArcInfo Interchange File""" ;
     skos:definition "The ArcInfo interchange file format, also known as an export file (.e00), is used to enable a coverage, grid to TIN, and associated INFO tables to be transferred between different machines that are not connected by any type of file sharing network. ArcInfo interchange files have an .e00 extension, which increases incrementally to .e01, .e02, and so on, if the interchange file is composed of several separate files."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "ArcInfo Interchange"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Esri ArcInfo Interchange File"@en ],
-        [ gcmd:text "Arc/Info export-interchange, ESRI interchange-format, ArcInfo 7.x interchange, ARC/INFO interchange format, E00"@en ] ;
+    gcmd:altLabel [ gcmd:text "Arc/Info export-interchange, ESRI interchange-format, ArcInfo 7.x interchange, ARC/INFO interchange format, E00"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Esri ArcInfo Interchange File"@en ] ;
     gcmd:reference [ gcmd:text "https://desktop.arcgis.com/en/arcmap/10.3/manage-data/coverages/importing-an-arcinfo-interchange-file.htm"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/5a9aea9c-9193-4074-a444-9073e348d5ad> a skos:Concept ;
@@ -35956,8 +35960,8 @@ New Value=Urban Heat Island [5ce8b673-cdb9-4000-ad00-774d1c67c1b1,368539] - ENVI
     skos:definition "The tendency for higher air temperatures to persist in urban areas as aresult of heat absorbed and emitted by buildings and asphalt, tending to make cities warmer than the surrounding countryside."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "Urban Heat Island"@en ;
-    gcmd:altLabel [ gcmd:text "Urban Heat Island Effect"@en ],
-        [ gcmd:text "UHI"@en ] ;
+    gcmd:altLabel [ gcmd:text "UHI"@en ],
+        [ gcmd:text "Urban Heat Island Effect"@en ] ;
     gcmd:reference [ gcmd:text "https://www.globalchange.gov/climate-change/glossary"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/5d05853c-b709-484f-a406-03f64e643ea4> a skos:Concept ;
@@ -38064,9 +38068,9 @@ language code: en""" ;
     skos:definition "SAS transport data set files are machine-independent files that let you move SAS data sets between computers running different operating systems. You can directly read SAS transport data set files with several statistical software packages (e.g., SPSS and BMDP)."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "SAS"@en ;
-    gcmd:altLabel [ gcmd:text "sas files"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "SAS Transport Data Set Files"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "SAS Transport Data Set Files"@en ],
+        [ gcmd:text "sas files"@en ] ;
     gcmd:reference [ gcmd:text "https://kb.iu.edu/d/aevb"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/6238f3e2-9a87-4e32-b866-c4a637094b51> a skos:Concept ;
@@ -39469,9 +39473,9 @@ language code: en""" ;
     skos:definition "GeoTIFF is a public domain metadata standard which allows georeferencing information to be embedded within a TIFF file. The potential additional information includes map projection, coordinate systems, ellipsoids, datums, and everything else necessary to establish the exact spatial reference for the file. The GeoTIFF format is fully compliant with TIFF 6.0, so software incapable of reading and interpreting the specialized metadata will still be able to open a GeoTIFF format file."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "GeoTIFF"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Georeferenced Tagged Image File Format"@en ],
-        [ gcmd:text "GeoTiff files, Georeferenced TIFF (geotiff), GEOtiff"@en ] ;
+    gcmd:altLabel [ gcmd:text "GeoTiff files, Georeferenced TIFF (geotiff), GEOtiff"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Georeferenced Tagged Image File Format"@en ] ;
     gcmd:reference [ gcmd:text "https://www.ogc.org/standards/geotiff"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/66b99c8a-5962-4049-af83-b2eafd59d1df> a skos:Concept ;
@@ -43117,9 +43121,9 @@ language code: en""" ;
     skos:definition "Office Open XML (also informally known as OOXML)[3] is a zipped, XML-based file format developed by Microsoft for representing spreadsheets, charts, presentations and word processing documents. Ecma International standardized the initial version as ECMA-376. ISO and IEC standardized later versions as ISO/IEC 29500."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "Open XML Spreadsheet"@en ;
-    gcmd:altLabel [ gcmd:text "XLSX"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Microsoft Excel Open XML Spreadsheet"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Microsoft Excel Open XML Spreadsheet"@en ],
+        [ gcmd:text "XLSX"@en ] ;
     gcmd:reference [ gcmd:text "http://regmedia.co.uk/2009/08/20/fokus_odf_ooxml_report.pdf"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/714be1d7-2012-4a98-bdd5-02bbcadf69d8> a skos:Concept ;
@@ -45697,9 +45701,9 @@ language code: en""" ;
     skos:definition "Digital Line Graphs (DLGs) are digital vector representations of cartographic information derived from USGS maps and related sources."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "DLG"@en ;
-    gcmd:altLabel [ gcmd:text "Digital Line Graph (DLG) Files, DLG-3"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Digital Line Graph"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Digital Line Graph"@en ],
+        [ gcmd:text "Digital Line Graph (DLG) Files, DLG-3"@en ] ;
     gcmd:reference [ gcmd:text "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-line-graphs-dlgs-large-scale?qt-science_center_objects=0#qt-science_center_objects"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/7903c432-f65f-4b92-bb9e-96cd3036fd1d> a skos:Concept ;
@@ -46329,9 +46333,9 @@ language code: en""" ;
     skos:definition "Bitmap Image File is a raster graphics image file format used to store bitmap digital images, independently of the display device (such as a graphics adapter), especially on Microsoft Windows and OS/2 operating systems. The BMP file format is capable of storing two-dimensional digital images both monochrome and color, in various color depths, and optionally with data compression, alpha channels, and color profiles. The Windows Metafile (WMF) specification covers the BMP file format."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "BMP"@en ;
-    gcmd:altLabel [ gcmd:text "SIR"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Bitmap Image File"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Bitmap Image File"@en ],
+        [ gcmd:text "SIR"@en ] ;
     gcmd:reference [ gcmd:text "https://archive.org/details/mac_Graphics_File_Formats_Second_Edition_1996/page/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/7abb05fb-8000-425c-8761-c85aba595205> a skos:Concept ;
@@ -46895,6 +46899,16 @@ New Value=HRIR Nimbus-2""" ;
             gcmd:text "High-Resolution Infrared Radiometer on Nimbus-2"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/486c2802-dca4-49a3-8bb8-4889e6961014>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/df91d23f-2c02-4bc1-92c1-a105fb0deb05> .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/7bd3e828-b70a-44cd-a222-222285cb862c> a skos:Concept ;
+    dcterms:modified "2025-08-26T18:53:39.918Z" ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote "Date=2025-08-26 User Id=system System Note=Added broader relation from HDF-EOS [7bd3e828-b70a-44cd-a222-222285cb862c] to Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb]",
+        "Date=2025-08-26 User Id=tstevens User Note=added new data format keyword" ;
+    skos:definition "HDF is the prescribed format for standard data products that are derived from EOS missions. HDF-EOS (Hierarchical Data Format - Earth Observing System) is a self-describing file format for transfer of various types of data between different machines based upon HDF. HDF-EOS is a standard format to store data collected from EOS satellites: Terra, Aqua and Aura. Two versions of HDF-EOS libraries: HDF-EOS2 (v3.0) based on HDF4 and HDF-EOS5 (v2.0) based on HDF5 are developed."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "HDF-EOS"@en ;
+    gcmd:reference [ gcmd:text "https://hdfeos.org/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/7bd773dd-d715-473b-8e24-64b32138515f> a skos:Concept ;
     dcterms:modified "2021-08-05 12:00:32.0" ;
@@ -48290,9 +48304,9 @@ generated by: null""" ;
     skos:definition "The AMR-C instrument is provided by NASA/JPL with the objective to measure the altimeter signal path delay due to tropospheric water vapor. AMR-C measures the 18.7 GHz, 23.8 GHz and 34.0 GHz sea surface microwave brightness temperatures. AMR-C is a successor to the AMR heritage radiometers.Rationale: This AMR instrument is not exactly the same as its predecessors and has its own name."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "AMR-C"@en ;
-    gcmd:altLabel [ gcmd:text "Advanced Microwave Radiometer-Climate Quality"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Advanced Microwave Radiometer-C"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Advanced Microwave Radiometer-C"@en ],
+        [ gcmd:text "Advanced Microwave Radiometer-Climate Quality"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/0df95c0e-77a5-46b5-94f4-3e5ae1391450>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/1f0f5178-9d7a-41ae-8f04-d6262415c30c> ;
     gcmd:reference [ gcmd:text "https://trs.jpl.nasa.gov/bitstream/handle/2014/47461/CL%2317-0979.pdf?sequence=1"@en ] .
@@ -48634,9 +48648,9 @@ language code: en""" ;
     skos:definition "KML is a file format used to display geographic data in an Earth browser such as Google Earth. You can create KML files to pinpoint locations, add image overlays, and expose rich data in new ways. KML is an international standard maintained by the Open Geospatial Consortium, Inc. (OGC)."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "KML"@en ;
-    gcmd:altLabel [ gcmd:text "Keyhole Markup Language (.kml), kml"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Keyhole Markup Language"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Keyhole Markup Language"@en ],
+        [ gcmd:text "Keyhole Markup Language (.kml), kml"@en ] ;
     gcmd:reference [ gcmd:text "https://developers.google.com/kml"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/80a6803a-5bf3-4439-b13f-0909e0ea40f9> a skos:Concept ;
@@ -50226,8 +50240,8 @@ New Value=HYPOXIC CONDITIONS [853c3456-5397-4e16-ba67-51e4f4205db5,368607] - BIO
     skos:definition "In ocean and freshwater environments, hypoxic conditions occur when dissolved oxygen concentration is depleted to a certain low level below which aquatic organisms, especially immobile species such as oysters and mussels, endure severe stress or die.​​ Hypoxic conditions can occur naturally but are often the consequence of excessive nutrient input from human activities."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "HYPOXIC CONDITIONS"@en ;
-    gcmd:altLabel [ gcmd:text "Hypoxic Zones"@en ],
-        [ gcmd:text "Hypoxic Events"@en ] ;
+    gcmd:altLabel [ gcmd:text "Hypoxic Events"@en ],
+        [ gcmd:text "Hypoxic Zones"@en ] ;
     gcmd:reference [ gcmd:text "Adapted from ​NOAA, the ​IPCC WGII AR5 Glossary​, and ​NCA4 Chapter 10"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/854d953c-3439-4a5b-86bc-19f9f9b6e92e> a skos:Concept ;
@@ -50664,9 +50678,9 @@ language code: en""" ;
     skos:definition "The purpose of the Network Common Data Form (netCDF) interface is to allow you to create, access, and share array-oriented data in a form that is self-describing and portable. 'Self-describing' means that a dataset includes information defining the data it contains. 'Portable' means that the data in a dataset is represented in a form that can be accessed by computers with different ways of storing integers, characters, and floating-point numbers."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "netCDF-3"@en ;
-    gcmd:altLabel [ gcmd:text "NetCDF3, NetCDF-3, netCDF-3/CF, NETCDF-3"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Network Common Data Format Version 3"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Network Common Data Format Version 3"@en ],
+        [ gcmd:text "NetCDF3, NetCDF-3, netCDF-3/CF, NETCDF-3"@en ] ;
     gcmd:reference [ gcmd:text "NetCDF Users Guide: https://docs.unidata.ucar.edu/nug/current/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/869110e9-ee07-4ebc-aa10-b7069ce78162> a skos:Concept ;
@@ -50815,7 +50829,7 @@ New Value=CG4 [86d56006-93bf-4cbc-9c1f-8a3ca2fea45a,158667] - PYRGEOMETERS [7bf2
     skos:prefLabel "PHYSICAL ANTHROPOLOGY"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/86f4b0e3-afef-4ee1-9d9a-8dd5d933d306> a skos:Concept ;
-    dcterms:modified "2021-08-05 17:15:20.0" ;
+    dcterms:modified "2025-08-27T17:33:04.695Z" ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/def72d78-3c2f-4f46-91e7-259a0e63e2de> ;
     skos:changeNote """Date=2021-08-05 User Id=sritz Entity=AltLabel Operation=INSERT 
 System Note=insert AltLabel
@@ -50826,8 +50840,6 @@ language code: en""" ;
     skos:definition "A SOIL MOISTURE PROBE is a device that measures the total amountof water, including the water vapor, in unsaturated soil."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "SOIL MOISTURE PROBE"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "SOIL MOISTURE PROBE"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/2516981b-e560-479d-ba96-f8edfb54efe9>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/a1586112-38f5-461c-9e88-0a95cf62062c>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/dbb82f09-3a6f-4840-b1a9-c4acc3f6bbe8> .
@@ -51215,9 +51227,9 @@ language code: en""" ;
     skos:definition "SAFE, the Standard Archive Format for Europe, is designed to act as a standard format for archiving and conveying Earth observation data within the European Space Agency (ESA) archiving facilities and, potentially, within the archiving facilities of cooperating agencies. SAFE benefits from experiences gathered during developments of several existing archiving standards and copes with the major constraints defined (in the OAIS-RM, see next paragraph) for the packaging and long term preservation of Earth observation data. SAFE has been designed to be used in an archive system compliant with the Open Archival Information System (OAIS) standard. Therefore, the OAIS reference model is a major input to its design. In fact, SAFE provides features that facilitate the archive compliance with OAIS and at the same time ensures that this compliance is not hampered by it."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "SAFE"@en ;
-    gcmd:altLabel [ gcmd:text "SENTINEL-SAFE"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "Standard Archive Format for Europe"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "Standard Archive Format for Europe"@en ],
+        [ gcmd:text "SENTINEL-SAFE"@en ] ;
     gcmd:reference [ gcmd:text "https://earth.esa.int/eogateway/activities/safe-the-standard-archive-format-for-europe"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/87fdeb97-2d3e-4812-8540-b88f425d920c> a skos:Concept ;
@@ -51741,6 +51753,16 @@ New Value=ASIRAS [8928c9da-2163-4cfc-b3ed-3fc5d67a4334,310063] - Radar Altimeter
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "ORGANIC PARTICLES"@en ;
     gcmd:reference [ gcmd:text "Charlson, R.J. and J. Heintzenberg, eds. 1994. Aerosol Forcing of Climate, Report of the Dahlem Workshop on Aerosol Forcing of Climate, Berlin, April 24-29, 1994, John Wiley & Sons, New York."@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/892c2d24-ccfd-479b-8d6e-51b9a09a52ac> a skos:Concept ;
+    dcterms:modified "2025-08-26T18:58:44.904Z" ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote "Date=2025-08-26 User Id=system System Note=Added broader relation from HDF [892c2d24-ccfd-479b-8d6e-51b9a09a52ac] to Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb]",
+        "Date=2025-08-26 User Id=tstevens User Note=added new keyword" ;
+    skos:definition "HDF is the prescribed format for standard data products that are derived from EOS missions."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "HDF"@en ;
+    gcmd:reference [ gcmd:text "https://hdfeos.org/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/8931329c-3f6d-4ba6-913c-27afa8d104c1> a skos:Concept ;
     dcterms:modified "2013-08-16 09:21:37.0" ;
@@ -53345,9 +53367,9 @@ language code: en""" ;
     skos:definition "ASCII is a character encoding standard for electronic communication. ASCII codes represent text in computers, telecommunications equipment, and other devices. Most modern character-encoding schemes are based on ASCII, although they support many additional characters."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "ASCII"@en ;
-    gcmd:altLabel [ gcmd:text "ASCII-IWG1, compressed ascii, ASCII interchange files, ASCII Table, ASCII files, OTHER ASCII, ASCII Text, Plain Text, ASCII Text"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "American Standard Code for Information Interchange"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "American Standard Code for Information Interchange"@en ],
+        [ gcmd:text "ASCII-IWG1, compressed ascii, ASCII interchange files, ASCII Table, ASCII files, OTHER ASCII, ASCII Text, Plain Text, ASCII Text"@en ] ;
     gcmd:reference [ gcmd:text "http://www.asciitable.com/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/8e2c0e3a-4716-4211-9804-734a7a93adbe> a skos:Concept ;
@@ -55465,9 +55487,9 @@ language code: en""" ;
     skos:definition "A concise data format commonly used in meteorology to store historical and forecast weather data."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "GRIB2"@en ;
-    gcmd:altLabel [ gcmd:text "General Regularly-distributed Information in Binary form, Edition 2"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "General Regularly-Distributed Information in Binary Form-2"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "General Regularly-Distributed Information in Binary Form-2"@en ],
+        [ gcmd:text "General Regularly-distributed Information in Binary form, Edition 2"@en ] ;
     gcmd:reference [ gcmd:text "https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/949e0309-4367-4349-8d62-a6ad8054a94a> a skos:Concept ;
@@ -57963,9 +57985,9 @@ text: pRES
 language code: en""" ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "pRES"@en ;
-    gcmd:altLabel [ gcmd:text "Phase Sensitive Radar System"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "pRES"@en ] .
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "pRES"@en ],
+        [ gcmd:text "Phase Sensitive Radar System"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/9ca8fc70-b0b7-4b57-8894-dc89a69910f4> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/ad11e2b2-db98-4820-b2dc-c075560baca8> ;
@@ -61242,9 +61264,9 @@ New Value=ECOLOGICAL CORRIDORS [a66ec515-6a6e-487b-9004-2d19d6ffff04,368967] - H
     skos:definition "An area of habitat connecting wildlife populations separated by humanactivities or structures."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "ECOLOGICAL CORRIDORS"@en ;
-    gcmd:altLabel [ gcmd:text "HABITAT CORRIDORS"@en ],
-        [ gcmd:text "GREEN CORRIDORS"@en ],
-        [ gcmd:text "WILDLIFE CORRIDORS"@en ] ;
+    gcmd:altLabel [ gcmd:text "GREEN CORRIDORS"@en ],
+        [ gcmd:text "WILDLIFE CORRIDORS"@en ],
+        [ gcmd:text "HABITAT CORRIDORS"@en ] ;
     gcmd:reference [ gcmd:text "USGCRP Glossary (https://www.globalchange.gov/climate-change/glossary)"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/a68048f4-181c-4c6c-9bfa-9e4171e9f237> a skos:Concept ;
@@ -62068,9 +62090,9 @@ generated by: null""" ;
     skos:definition "GRACE-FO Microwave Instrument (MWI) consists of a GNSS receiver and a K-band ranging (KBR) assembly."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "GRACE-FO MWI"@en ;
-    gcmd:altLabel [ gcmd:text "Microwave Instrument"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "GRACE-FO Microwave Instrument"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "GRACE-FO Microwave Instrument"@en ],
+        [ gcmd:text "Microwave Instrument"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/f75e34e2-ebe7-4a6c-8bf6-da596a36b632> ;
     gcmd:reference [ gcmd:text "ESA"@en ] .
 
@@ -65063,9 +65085,9 @@ language code: en""" ;
     skos:definition "Gas Chromatography - Electron Capture Detector or GC-ECD is a technique used to analyze halogenated compounds and is primarily used in the environmental, forensic and pharmaceutical markets. Within an ECD, when certain molecules pass by the detector, they capture some of the electrons in the sample and this reduces the current measured. The compensation for this reduction is recorded as a positive peak."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "GC-ECD"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "GC-ECD"@en ],
-        [ gcmd:text "Gas Chromatography - Electron Capture Detector"@en ] .
+    gcmd:altLabel [ gcmd:text "Gas Chromatography - Electron Capture Detector"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "GC-ECD"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/b1a1df43-48b0-4fa5-b6dc-dd3646803161> a skos:Concept ;
     dcterms:modified "2021-08-04 17:31:27.0" ;
@@ -65674,6 +65696,14 @@ language code: en""" ;
         <https://gcmd.earthdata.nasa.gov/kms/concept/a1586112-38f5-461c-9e88-0a95cf62062c>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b16010e6-c7ea-4c98-929e-3f844ca2f2c2>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/fa514134-ff56-47d1-bc02-6b8568ad21e7> .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/b2dc6c3f-d9a7-4638-8166-e12182bf7143> a skos:Concept ;
+    dcterms:modified "2025-08-26T19:07:37.791Z" ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote "Date=2025-08-26 User Id=system System Note=Added broader relation from ZIP [b2dc6c3f-d9a7-4638-8166-e12182bf7143] to Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb]" ;
+    skos:definition ""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "ZIP"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/b2e9c2ee-8112-43a8-911c-6cbb8f5215bb> a skos:Concept ;
     dcterms:modified "2021-08-05 17:55:12.0" ;
@@ -74563,9 +74593,9 @@ New Value=WASTEWATER MANAGEMENT""" ;
     skos:definition "The management of wastewater or sewage, often in the form oftreatment that removes contaminants and impurities so that the watercan be directly reused or returned to aquifers or natural bodies of water."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "WASTEWATER MANAGEMENT"@en ;
-    gcmd:altLabel [ gcmd:text "Sewage Treatment"@en ],
-        [ gcmd:text "Wastewater Treatment"@en ],
-        [ gcmd:text "Sewage Management"@en ] ;
+    gcmd:altLabel [ gcmd:text "Sewage Management"@en ],
+        [ gcmd:text "Sewage Treatment"@en ],
+        [ gcmd:text "Wastewater Treatment"@en ] ;
     gcmd:reference [ gcmd:text "Adapted from Encyclopædia Britannica (https://www.britannica.com/technology/wastewater-treatment)"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/cbfabd7a-7032-4f67-acd8-8f6f1e026eff> a skos:Concept ;
@@ -75506,9 +75536,9 @@ language code: en""" ;
     skos:definition "Spatial Data Transfer Standard, or SDTS, is a standard used to describe earth-referenced spatial data. It was designed to easily transfer and use spatial data on different computer platforms. The FGDC has proposed to withdraw the standard. The USGS made an effort to promulgate the standard by making a large volume of data available at no cost and many companies supported the standard by writing translators to transform the data into different formats."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "SDTS"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Spatial Data Transfer Standard"@en ],
-        [ gcmd:text "Spatial Data Tranfer Standard (SDTS) Files, SDTS Topological Vector Profile (tar-archived files)"@en ] ;
+    gcmd:altLabel [ gcmd:text "Spatial Data Tranfer Standard (SDTS) Files, SDTS Topological Vector Profile (tar-archived files)"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Spatial Data Transfer Standard"@en ] ;
     gcmd:reference [ gcmd:text "https://www.fgdc.gov/standards/news/withdraw-SDTS-proposal"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/cfef6030-aba1-47b6-b643-e826c5b88468> a skos:Concept ;
@@ -76796,8 +76826,8 @@ New Value=TECHNOLOGICAL HAZARDS MAPPING [d454b0f7-d811-46b4-9778-45bb60d7c914,36
     skos:definition "Mapping of hazards that are the result of human action or inaction. These hazards often result from the failure of existing man-made infrastructure or technology and can be aggravated by other environmental conditions. Examples include dam failure, hazardous materials accidents, and other forms of infrastructure failure."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "TECHNOLOGICAL HAZARDS MAPPING"@en ;
-    gcmd:altLabel [ gcmd:text "MAN-MADE HAZARDS MAPPING"@en ],
-        [ gcmd:text "ANTHROPOGENIC HAZARDS MAPPING"@en ] ;
+    gcmd:altLabel [ gcmd:text "ANTHROPOGENIC HAZARDS MAPPING"@en ],
+        [ gcmd:text "MAN-MADE HAZARDS MAPPING"@en ] ;
     gcmd:reference [ gcmd:text "Adapted from the ​National Service Knowledge Network (https://www.nationalservice.gov/sites/default/files/olc/moodle/ds_online_orientation/viewef14.html?id=3139&chapterid=896)"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/d45ca303-30a8-4987-ad86-13a5f86be32c> a skos:Concept ;
@@ -77563,10 +77593,10 @@ New Value=The Airborne Visible/Infrared Imaging Spectrometer - Classic (AVIRIS, 
     skos:definition "The Airborne Visible/Infrared Imaging Spectrometer - Classic (AVIRIS, AVIRIS-C, or AVIRIS-Classic) is the first of the NASA AVIRIS spectrometer Facility Instrument series. The AVIRIS-C delivers calibrated images of the upwelling spectral radiance in 224 contiguous spectral channels (also called bands) with wavelengths from 380 to 2510 nanometers (nm). The AVIRIS has been in operation since 1987 and flown on various aircraft platforms, including NASA's ER-2 jet, Twin Otter International's turboprop, Scaled Composites' Proteus, and WB-57. The AVIRIS instrument collects data that can be used for characterization of the Earth's surface and atmosphere from geometrically coherent spectroradiometric measurements. This data can be applied to studies in the fields of oceanography, environmental science, snow hydrology, geology, volcanology, soil and land management, atmospheric and aerosol studies, agriculture, limnology, etc."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "AVIRIS"@en ;
-    gcmd:altLabel [ gcmd:text "AVIRIS-Classic"@en ],
+    gcmd:altLabel [ gcmd:text "AVIRIS-C"@en ],
         [ gcmd:category "primary"@en ;
             gcmd:text "Airborne Visible InfraRed Imaging Spectrometer"@en ],
-        [ gcmd:text "AVIRIS-C"@en ] ;
+        [ gcmd:text "AVIRIS-Classic"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/b16010e6-c7ea-4c98-929e-3f844ca2f2c2> ;
     gcmd:reference [ gcmd:text "ORNL DAAC"@en ] .
 
@@ -79201,9 +79231,9 @@ language code: en""" ;
     skos:definition "The HDF-EOS2 is a software library designed built on HDF4* to support EOS-specific data structures, namely Grid, Point, and Swath. The new data structures are constructed from standard HDF data objects, using EOS conventions, through the use of a software library. A key feature of HDF-EOS files is that instrument-independent services, such as subsetting by geolocation, can be applied to the files across a wide variety of data products."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "HDF-EOS2"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Hierarchical Data Format - Earth Observing System Version 2"@en ],
-        [ gcmd:text "HDF-EOS"@en ] ;
+    gcmd:altLabel [ gcmd:text "HDF-EOS"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Hierarchical Data Format - Earth Observing System Version 2"@en ] ;
     gcmd:reference [ gcmd:text "https://hdfeos.org/software/library.php#HDF-EOS2"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/db89fdd2-d911-4a75-9210-ce90db043358> a skos:Concept ;
@@ -81456,8 +81486,7 @@ New Value=UTIG IMU [e1539872-b5fd-43e9-b67b-7b4252885aa0,309827] - Radar Altimet
     skos:prefLabel "TIME PERIOD STUDIES"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e1544d27-a3b8-4b14-95aa-e25b21bcce1f> a skos:Concept ;
-    dcterms:created "2019-10-28" ;
-    dcterms:modified "2022-08-11 09:03:18.0" ;
+    dcterms:modified "2025-08-26T19:10:45.549Z" ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
     skos:changeNote """Date=2019-10-28 User Id=sritz Entity=BroaderRelation Operation=INSERT 
 User Note=Insert Concept
@@ -81489,10 +81518,11 @@ System Note=update Definition
 New Value=https://jpeg.org/jpeg2000/""" ;
     skos:definition "JPEG 2000 (JP2) is an image compression standard and coding system. It was developed from 1997 to 2000 by a Joint Photographic Experts Group committee chaired by Touradj Ebrahimi (later the JPEG president),[1] with the intention of superseding their original discrete cosine transform (DCT) based JPEG standard (created in 1992) with a newly designed, wavelet-based method. The standardized filename extension is .jp2 for ISO/IEC 15444-1 conforming files and .jpx for the extended part-2 specifications, published as ISO/IEC 15444-2."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
-    skos:prefLabel "JPEG2000"@en ;
+    skos:prefLabel "JPEG-2000"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Joint Photographic Experts Group Format 2000"@en ],
-        [ gcmd:text "JPEG-2000"@en ] ;
+            gcmd:text "JPEG-2000"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Joint Photographic Experts Group Format 2000"@en ] ;
     gcmd:reference [ gcmd:text "https://jpeg.org/jpeg2000/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e18c90cb-7dfe-4135-83c8-97a393c1d057> a skos:Concept ;
@@ -82747,9 +82777,9 @@ New Value=HDF4""" ;
     skos:definition "HDF4 is a library and multi-object file format for storing and managing data between machines. HDF4 is a very different technology than HDF5. The HDF Group recommends that, other than for working with existing HDF4 data, new applications use HDF5 since HDF5 addresses important deficiencies of HDF4."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "HDF4"@en ;
-    gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Hierarchical Data Format Version 4"@en ],
-        [ gcmd:text "HDF-4, HDF"@en ] ;
+    gcmd:altLabel [ gcmd:text "HDF-4, HDF"@en ],
+        [ gcmd:category "primary"@en ;
+            gcmd:text "Hierarchical Data Format Version 4"@en ] ;
     gcmd:reference [ gcmd:text "https://www.hdfgroup.org/solutions/hdf4/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e5c4876e-47b7-4d53-90a2-081a6b150140> a skos:Concept ;
@@ -83484,8 +83514,7 @@ proxy records."""@en ;
     skos:prefLabel "THEATER"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/e7c3b01c-0739-487b-adbb-59d84c559375> a skos:Concept ;
-    dcterms:created "2018-07-05" ;
-    dcterms:modified "2019-02-21 04:48:48.0" ;
+    dcterms:modified "2025-08-27T17:36:09.488Z" ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/47d0c7c0-683c-42a9-b53b-53b684972b52> ;
     skos:changeNote """Date=2018-07-05 User Id=mmorahan Entity=AltLabel Operation=INSERT 
 System Note=insert AltLabel
@@ -83500,22 +83529,21 @@ New Value=TRSR [e7c3b01c-0739-487b-adbb-59d84c559375,367771] - GPS [47d0c7c0-683
         """Date=2018-07-05 User Id=mmorahan Entity=Definition Operation=INSERT 
 System Note=insert Definition
 New Value=id: null
-text: BlackJack is also referred to as TRSR-2 (Turbo Rogue Space Receiver-2). The instrument is of GPS/MET (Microlab) heritage (of a design as flown on CHAMP) and is being provided by NASA/JPL and built by Spectrum Astro Inc. of Gilbert, AZ. BlackJack is a 16-channel GPS receiver with the objective to provide supplementary positioning data to DORIS in support of the POD (Precision Orbit Determination) function and to enhance and/or improve gravity field models. Radial accuracies of 1-2 cm are obtained in post-processing. BlackJack is a fully redundant unit (two independent receivers operating in cold redundancy). Each unit is comprised of an omnidirectional antenna, low-noise amplifier, crystal oscillator, sampling down-converter, and a baseband digital processor assembly, communicating through a 1553 bus interface. Instrument mass = 10 kg (2), power = 17.5 W.
-
-In its current configuration, the BlackJack on Jason-1 can track up to 12 GPS satellites simultaneously in dual-frequency mode. From these signals, BlackJack acquires measurements of the GPS carrier phase providing range measurements with an accuracy of about 1 mm; the absolute pseudo range (defined as the absolute range plus receiver time offset from GPS time) has an accuracy of about 10 cm. BlackJack provides also onboard solutions for S/C position and time, accurate to about 50 m and 150 ns, respectively.
-language code: en""",
+text: BlackJack is also referred to as TRSR-2 (Turbo Rogue Space Receiver-2). The instrument is of GPS/MET (Microlab) heritage (of a design as flown on CHAMP) and is being provided by NASA/JPL and built by Spectrum Astro Inc. of Gilbert, AZ. BlackJack is a 16-channel GPS receiver with the objective to provide supplementary positioning data to DORIS in support of the POD (Precision Orbit Determination) function and to enhance and/or improve gravity field models. Radial accuracies of 1-2 cm are obtained in post-processing. BlackJack is a fully redundant unit (two independent receivers operating in cold redundancy). Each unit is comprised of an omnidirectional antenna, low-noise amplifier, crystal oscillator, sampling down-converter, and a baseband digital processor assembly, communicating through a 1553 bus interface. Instrument mass = 10 kg (2), power = 17.5 W.""",
         """Date=2019-02-21 User Id=mmorahan Entity=WeightedRelation Operation=INSERT 
 System Note=insert WeightedRelation
 New Value=id: null
 related concept uuid: 4ea59dad-ed94-453e-a991-62c790a1d101
 relationship type: null
 relationship value: null
-generated by: null""" ;
+generated by: null""",
+        """In its current configuration, the BlackJack on Jason-1 can track up to 12 GPS satellites simultaneously in dual-frequency mode. From these signals, BlackJack acquires measurements of the GPS carrier phase providing range measurements with an accuracy of about 1 mm; the absolute pseudo range (defined as the absolute range plus receiver time offset from GPS time) has an accuracy of about 10 cm. BlackJack provides also onboard solutions for S/C position and time, accurate to about 50 m and 150 ns, respectively.
+language code: en""" ;
     skos:definition "BlackJack is also referred to as TRSR-2 (Turbo Rogue Space Receiver-2). The instrument is of GPS/MET (Microlab) heritage (of a design as flown on CHAMP) and is being provided by NASA/JPL and built by Spectrum Astro Inc. of Gilbert, AZ. BlackJack is a 16-channel GPS receiver with the objective to provide supplementary positioning data to DORIS in support of the POD (Precision Orbit Determination) function and to enhance and/or improve gravity field models. Radial accuracies of 1-2 cm are obtained in post-processing. BlackJack is a fully redundant unit (two independent receivers operating in cold redundancy). Each unit is comprised of an omnidirectional antenna, low-noise amplifier, crystal oscillator, sampling down-converter, and a baseband digital processor assembly, communicating through a 1553 bus interface. Instrument mass = 10 kg (2), power = 17.5 W.In its current configuration, the BlackJack on Jason-1 can track up to 12 GPS satellites simultaneously in dual-frequency mode. From these signals, BlackJack acquires measurements of the GPS carrier phase providing range measurements with an accuracy of about 1 mm; the absolute pseudo range (defined as the absolute range plus receiver time offset from GPS time) has an accuracy of about 10 cm. BlackJack provides also onboard solutions for S/C position and time, accurate to about 50 m and 150 ns, respectively."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "TRSR"@en ;
     gcmd:altLabel [ gcmd:category "primary"@en ;
-            gcmd:text "Turbo Rogue Space Receiver-"@en ] ;
+            gcmd:text "Turbo Rouge Space Receiver"@en ] ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/4ea59dad-ed94-453e-a991-62c790a1d101> ;
     gcmd:reference [ gcmd:text "https://earth.esa.int/web/eoportal/satellite-missions/j/jason-1"@en ] .
 
@@ -84809,9 +84837,9 @@ language code: en""" ;
     skos:definition "AREA is a GIS/geospatial file extension."@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:prefLabel "AREA"@en ;
-    gcmd:altLabel [ gcmd:text "McIDAS GRID, McIDAS MD, McIDAS AREA format (archive), McIDAS AREA, McIDAS, McIDAS MD file"@en ],
-        [ gcmd:category "primary"@en ;
-            gcmd:text "McIDAS Image File Format"@en ] ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "McIDAS Image File Format"@en ],
+        [ gcmd:text "McIDAS GRID, McIDAS MD, McIDAS AREA format (archive), McIDAS AREA, McIDAS, McIDAS MD file"@en ] ;
     gcmd:reference [ gcmd:text "https://gisgeography.com/gis-formats/"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/ec165cc6-324d-4be1-8ace-48a660a1f900> a skos:Concept ;
@@ -85159,6 +85187,15 @@ language code: en""" ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/sciencekeywords> ;
     skos:prefLabel "MICROFLORA"@en ;
     gcmd:reference [ gcmd:text "Adapted from Allaby, Michael. 1998. A Dictionary of Plant Sciences, New York: Oxford University Press."@en ] .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/ed23d5a4-a8d0-4601-a343-e1223d83332a> a skos:Concept ;
+    dcterms:modified "2025-08-26T19:01:14.655Z" ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote "Date=2025-08-26 User Id=system System Note=Added broader relation from PDS [ed23d5a4-a8d0-4601-a343-e1223d83332a] to Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb]" ;
+    skos:definition "PDS is a format used primarily by NASA to store and distribute solar, lunar and planetary imagery data. GDAL provides read-only access to PDS formatted imagery data."@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "PDS"@en ;
+    gcmd:reference [ gcmd:text "https://gdal.org/en/stable/drivers/raster/pds.html"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/ed2e9f34-2358-4a2a-a83e-febba8989c5c> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/63bc0693-52eb-4ebd-a39e-e77e96409072> ;
@@ -88725,6 +88762,14 @@ language code: en""" ;
     skos:prefLabel "LAND/OCEAN/ICE FRACTION"@en ;
     gcmd:reference [ gcmd:text "GES-DISC, https://disc.gsfc.nasa.gov/"@en ] .
 
+<https://gcmd.earthdata.nasa.gov/kms/concept/f7fd0224-feaa-4a30-b5c1-0af088017f76> a skos:Concept ;
+    dcterms:modified "2025-08-26T19:12:15.861Z" ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote "Date=2025-08-26 User Id=system System Note=Added broader relation from NetCDF [f7fd0224-feaa-4a30-b5c1-0af088017f76] to Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb]" ;
+    skos:definition ""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "NetCDF"@en .
+
 <https://gcmd.earthdata.nasa.gov/kms/concept/f80c47db-63dc-4be2-b07b-a00d13ff4ca7> a skos:Concept ;
     dcterms:created "2017-07-26" ;
     dcterms:modified "2017-07-26 15:25:27.0" ;
@@ -90857,6 +90902,14 @@ language code: en""" ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:prefLabel "ICE STRESS SENSORS"@en ;
     gcmd:isOnPlatform <https://gcmd.earthdata.nasa.gov/kms/concept/06e037ed-f463-4fa3-a23e-8f694b321eb1> .
+
+<https://gcmd.earthdata.nasa.gov/kms/concept/fd129b07-7c68-40fb-bf63-7248b31501a3> a skos:Concept ;
+    dcterms:modified "2025-08-26T18:45:58.020Z" ;
+    skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
+    skos:changeNote "Date=2025-08-26 User Id=system System Note=Added broader relation from WMS [fd129b07-7c68-40fb-bf63-7248b31501a3] to Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb]" ;
+    skos:definition ""@en ;
+    skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
+    skos:prefLabel "WMS"@en .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/fd19a3f1-8eeb-49ab-bcaf-e7b4b267d415> a skos:Concept ;
     dcterms:modified "2013-10-16 19:00:18.0" ;
@@ -106835,8 +106888,7 @@ generated by: null""" ;
     gcmd:reference [ gcmd:text "American Meteorological Society Glossary of Meteorology"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/fd7e2a51-5ccc-4592-8056-487b400ac350> a skos:Concept ;
-    dcterms:created "2015-09-02" ;
-    dcterms:modified "2015-09-02 07:12:21.0" ;
+    dcterms:modified "2025-08-27T17:22:31.521Z" ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/8129a4b9-b5f9-4585-87e6-4576c3a53682> ;
     skos:changeNote """Date=2015-09-02 User Id=tbs1979 Entity=BroaderRelation Operation=INSERT 
 User Note=Insert Concept
@@ -106846,9 +106898,12 @@ New Value=NOT APPLICABLE [fd7e2a51-5ccc-4592-8056-487b400ac350,158355] - NOT APP
 User Note=Insert Concept
 System Note=add narrower relation
 New Value=NOT APPLICABLE [fd7e2a51-5ccc-4592-8056-487b400ac350,158355] - NOT APPLICABLE [51963b3c-d82e-441f-8f65-e21b005861ef,158359]""" ;
+    skos:definition ""@en ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/instruments> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/51963b3c-d82e-441f-8f65-e21b005861ef> ;
-    skos:prefLabel "NOT APPLICABLE"@en .
+    skos:prefLabel "NOT APPLICABLE"@en ;
+    gcmd:altLabel [ gcmd:category "primary"@en ;
+            gcmd:text "NOT APPLICABLE"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/fdb29ed9-9a40-4b14-993d-332e53d2a019> a skos:Concept ;
     skos:broader <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
@@ -108071,8 +108126,8 @@ New Value=GEOENGINEERING [262e3568-c57b-4e28-a142-ad5e7b51dfb7,368563] - SOLAR R
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/0f583845-c39e-471d-a590-8212a4358e1e>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/1595c0a9-63a8-433c-8515-044a977d73a7> ;
     skos:prefLabel "GEOENGINEERING"@en ;
-    gcmd:altLabel [ gcmd:text "Climate Intervention"@en ],
-        [ gcmd:text "Climate Engineering"@en ] ;
+    gcmd:altLabel [ gcmd:text "Climate Engineering"@en ],
+        [ gcmd:text "Climate Intervention"@en ] ;
     gcmd:reference [ gcmd:text "http://www.ipcc-wg2.org/meetings/EMs/EM_GeoE_Meeting_Report_final.pdf"@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/267eca20-09a7-46ad-89f4-111ccb3fd16d> a skos:Concept ;
@@ -130851,7 +130906,7 @@ generated by: null""" ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9728ca44-7bb3-40a4-9dd2-49470ad47fa5> ;
     gcmd:hits "8" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -131039,8 +131094,8 @@ language code: en""",
         <https://gcmd.earthdata.nasa.gov/kms/concept/e210bb78-19b6-453c-8dcb-81e389601329>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f12d8026-f24a-4413-91d0-4704c243c9e7> ;
     skos:prefLabel "AGRICULTURAL PLANT SCIENCE"@en ;
-    gcmd:altLabel [ gcmd:text "AGRICULTURAL PLANT SCIENCES"@en ],
-        [ gcmd:text "PLANT SCIENCE"@en ] ;
+    gcmd:altLabel [ gcmd:text "PLANT SCIENCE"@en ],
+        [ gcmd:text "AGRICULTURAL PLANT SCIENCES"@en ] ;
     gcmd:reference [ gcmd:text "Adapted from: Herren, R.V., and R.L. Donahue.  1991.  The Agriculture Dictionary, Delmar Publishers INC.  Albany, New york.  553pp."@en ] .
 
 <https://gcmd.earthdata.nasa.gov/kms/concept/2b9ad978-d986-4d63-b477-0f5efc8ace72> a skos:Concept ;
@@ -137741,7 +137796,7 @@ generated by: null""" ;
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/0cde2885-d08e-4539-9055-99d9a4754df0> ;
     gcmd:hits "13" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -139425,7 +139480,7 @@ New Value=Lidar/Laser Altimeters [ec76ff59-7450-48a0-9152-7c3531e609fd,546155] -
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1499785c-8b74-45f4-bbf7-19d2d4e43b2f> ;
     gcmd:hits "15" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -140378,7 +140433,7 @@ New Value=MARINE SEDIMENTS [ce4b2c6e-3d69-4cf1-8416-c36e5f9b1b2c,1481262] - SEDI
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/6eb7a3bb-2330-4086-9a77-79e46470f1e6> ;
     gcmd:hits "17" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -142405,7 +142460,7 @@ New Value=Describes the major physical characteristics of water that respond to 
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/e97d2b88-a545-4882-801b-40964a2bc723> ;
     gcmd:hits "21" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -142685,7 +142740,7 @@ New Value=Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c31,1312537] - 
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/27fa831b-f131-4f6d-8020-cc4ab0896249> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -142693,7 +142748,7 @@ New Value=Lidar/Laser Sounders [7c13f166-8711-4d2f-9251-4635002c6c31,1312537] - 
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/502ad03c-dba8-4b32-8af5-13fa947c3988> ;
     gcmd:hits "22" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -147117,7 +147172,7 @@ New Value=Projection Name [9d37b0bc-31fa-4b2e-b39d-1e19ceefa103,423537] - World 
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/9d37b0bc-31fa-4b2e-b39d-1e19ceefa103> ;
     gcmd:hits "52" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -149503,7 +149558,13 @@ New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,1674695] - WAV [ea7c
         """Date=2025-05-07 User Id=tstevens Entity=NarrowerRelation Operation=INSERT 
 User Note=Insert Concept
 System Note=add narrower relation
-New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple [2e5c9035-16fc-438d-85a4-d7e26e233516,2148818]""" ;
+New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple [2e5c9035-16fc-438d-85a4-d7e26e233516,2148818]""",
+        "Date=2025-08-26 User Id=system System Note=Added narrower relation from Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb] to HDF [892c2d24-ccfd-479b-8d6e-51b9a09a52ac]",
+        "Date=2025-08-26 User Id=system System Note=Added narrower relation from Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb] to HDF-EOS [7bd3e828-b70a-44cd-a222-222285cb862c]",
+        "Date=2025-08-26 User Id=system System Note=Added narrower relation from Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb] to NetCDF [f7fd0224-feaa-4a30-b5c1-0af088017f76]",
+        "Date=2025-08-26 User Id=system System Note=Added narrower relation from Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb] to PDS [ed23d5a4-a8d0-4601-a343-e1223d83332a]",
+        "Date=2025-08-26 User Id=system System Note=Added narrower relation from Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb] to WMS [fd129b07-7c68-40fb-bf63-7248b31501a3]",
+        "Date=2025-08-26 User Id=system System Note=Added narrower relation from Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb] to ZIP [b2dc6c3f-d9a7-4638-8166-e12182bf7143]" ;
     skos:inScheme <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> ;
     skos:narrower <https://gcmd.earthdata.nasa.gov/kms/concept/0225ee3e-c3b1-4a5d-bd22-b36462330b00>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/067315ec-ed74-401f-b828-d568351211d1>,
@@ -149580,6 +149641,7 @@ New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple 
         <https://gcmd.earthdata.nasa.gov/kms/concept/789d230c-8557-493b-8bdc-4e810f4f7968>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/78fe04cb-d68f-4b4f-a6b5-3b59660d3f95>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/7aafe1ad-b785-4805-ac76-2aa102cdb7e4>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/7bd3e828-b70a-44cd-a222-222285cb862c>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/7de32ba8-eb3a-4e02-add3-3d828e46bd57>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/7eb10062-b8d3-44c9-b89e-57fa895dcfbb>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/7f6d6202-7fb2-4ad5-bbfe-114803316b63>,
@@ -149593,6 +149655,7 @@ New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple 
         <https://gcmd.earthdata.nasa.gov/kms/concept/868fc5dc-21fa-4356-a3de-f4c3c9559a21>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/87ae4923-1a96-4fa2-a560-ddf27de4fcba>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/87eddebb-2ef4-4597-bfac-1b97e9f54440>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/892c2d24-ccfd-479b-8d6e-51b9a09a52ac>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/8b3ff8b7-92b4-48ba-97dd-29e925069745>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/8b7ff128-106e-4a40-9de9-5bf3b6404fc2>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/8e128326-b9cb-44c7-9e6b-4bd950a08753>,
@@ -149614,6 +149677,7 @@ New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple 
         <https://gcmd.earthdata.nasa.gov/kms/concept/ac392872-1571-4bfd-94dd-81f93d9f1fd0>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ac8d1b01-34f9-477a-a17d-21866b862ee1>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/adc9dbd1-13ec-4f36-aa3a-378af76ba34b>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/b2dc6c3f-d9a7-4638-8166-e12182bf7143>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b46bb83e-736e-4189-b1d8-6f0570fdfa6c>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b4daf648-f134-42c4-8840-b0966e233554>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/b517c1af-7de8-45ef-8141-63fc31615165>,
@@ -149651,14 +149715,17 @@ New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple 
         <https://gcmd.earthdata.nasa.gov/kms/concept/e807acba-457e-4f7e-be44-da5f93f4118b>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ea7c4eed-f0c4-47a6-9ba9-1a4aafee19c4>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ebe6f3c4-a78f-4152-977c-296d42e4e9e8>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/ed23d5a4-a8d0-4601-a343-e1223d83332a>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ed9804d8-e1ad-4209-8fea-30fba3d47ed7>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/ee05a43b-abfa-4955-847b-86cb590fba53>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f1736125-bd43-47d3-9125-262baa182f99>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f4930ca9-6b68-4bb8-adb0-81a571e20a53>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f49d1197-2ed0-4f88-98ce-fbb86bbb03e1>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/f7fd0224-feaa-4a30-b5c1-0af088017f76>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f831ec03-4d23-4322-a789-f9404187aa33>,
         <https://gcmd.earthdata.nasa.gov/kms/concept/f8c1fd07-20b6-47fe-a420-f01679c523d1>,
-        <https://gcmd.earthdata.nasa.gov/kms/concept/fa52494f-c855-4d6c-a4dc-46b3090cc6e3> ;
+        <https://gcmd.earthdata.nasa.gov/kms/concept/fa52494f-c855-4d6c-a4dc-46b3090cc6e3>,
+        <https://gcmd.earthdata.nasa.gov/kms/concept/fd129b07-7c68-40fb-bf63-7248b31501a3> ;
     skos:prefLabel "Data Format"@en ;
     skos:topConceptOf <https://gcmd.earthdata.nasa.gov/kms/>,
         <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> .
@@ -149666,8 +149733,8 @@ New Value=Data Format [8e770fe1-6e82-43aa-9f8a-75d217d7e6cb,2144774] - Multiple 
 <https://gcmd.earthdata.nasa.gov/kms/concepts/concept_scheme/DataFormat> a skos:ConceptScheme,
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/8e770fe1-6e82-43aa-9f8a-75d217d7e6cb> ;
-    gcmd:hits "155" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:hits "161" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -150934,7 +151001,7 @@ New Value=Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e799782
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/2bc6e372-93d8-4672-96b1-ec159aff2e19> ;
     gcmd:hits "251" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -150942,7 +151009,7 @@ New Value=Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e799782
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/5b98265f-7cd1-4976-bc78-1ac1e6b9b90f> ;
     gcmd:hits "450" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -150950,7 +151017,7 @@ New Value=Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e799782
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/b2140059-b3ca-415c-b0a7-3e142783ffe8> ;
     gcmd:hits "2076" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
@@ -150958,7 +151025,7 @@ New Value=Imaging Spectrometers/Radiometers [944b7691-af37-4fb4-9393-c114e799782
         gcmd:gcmd ;
     skos:hasTopConcept <https://gcmd.earthdata.nasa.gov/kms/concept/1eb0ea0a-312c-4d74-8d42-6f1ad758f999> ;
     gcmd:hits "3660" ;
-    gcmd:keywordVersion "21.9" ;
+    gcmd:keywordVersion "22.0" ;
     gcmd:termsOfUse "https://cdn.earthdata.nasa.gov/conduit/upload/5182/KeywordsCommunityGuide_Baseline_v1_SIGNED_FINAL.pdf" ;
     gcmd:viewer "https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all" .
 
