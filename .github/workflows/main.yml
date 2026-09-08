@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every day at 4:30 PM UTC (approximates 5:30 PM CET)
     - cron: '30 16 * * *'
-    
+
   workflow_dispatch:
 
 jobs:
@@ -13,12 +13,14 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        # Pinned on purpose: '3.x' followed the newest release and broke this
+        # workflow when Python 3.14 shipped (rdflib failed to import).
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.13'
 
       - name: Install dependencies
         run: |
@@ -32,23 +34,37 @@ jobs:
           python scripts/concat_GCMD.py --all
           sed -Ei 's/<([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12})>/<https:\/\/gcmd.earthdata.nasa.gov\/kms\/concept\/\1>/g' semantic_artefacts/gcmd_full.ttl
           sed -Ei 's/<([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12})>/<https:\/\/gcmd.earthdata.nasa.gov\/kms\/concept\/\1>/g' semantic_artefacts/gcmd_all.ttl
-      
+
       - name: Update NVS vocabularies
+        # The URLs must stay quoted: unquoted, the '&' before _mediatype made
+        # bash background each command and drop the parameter, so failures were
+        # invisible and the requested media type was never sent.
+        # Each collection is attempted even if an earlier one fails; the step
+        # still ends non-zero so the failure is visible.
         run: |
-          python3 scripts/nvs_updater.py --input semantic_artefacts/C17.ttl --url https://vocab.nerc.ac.uk/collection/C17/current/?_profile=nvs&_mediatype=text/turtle
-          python3 scripts/nvs_updater.py --input semantic_artefacts/C19.ttl --url https://vocab.nerc.ac.uk/collection/C19/current/?_profile=nvs&_mediatype=text/turtle
-          python3 scripts/nvs_updater.py --input semantic_artefacts/L06.ttl --url https://vocab.nerc.ac.uk/collection/L06/current/?_profile=nvs&_mediatype=text/turtle
-          python3 scripts/nvs_updater.py --input semantic_artefacts/L22.ttl --url https://vocab.nerc.ac.uk/collection/L22/current/?_profile=nvs&_mediatype=text/turtle
-          python3 scripts/nvs_updater.py --input semantic_artefacts/P02.ttl --url https://vocab.nerc.ac.uk/collection/P02/current/?_profile=nvs&_mediatype=text/turtle
-          python3 scripts/nvs_updater.py --input semantic_artefacts/P07.ttl --url https://vocab.nerc.ac.uk/collection/P07/current/?_profile=nvs&_mediatype=text/turtle
-          python3 scripts/nvs_updater.py --input semantic_artefacts/P06.ttl --url https://vocab.nerc.ac.uk/collection/P06/current/?_profile=nvs&_mediatype=text/turtle
-          
+          rc=0
+          nvs() {
+            collection="$1"
+            echo "::group::NVS $collection"
+            python scripts/nvs_updater.py \
+              --input "semantic_artefacts/${collection}.ttl" \
+              --url "https://vocab.nerc.ac.uk/collection/${collection}/current/?_profile=nvs&_mediatype=text/turtle" \
+              || { echo "::error::NVS update failed: $collection"; rc=1; }
+            echo "::endgroup::"
+          }
+          for collection in C17 C19 L06 L22 P02 P07 P06; do
+            nvs "$collection"
+          done
+          exit $rc
 
       # Compare the output file and commit changes if different
       - name: Check if file has been updated and commit changes
+        # always(): commit the vocabularies that did update, even when another
+        # one failed above.
+        if: always()
         run: |
           sa_folder="semantic_artefacts"
-          
+
           # Check if the original file has been updated by comparing it with the previously committed version
           git diff --quiet "$sa_folder" || {
             echo "Changes detected in $sa_folder, committing changes..."

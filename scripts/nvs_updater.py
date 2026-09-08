@@ -22,10 +22,13 @@ def main():
     headers = {
         "Accept": "text/turtle"
     }
-    response = requests.get(remote_url, headers=headers)
+    response = requests.get(remote_url, headers=headers, timeout=120)
     if response.status_code != 200:
-        print(f"Error: Could not fetch remote TTL file from {remote_url} (status {response.status_code})")
-        return
+        # Exit non-zero: returning quietly here made the workflow look green
+        # while the vocabulary silently stopped being updated.
+        raise SystemExit(
+            f"Error: Could not fetch remote TTL file from {remote_url} (status {response.status_code})"
+        )
     remote_data = response.text
 
     remote_graph = Graph()
